@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	“NewHTML”的评论	</title>
+	<atom:link href="https://newhtml.net/comments/feed.xml" rel="self" type="application/rss+xml" />
+	<link>https://newhtml.net</link>
+	<description>全新的互联网体验</description>
+	<lastBuildDate>Mon, 13 Feb 2017 11:52:49 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+			<item>
+				<title>
+				学习WPF——使用Font-Awesome图标字体-紫金星对《一组很棒的Icon Font分享》的评论				</title>
+				<link>https://newhtml.net/%e4%b8%80%e7%bb%84%e5%be%88%e6%a3%92%e7%9a%84icon-font%e5%88%86%e4%ba%ab/#comment-10976</link>
+		<dc:creator><![CDATA[学习WPF——使用Font-Awesome图标字体-紫金星]]></dc:creator>
+		<pubDate>Mon, 12 Jan 2015 04:48:01 +0000</pubDate>
+		<guid isPermaLink="false">https://newhtml.net/?p=1002#comment-10976</guid>
+					<description><![CDATA[[&#8230;] ---------------- 常见的图标字体有很多，但我认为Font-Awesome是迄今为止最出色的图标字体（没有之一） [&#8230;]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] &#8212;&#8212;&#8212;&#8212;&#8212;- 常见的图标字体有很多，但我认为Font-Awesome是迄今为止最出色的图标字体（没有之一） [&#8230;]</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				浅谈V8引擎中的垃圾回收机制 &#124; 鸭嘴兽创意博客对《V8 之旅： 垃圾回收器》的评论				</title>
+				<link>https://newhtml.net/v8-garbage-collection/#comment-6917</link>
+		<dc:creator><![CDATA[浅谈V8引擎中的垃圾回收机制 &#124; 鸭嘴兽创意博客]]></dc:creator>
+		<pubDate>Sun, 10 Aug 2014 04:21:37 +0000</pubDate>
+		<guid isPermaLink="false">https://newhtml.net/?p=1521#comment-6917</guid>
+					<description><![CDATA[[&#8230;] 这篇文章的所有内容均来自 朴灵的《深入浅出Node.js》及A tour of V8:Garbage Collection，后者还有中文翻译版V8 之旅： 垃圾回收器，我在这里只是做了个记录和结合 [&#8230;]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] 这篇文章的所有内容均来自 朴灵的《深入浅出Node.js》及A tour of V8:Garbage Collection，后者还有中文翻译版V8 之旅： 垃圾回收器，我在这里只是做了个记录和结合 [&#8230;]</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				cors跨域 &#124; otarim对《利用CORS实现跨域请求》的评论				</title>
+				<link>https://newhtml.net/using-cors/#comment-5905</link>
+		<dc:creator><![CDATA[cors跨域 &#124; otarim]]></dc:creator>
+		<pubDate>Wed, 11 Jun 2014 10:50:37 +0000</pubDate>
+		<guid isPermaLink="false">https://newhtml.net/?p=366#comment-5905</guid>
+					<description><![CDATA[[&#8230;] 参考来源： http://blog.csdn.net/hfahe/article/details/7730944 https://newhtml.net/using-cors/ [&#8230;]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] 参考来源： <a href="http://blog.csdn.net/hfahe/article/details/7730944" rel="nofollow ugc">http://blog.csdn.net/hfahe/article/details/7730944</a> <a href="https://newhtml.net/using-cors/" rel="nofollow ugc">https://newhtml.net/using-cors/</a> [&#8230;]</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				Sam对《一步到位，一组免费Bootstrap UI套件分享》的评论				</title>
+				<link>https://newhtml.net/%e4%b8%80%e6%ad%a5%e5%88%b0%e4%bd%8d%ef%bc%8c%e4%b8%80%e7%bb%84%e5%85%8d%e8%b4%b9bootstrap-ui%e5%a5%97%e4%bb%b6%e5%88%86%e4%ba%ab/#comment-5616</link>
+		<dc:creator><![CDATA[Sam]]></dc:creator>
+		<pubDate>Wed, 14 May 2014 19:07:06 +0000</pubDate>
+		<guid isPermaLink="false">https://newhtml.net/?p=1499#comment-5616</guid>
+					<description><![CDATA[辛苦了，作品非常棒！]]></description>
+		<content:encoded><![CDATA[<p>辛苦了，作品非常棒！</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				CORS跨域请求，以及cookie操作 &#124; Passion and Dream对《利用CORS实现跨域请求》的评论				</title>
+				<link>https://newhtml.net/using-cors/#comment-5504</link>
+		<dc:creator><![CDATA[CORS跨域请求，以及cookie操作 &#124; Passion and Dream]]></dc:creator>
+		<pubDate>Wed, 07 May 2014 13:46:49 +0000</pubDate>
+		<guid isPermaLink="false">https://newhtml.net/?p=366#comment-5504</guid>
+					<description><![CDATA[[&#8230;] 但是在权限操作的时候又遇到问题，这种方式虽然可以获取资源，但是请求中不能附带cookies，服务器返回的coolies也不能设置，这导致了，现在的同域名依靠cookie实现的session会话机制，不能使用。接着查找到了https://newhtml.net/using-cors/这篇文章。 在服务器的header中设置 [&#8230;]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] 但是在权限操作的时候又遇到问题，这种方式虽然可以获取资源，但是请求中不能附带cookies，服务器返回的coolies也不能设置，这导致了，现在的同域名依靠cookie实现的session会话机制，不能使用。接着查找到了https://newhtml.net/using-cors/这篇文章。 在服务器的header中设置 [&#8230;]</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				liuyanghejerry对《FlowType.JS &#8211; 帮你调节文字大小的利器》的评论				</title>
+				<link>https://newhtml.net/flowtype-js-%e5%b8%ae%e4%bd%a0%e8%b0%83%e8%8a%82%e6%96%87%e5%ad%97%e5%a4%a7%e5%b0%8f%e7%9a%84%e5%88%a9%e5%99%a8/#comment-5481</link>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+		<pubDate>Tue, 06 May 2014 06:34:50 +0000</pubDate>
+		<guid isPermaLink="false">https://newhtml.net/?p=1459#comment-5481</guid>
+					<description><![CDATA[乐乐早啊]]></description>
+		<content:encoded><![CDATA[<p>乐乐早啊</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				游乐对《FlowType.JS &#8211; 帮你调节文字大小的利器》的评论				</title>
+				<link>https://newhtml.net/flowtype-js-%e5%b8%ae%e4%bd%a0%e8%b0%83%e8%8a%82%e6%96%87%e5%ad%97%e5%a4%a7%e5%b0%8f%e7%9a%84%e5%88%a9%e5%99%a8/#comment-5479</link>
+		<dc:creator><![CDATA[游乐]]></dc:creator>
+		<pubDate>Tue, 06 May 2014 03:00:06 +0000</pubDate>
+		<guid isPermaLink="false">https://newhtml.net/?p=1459#comment-5479</guid>
+					<description><![CDATA[天哪噜，刚刚好在搜索这种文字大小功能的代码，竟然搜到这里来了，浏阳河姐姐真是努力]]></description>
+		<content:encoded><![CDATA[<p>天哪噜，刚刚好在搜索这种文字大小功能的代码，竟然搜到这里来了，浏阳河姐姐真是努力</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				關於 css3 Animations ＆ Transitions 控制的二三事 &#124; Duncan &#039;s blog对《CSS3 Transition 的背后》的评论				</title>
+				<link>https://newhtml.net/behind-css3-transitions/#comment-5171</link>
+		<dc:creator><![CDATA[關於 css3 Animations ＆ Transitions 控制的二三事 &#124; Duncan &#039;s blog]]></dc:creator>
+		<pubDate>Sun, 20 Apr 2014 09:43:08 +0000</pubDate>
+		<guid isPermaLink="false">https://newhtml.net/?p=1473#comment-5171</guid>
+					<description><![CDATA[[&#8230;] 相關資訊： How to Capture CSS3 Animation Events in JavaScript Controlling CSS Animations and Transitions with JavaScript Get the Value of Animating CSS Properties（譯） CSS3 TRANSITION 的背後 [&#8230;]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] 相關資訊： How to Capture CSS3 Animation Events in JavaScript Controlling CSS Animations and Transitions with JavaScript Get the Value of Animating CSS Properties（譯） CSS3 TRANSITION 的背後 [&#8230;]</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				liuyanghejerry对《更简单的网页布局体验：CSS3 Flexible Box 简明入门教程》的评论				</title>
+				<link>https://newhtml.net/css3-flexible-box-%e7%ae%80%e6%98%8e%e5%85%a5%e9%97%a8%e6%95%99%e7%a8%8b/#comment-4985</link>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+		<pubDate>Fri, 28 Mar 2014 14:22:46 +0000</pubDate>
+		<guid isPermaLink="false">https://newhtml.net/?p=912#comment-4985</guid>
+					<description><![CDATA[最后两张图排反了，现已更正，谢谢指正！]]></description>
+		<content:encoded><![CDATA[<p>最后两张图排反了，现已更正，谢谢指正！</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				yuantingisme对《更简单的网页布局体验：CSS3 Flexible Box 简明入门教程》的评论				</title>
+				<link>https://newhtml.net/css3-flexible-box-%e7%ae%80%e6%98%8e%e5%85%a5%e9%97%a8%e6%95%99%e7%a8%8b/#comment-4984</link>
+		<dc:creator><![CDATA[yuantingisme]]></dc:creator>
+		<pubDate>Thu, 27 Mar 2014 14:13:35 +0000</pubDate>
+		<guid isPermaLink="false">https://newhtml.net/?p=912#comment-4984</guid>
+					<description><![CDATA[最后的效果不对吧]]></description>
+		<content:encoded><![CDATA[<p>最后的效果不对吧</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				daliy record &#124; Web开源笔记-专注Web开发技术,分享Web开发技术与资源对《用PhantomJS轻松给网页截图》的评论				</title>
+				<link>https://newhtml.net/%e7%94%a8phantomjs%e8%bd%bb%e6%9d%be%e7%bb%99%e7%bd%91%e9%a1%b5%e6%88%aa%e5%9b%be/#comment-4983</link>
+		<dc:creator><![CDATA[daliy record &#124; Web开源笔记-专注Web开发技术,分享Web开发技术与资源]]></dc:creator>
+		<pubDate>Thu, 20 Mar 2014 15:40:32 +0000</pubDate>
+		<guid isPermaLink="false">https://newhtml.net/?p=1281#comment-4983</guid>
+					<description><![CDATA[[&#8230;] https://newhtml.net/%E7%94%A8phantomjs%E8%BD%BB%E6%9D%BE%E7%BB%99%E7%BD%91%E9%A1%B5%E6%88%AA%E5%9B%BE&#8230; [&#8230;]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] <a href="https://newhtml.net/%E7%94%A8phantomjs%E8%BD%BB%E6%9D%BE%E7%BB%99%E7%BD%91%E9%A1%B5%E6%88%AA%E5%9B%BE&#038;#8230" rel="nofollow ugc">https://newhtml.net/%E7%94%A8phantomjs%E8%BD%BB%E6%9D%BE%E7%BB%99%E7%BD%91%E9%A1%B5%E6%88%AA%E5%9B%BE&#038;#8230</a>; [&#8230;]</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				marchen对《CSS Shake &#8211; 让你的页面晃起来！》的评论				</title>
+				<link>https://newhtml.net/css-shake-%e8%ae%a9%e4%bd%a0%e7%9a%84%e9%a1%b5%e9%9d%a2%e6%99%83%e8%b5%b7%e6%9d%a5%ef%bc%81/#comment-4982</link>
+		<dc:creator><![CDATA[marchen]]></dc:creator>
+		<pubDate>Sat, 15 Mar 2014 13:19:34 +0000</pubDate>
+		<guid isPermaLink="false">https://newhtml.net/?p=1594#comment-4982</guid>
+					<description><![CDATA[it is awesome .]]></description>
+		<content:encoded><![CDATA[<p>it is awesome .</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				audio.js &#8211; 随时随地，播放 HTML5 的声音 &#124; java面试题对《audio.js &#8211; 随时随地，播放 HTML5 的声音》的评论				</title>
+				<link>https://newhtml.net/audio-js-%e9%9a%8f%e6%97%b6%e9%9a%8f%e5%9c%b0%ef%bc%8c%e6%92%ad%e6%94%be-html5-%e7%9a%84%e5%a3%b0%e9%9f%b3/#comment-4981</link>
+		<dc:creator><![CDATA[audio.js &#8211; 随时随地，播放 HTML5 的声音 &#124; java面试题]]></dc:creator>
+		<pubDate>Sun, 09 Feb 2014 03:31:01 +0000</pubDate>
+		<guid isPermaLink="false">https://newhtml.net/?p=761#comment-4981</guid>
+					<description><![CDATA[[&#8230;] 文章来源地址：https://newhtml.net/audio-js-%E9%9A%8F%E6%97%B6%E9%9A%8F%E5%9C%B0%EF%BC%8C%E6%92%AD%E6%94%BE-html5-%E&#8230; [&#8230;]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] 文章来源地址：https://newhtml.net/audio-js-%E9%9A%8F%E6%97%B6%E9%9A%8F%E5%9C%B0%EF%BC%8C%E6%92%AD%E6%94%BE-html5-%E&#8230; [&#8230;]</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				hafeyang对《数组操作的福星 &#8211; Lazy.js》的评论				</title>
+				<link>https://newhtml.net/%e6%95%b0%e7%bb%84%e6%93%8d%e4%bd%9c%e7%9a%84%e7%a6%8f%e6%98%9f-lazy-js/#comment-4660</link>
+		<dc:creator><![CDATA[hafeyang]]></dc:creator>
+		<pubDate>Wed, 11 Dec 2013 09:20:14 +0000</pubDate>
+		<guid isPermaLink="false">https://newhtml.net/?p=1492#comment-4660</guid>
+					<description><![CDATA[underscore里面也有这样的封装]]></description>
+		<content:encoded><![CDATA[<p>underscore里面也有这样的封装</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				V8 内部原理：object representation &#124; JavaScript V8 Node.js HTML5 CSS3对《V8 之旅：full compiler》的评论				</title>
+				<link>https://newhtml.net/v8-full-compiler/#comment-4252</link>
+		<dc:creator><![CDATA[V8 内部原理：object representation &#124; JavaScript V8 Node.js HTML5 CSS3]]></dc:creator>
+		<pubDate>Thu, 28 Nov 2013 16:46:02 +0000</pubDate>
+		<guid isPermaLink="false">https://newhtml.net/?p=1503#comment-4252</guid>
+					<description><![CDATA[[&#8230;] 在前一篇文章中，我们观察了V8的简单编译器——Full Compiler。在我们继续观察Crankshaft之前，为更好地理解它，我们首先来看看V8在内存中如何表达对象。 [&#8230;]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] 在前一篇文章中，我们观察了V8的简单编译器——Full Compiler。在我们继续观察Crankshaft之前，为更好地理解它，我们首先来看看V8在内存中如何表达对象。 [&#8230;]</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				yio对《NProgress &#8211; 独特的线条进度条》的评论				</title>
+				<link>https://newhtml.net/nprogress-%e7%8b%ac%e7%89%b9%e7%9a%84%e7%ba%bf%e6%9d%a1%e8%bf%9b%e5%ba%a6%e6%9d%a1/#comment-3530</link>
+		<dc:creator><![CDATA[yio]]></dc:creator>
+		<pubDate>Fri, 01 Nov 2013 07:17:04 +0000</pubDate>
+		<guid isPermaLink="false">https://newhtml.net/?p=1469#comment-3530</guid>
+					<description><![CDATA[网站很漂亮，内容也很使用。]]></description>
+		<content:encoded><![CDATA[<p>网站很漂亮，内容也很使用。</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				liuyanghejerry对《NProgress &#8211; 独特的线条进度条》的评论				</title>
+				<link>https://newhtml.net/nprogress-%e7%8b%ac%e7%89%b9%e7%9a%84%e7%ba%bf%e6%9d%a1%e8%bf%9b%e5%ba%a6%e6%9d%a1/#comment-3402</link>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+		<pubDate>Wed, 23 Oct 2013 15:46:41 +0000</pubDate>
+		<guid isPermaLink="false">https://newhtml.net/?p=1469#comment-3402</guid>
+					<description><![CDATA[这个主要是针对页面中的异步加载，而不是针对页面初次加载的过程。如果你需要更加智能的进度条解决方案，可以考虑&lt;a href=&quot;https://github.com/HubSpot/pace&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;pace&lt;/a&gt;]]></description>
+		<content:encoded><![CDATA[<p>这个主要是针对页面中的异步加载，而不是针对页面初次加载的过程。如果你需要更加智能的进度条解决方案，可以考虑<a href="https://github.com/HubSpot/pace" target="_blank" rel="nofollow">pace</a></p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				J.Chen对《NProgress &#8211; 独特的线条进度条》的评论				</title>
+				<link>https://newhtml.net/nprogress-%e7%8b%ac%e7%89%b9%e7%9a%84%e7%ba%bf%e6%9d%a1%e8%bf%9b%e5%ba%a6%e6%9d%a1/#comment-3339</link>
+		<dc:creator><![CDATA[J.Chen]]></dc:creator>
+		<pubDate>Thu, 10 Oct 2013 05:55:12 +0000</pubDate>
+		<guid isPermaLink="false">https://newhtml.net/?p=1469#comment-3339</guid>
+					<description><![CDATA[但是我有个问题，前端的我们如何知道页面加载到哪里？ 难道要在页面中的 上，中，下的内容里面插入 Javascript？]]></description>
+		<content:encoded><![CDATA[<p>但是我有个问题，前端的我们如何知道页面加载到哪里？ 难道要在页面中的 上，中，下的内容里面插入 Javascript？</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				tmdphp对《HTML5应用之文件上传》的评论				</title>
+				<link>https://newhtml.net/html5-files-uploads/#comment-3317</link>
+		<dc:creator><![CDATA[tmdphp]]></dc:creator>
+		<pubDate>Wed, 02 Oct 2013 07:54:47 +0000</pubDate>
+		<guid isPermaLink="false">https://newhtml.net/?p=89#comment-3317</guid>
+					<description><![CDATA[原来有这货 FormData。
+学习了]]></description>
+		<content:encoded><![CDATA[<p>原来有这货 FormData。<br />
+学习了</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				利用CORS实现跨域请求 &#124; Do you know me?对《利用CORS实现跨域请求》的评论				</title>
+				<link>https://newhtml.net/using-cors/#comment-3149</link>
+		<dc:creator><![CDATA[利用CORS实现跨域请求 &#124; Do you know me?]]></dc:creator>
+		<pubDate>Tue, 27 Aug 2013 03:24:04 +0000</pubDate>
+		<guid isPermaLink="false">https://newhtml.net/?p=366#comment-3149</guid>
+					<description><![CDATA[[&#8230;] 转载：https://newhtml.net/using-cors/ [&#8230;]]]></description>
+		<content:encoded><![CDATA[<p>[&#8230;] 转载：https://newhtml.net/using-cors/ [&#8230;]</p>
+]]></content:encoded>
+						</item>
+			</channel>
+</rss>

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="stylesheet" href="../wp-content/themes/contango/style.css" type="text/css" media="all" />
+
+<title>从Unicode到emoji &#8211; NewHTML</title>
+<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="NewHTML &raquo; Feed" href="https://newhtml.net/feed.xml" />
+<link rel="alternate" type="application/rss+xml" title="NewHTML &raquo; 评论Feed" href="https://newhtml.net/comments/feed.xml" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/newhtml.net\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='../wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contango-css-960-css'  href='../wp-content/themes/contango/lib/css/960.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contango-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%7CNixie+One&#038;ver=5.3.2' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='读屏器与CSS' href='../screen-readers-and-css/' />
+<link rel='next' title='102款最适合编程的字体' href='../102-programming-fonts/' />
+<link rel="canonical" href="../from-unicode-to-emoji/" />
+<link rel='shortlink' href='../from-unicode-to-emoji/' />
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("../wp-content/themes/contango/images/bg-pattern.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }
+</style>
+	</head>
+
+<body class="post-template-default single single-post postid-1698 single-format-standard custom-background">
+<div id="page" class="wrapper hfeed site">
+
+  <header id="masthead" class="site-header" role="banner">
+    <div class="container_16 clearfix">
+      <div class="grid_16">
+        <div id="headimg">
+
+    
+  <div id="logo-text">
+    <span class="site-name"><a href="../page/1/index.html" title="NewHTML" rel="home">NewHTML</a></span>
+    <span class="site-description">全新的互联网体验</span>
+  </div><!-- end of #logo -->
+  
+  
+</div>      </div>
+    </div>
+  </header><!-- #masthead -->
+
+
+  <div class="container_16 clearfix">
+    <nav id="site-navigation" class="grid_16 main-navigation" role="navigation">
+      <div class="menu clearfix"><ul id="menu-%e9%a6%96%e9%a1%b5" class="sf-menu"><li id="menu-item-60" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-60"><a href="../category/html5/page/1/index.html">HTML5</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19"><a href="../category/css3/page/1/index.html">CSS3</a></li>
+<li id="menu-item-77" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-77"><a href="../category/jquery/page/1/index.html">jQuery</a>
+<ul class="sub-menu">
+	<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a href="../jquery-plugins/">jQuery plugins</a></li>
+</ul>
+</li>
+<li id="menu-item-1527" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1527"><a href="../category/v8专题/index.html">V8专题</a></li>
+<li id="menu-item-61" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61"><a href="http://paletton.com/">配色</a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20"><a href="../category/about-us/index.html">关于我们</a></li>
+</ul></div>    </nav><!-- #site-navigation -->
+  </div>
+<div id="content" class="site-content clearfix">
+
+      
+  <div class="container_16 clearfix">
+    
+    <div class="grid_11">
+      
+      <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+  	  
+      	  
+                      
+                            
+                <article id="post-1698" class="post-1698 post type-post status-publish format-standard hentry category-javascirpt category-222 tag-emoji tag-javascript tag-unicode">
+  
+  <div class="entry-meta-group clearfix">
+    <div class="grid_2 alpha">
+      <time class="entry-date entry-time updated" datetime="2018-02-18T15:47:21+08:00"><a href="../from-unicode-to-emoji/" title="2018 年 2 月 18 日 15:47" rel="bookmark"><span class="entry-date-day">18</span><span class="entry-date-month-year">2月 2018</span></a></time>    </div>
+    <div class="grid_8 omega">
+      <h1 class="entry-title entry-title-single">从Unicode到emoji</h1>
+      <div class="entry-meta">    
+		<span class="entry-author author vcard">by <a href="../author/admin/page/1/index.html" title="by liuyanghejerry" rel="author"><span class="entry-author-name fn">liuyanghejerry</span></a></span>      </div><!-- .entry-meta -->
+    </div>
+  </div>
+  
+  <div class="entry-content clearfix">
+  	<p>字符编码是计算机中非常重要的一环。过去，中国程序员经常需要做的一件事情就是处理中文在他们自己程序中是否可用。现如今我们很少和GBK较劲了，但字符编码并不等于不存在了。相反，随着emoji的出现，编码变得越来越有趣。</p>
+<p><span id="more-1698"></span></p>
+<h2>你知道吗</h2>
+<p>很难说大家对编码的理解到底达到怎样一个程度，因此我准备了一份问题列表，各位可以看看自己能答上来多少：</p>
+<ul>
+<li>ASCII为什么不能表达所有的字符</li>
+<li>Windows上的“乱码”是怎么来的</li>
+<li>Unicode到底涵盖哪些字符</li>
+<li>UTF-8和UTF-16有什么区别，UTF-32呢</li>
+<li>UTF-7是怎么回事，为什么没有人用了</li>
+<li>emoji是Unicode的一部分吗</li>
+<li>为什么不同的emoji的字节数并不相等</li>
+<li>JavaScript对Unicode的支持度如何</li>
+</ul>
+<p>也许有人能够全部立刻给出答案。如果你达到了这样的水平，麻烦在阅读时能够给出宝贵意见，指出文中的不实之处。如果绝大部分问题你都需要抓耳挠腮，那这篇文章就是为你准备的了。</p>
+<h2>编码到底是什么</h2>
+<p>我是个粗人，我就按自己的理解来说吧。编码就是把信息“格式化”。例如我心里想着，晚上要吃点好的，比如北京烤鸭。这个信息如果我用中文说出来，那么汉语其实就是一种“编码”，相应地，如果我用英语说出来，虽然意思一样，但编码不同，最终写在纸上就长的不一样。</p>
+<p>计算机世界里的字符编码有类似的原理。同样“ABCD”四个字母，虽然在各位的脑海里是一样的，但如果这个信息要在计算机里表达，那么它必然要经过某种形式的编码。或者干脆说的具体一些，如果要把ABCD存储成文件落地在磁盘中，那么他们必定会成为一串二进制，而这个“内容”=&gt;“二进制”的映射关系，就是编码了。一般来说，编码有两个重要的步骤：一是给每个字符一个确切的编号；二是将这个编号序列化成无歧义的二进制序列。</p>
+<h2>ASCII和代码页</h2>
+<p>ASCII基本上是所有程序员都能熟知的编码，这个编码本身的规则也比较简单：</p>
+<ul>
+<li>ASCII使用一个字节来表示一个字符，一个字节一共有256种可能性，</li>
+<li>其中第0~31种可能性，用来表示各种控制符，例如换行符</li>
+<li>32~126用于表达可见字符，包括字母、数字、常用标点等</li>
+<li>第127种可能性是删除符，也属于一个控制符</li>
+</ul>
+<p>不过问题在于，这种映射关系无法容纳中文、日语以及所有其他非英语国家的文字。以母语中文为例，现代汉语的常用字有2500个，次常用字有1000个，加起来远远超过了256种可能性，这就更别说其他文化下的文字了。</p>
+<p>那么一个字节不够，用两个呗？</p>
+<p>如果一个字符映射一个字节行不通，那么两个字节总该够了吧，掰手指头也能知道，两个字节多达65536种可能性，涵盖中文可以说是绰绰有余了。如果要纳入其他国家文字，说不定也够？</p>
+<p>这个想法基本没错，实现也不复杂，但最大的阻碍来自于兼容性。在ASCII通行的年代里，已经有相当多的电子内容使用了ASCII来表达，如果现在突然改换编码，那么以前的文件恐怕就无法轻易读取了。更何况如果没有妥善的打上标签，一个文件到底是什么编码，也没有人知道了，总不能看一个文件像什么就用什么来解析吧。在这种情形之下，设计新的编码就要求必须能够兼容ASCII——亦即，新编码必须能够支持以前那套ASCII的映射关系。</p>
+<p>所以这就出现了“代码页”。</p>
+<p>在ASCII中，256种可能性只占用了128种，这128种可能性实际都位于1个字节的低7位中，最高位并没有内容。那么我们就可以在最高位做手脚，来识别一个字节究竟是ASCII，还是新编码2个字节中的第一个。</p>
+<p>至于2个字节组合起来到底是什么字符，不同国家、地区以及公司，都有不同的安排，这个安排就是所谓的代码页了。因此，代码页不是一种编码，而是一系列编码所采用的方法。GBK这样的编码，就是在这个时代背景下诞生的。</p>
+<p>下图是GBK编码对2个字节的使用情况，这张图来自于维基百科。</p>
+<div id="attachment_1701" style="width: 655px" class="wp-caption aligncenter"><a href="../wp-content/uploads/2018/02/1.png"><img aria-describedby="caption-attachment-1701" src="../wp-content/uploads/2018/02/1.png" alt="GBK编码对2个字节的使用情况" width="645" height="599" class="size-full wp-image-1701" /></a><p id="caption-attachment-1701" class="wp-caption-text">GBK编码对2个字节的使用情况</p></div>
+<p>不过，代码页并没有完全解决编码问题。</p>
+<p>首先，代码页逐渐成为了操作系统、文字软件中，语言设置的一部分，并不在文件或字符当中。这就是说，在日文操作系统下产生的含有日文文字的文件，传输到中文操作系统下打开，就会因为彼此系统的代码页不同，而无法正常显示，俗称乱码。不过这还不是最惨的。</p>
+<p>其次，单单Windows就有一百余种代码页，IBM、HP等厂商也有自己规定的代码页。IBM大型机上甚至有一千多种代码页。这就使得代码页的自动推导，很难施行。机器无法仅仅根据内容来准确判断文件所使用的代码页。当然，这个问题在今天看来未必完全不可行，毕竟现在人人都说自己在搞机器学习。我不是这方面的专家，我和当时的程序员一样一筹莫展。</p>
+<p>最致命的一点是，各个组织、标准、国家，无法在哪个字符如何表达上达成一致，同一个二进制序列所代表的意思，产生了很大的歧义。即使2个字节能够涵盖现今文化中的所有字符，但大家无法妥善规范，又有什么意义呢。</p>
+<h2>Unicode，给每个字符一个无独立歧义的编号</h2>
+<p>Unicode是将一切字符编码到同一个编码体系的结果。这个规范有很多定义，大家如果想知道细节，可以去它的官网直接翻看定义。我这里不会说的特别准确和详细。</p>
+<p>Unicode给每个字形一个独立的表示，叫做“码点”（code point）。为了方便表示，码点一般写作“U+xxxxx”，其中x为16进制表示的数字。例如U+54C8，就是“哈”。</p>
+<p>用途或意思相近的码点被划分到不同的组当中，叫做“平面”（plane）。目前一共规定了16个平面，目前只使用到了其中少数几个。</p>
+<div id="attachment_1702" style="width: 960px" class="wp-caption aligncenter"><a href="../wp-content/uploads/2018/02/2.png"><img aria-describedby="caption-attachment-1702" src="../wp-content/uploads/2018/02/2.png" alt="目前的平面分布" width="950" height="506" class="size-full wp-image-1702" /></a><p id="caption-attachment-1702" class="wp-caption-text">目前的平面分布</p></div>
+<p>截至Unicode 10.0，Unicode一共规定了136,690个不重复字符。</p>
+<p>可以看出，目前我们使用到的绝大部分字符，都放在BMP当中。</p>
+<p>这里面有一个非常眼熟的缩写：CJKV。程序员老鸟可能见过CJK，CJK是什么呢？CJK特指中国（China）、日本（Japan）、韩国（Korea）这三国的表意文字。那么CJKV是什么意思呢？我特地查了一下，原来越南曾经也使用过汉字，被称为喃字。Unicode后来也包含了喃字，因此有了CJKV这个缩写。</p>
+<div id="attachment_1703" style="width: 285px" class="wp-caption aligncenter"><a href="../wp-content/uploads/2018/02/3.png"><img aria-describedby="caption-attachment-1703" src="../wp-content/uploads/2018/02/3.png" alt="汉字标准中的变体" width="275" height="100" class="size-full wp-image-1703" /></a><p id="caption-attachment-1703" class="wp-caption-text">汉字标准中的变体。图片来自维基百科。</p></div>
+<h3>组合与拆分</h3>
+<p>Unicode不仅给每个字符分配了编号，而且为了适应一些语言的特殊性，还创造了一些新的花样。</p>
+<p>Unicode中存在“组合字”的概念。使用者可以通过组合多个码点，“拼”出一个完整的字。</p>
+<p>例如，Á 实际可以由U+0041（“A”）与U+0301 （“◌́” ）组合而成。在不同的环境里，U+0301可能会展示成不同的样子，不过如果你的软件支持，它应该会很像是一个拼音二声的样子。</p>
+<p>那么哪些地方会出现这种“组合字”呢？我查到的是包括希伯来语、阿拉伯语、印度语和韩语，都有这样的场景。所以并不是多余的设计呢。</p>
+<p>不过虽然已经有了拆分的概念，实际上Unicode还为某些常用字提供了“预组合”的写法。</p>
+<p>例如刚才的Á，实际也有单独对应的码点：U+00C1。也就是说，同一个字，出现了两种写法。有点厉害了，但这还不是最厉害的，最厉害的是，这种组合拆分不一定发生在两个“半字”之间，还有可能更多个！</p>
+<p>例如“ệ”这个越南字母，可以有多达5种组合方式：</p>
+<ul>
+<li>U+1EC7 “ệ”</li>
+<li>U+1EB9 “ẹ” + U+0302 “◌̂”</li>
+<li>U+00EA “ê” + U+0323 “◌̣”</li>
+<li>U+0065 “e” + U+0323 “◌̣” + U+0302 “◌̂”</li>
+<li>U+0065 “e” + U+0302 “◌̂” + U+0323 “◌̣”</li>
+</ul>
+<div id="attachment_1704" style="width: 883px" class="wp-caption aligncenter"><a href="../wp-content/uploads/2018/02/4.png"><img aria-describedby="caption-attachment-1704" src="../wp-content/uploads/2018/02/4.png" alt="喷射出的文字" width="873" height="434" class="size-full wp-image-1704" /></a><p id="caption-attachment-1704" class="wp-caption-text">实际上不止一种文化当中存在组合字的概念。这组图片的的来源我不小心给忘了。</p></div>
+<h2>UTF一家子</h2>
+<p>上面的Unicode编码完成了给每个字符，甚至每个字形、字元一个编号的过程。但正如之前所说，编码的第二步，是还需要将这些编号能够序列化，否则这些编码只能停留于理论，无法进行传输和传播了。</p>
+<p>不过在讲如何序列化Unicode之前，需要先稍微卖个关子，说一下字节序。</p>
+<p>字节序是要解决一个问题：如果一次读取多个字节，组合成一个更大的数字时，哪部分在低位，哪部分在高位？</p>
+<p>计算机世界里有两种主流字节序：大端序、小端序。大端序的意思是，先序列化的是大端，因此大端在前面传输；而小端序的意思是，先序列化的是小端，因此小端在前面传输。</p>
+<p>例如，0x0A0B0C0D，这么长一个数字，在大端序和小端序的样子就是：</p>
+<ul>
+<li>大端序：0A 0B 0C 0D</li>
+<li>小端序：0D 0C 0B 0A</li>
+</ul>
+<p>因为Unicode要使用不止一个字节来表示一个字符，字节序就成为了序列化时一个重要的考量点。</p>
+<h3>UTF-32</h3>
+<p>尽管UTF-8是大家最熟悉的Unicode序列化格式，但我想先说说UTF-32，这个编码是最为简单的。</p>
+<p>UTF-32每个字符固定使用4个字节，因此理论上最多表达256^4种字符。然而实际上UFT-32要求每个字符最高位必须为0，所以比256^4稍微要少一些，不过仍然足以覆盖Unicode。</p>
+<p>那么字节序怎么去考虑呢？</p>
+<p>如果一个文件使用UTF-32存储，通常需要以U+FEFF来开头。如果程序读出的是0x00 0x00 0xFE 0xFF，则表示文件内容是小端序，反之则说明是大端序（0xFF 0xFE 0x00 0x00）。</p>
+<p>这个特殊的四字节，被称为BOM。</p>
+<h3>UTF-16</h3>
+<p>UTF-16就比UTF-32要复杂一些了，不过大体上来说，除了构成“代理编码对”（surrogate pair）的情况以外，每个字符使用2个字节存储。而且和你想的一样，UTF-16也需要BOM，只不过BOM缩减到了2个字节。</p>
+<p>那么什么是“代理编码对”呢？</p>
+<p>最早UTF-16可以像UTF-32一样简单，只计划包含6万多个码点。令人意外的是，Unicode后来超过了这个数量，于是就有了代理编码对这样的技巧。</p>
+<p>原理上来说，就是将一部分字符的表达，拆成了4个字节来表示。而为了不造成混淆，之前一些有效的2字节组合，也不再对应真实字符。</p>
+<p>因此UTF-16的解码和编码，并不是简单地查表翻译，而存在一个“if”的情况。具体的算法并不复杂，大家可以自己搜索一下如何实现。维基百科上有一个非常不错的例子。</p>
+<h3>UTF-8</h3>
+<p>UTF-8可能是最常用的Unicode传输格式了，别看名字上是“8”，但实际只有ASCII涵盖的那些字符，才是真正1个字节。而Unicode里的其他字符，可能占用2个字节，也可能占用3个甚至4个字节。</p>
+<p>UTF-8的算法比较精巧，在算法执行过程中，需要根据特定的情况来决定一个字符是否已经读完。而且算法当中也已经囊括了字节序相关的信息，因此UTF-8并不需要BOM。</p>
+<p>由于兼容ASCII，UTF-8对于以英文为主的文本，最节省存储空间。这里特别注意下，UTF-16和UTF-32是不兼容ASCII的哦。</p>
+<h3>UTF-7</h3>
+<p>下面来说说这个异类。早期一些软件及协议对字符的限制很严格，导致使用了最高位的UTF-8在这些软件或协议中就会出现问题。UTF-7就是只使用低7位来进行编码。</p>
+<p>具体的编码规则在这就不赘述了，我自己也没有深入去看，大体上来说，就是将一部分合法的ASCII字符用作转义，类似于base64。</p>
+<p>不过值得一提的是，由于UTF-7中的转义规则，一些ASCII字符也可以被转义。例如“&lt;”和“&gt;”可以被转义为“+ADw-”“+AD4-”。这曾经导致过一些网站遭受UTF-7 XSS攻击，攻击者利用UTF-7编码逃过了敏感字符过滤，进而大摇大摆地向页面注入了自己的JS代码。关于这一点，感兴趣的各位可以自己搜索一下。</p>
+<h3>UCS与UTF</h3>
+<p>如今在一些很有来历的文本编辑器中，还可以看到一类编码，叫做UCS编码。UCS和UTF又是什么关系呢？</p>
+<p>历史上曾经有两个国际组织都试图统一编码：一方是ISO的某个工作小组，另一方则是由Xerox和苹果等软件尝试组织起的联盟。后来毕竟大家目标一致，两个组织开始了合作。UCS曾是其中一方的工作成果，不过我忘了是哪一方。</p>
+<p>UCS和UTF很像，其中UCS-2和UTF-16对标，但UCS-2没有代理编码对，而UTF-16有；UCS-4和UTF-32则基本等价。</p>
+<h2>Emoji</h2>
+<p>终于可以说说emoji了。Emoji早先由日本企业发明，日文将其称为“絵文字”。后来随着智能手机的推广，全世界都在用，于是被Unicode收编了。截至Unicode 10.0，共有1144个emoji被收录。</p>
+<p>别小看这段无聊的历史介绍，这里面隐藏着一个很大的坑。</p>
+<h3>&#x1f343;与</h3>
+<p>这个小标题可能会有乱码或者显示一半的情况，这是有意为之。大家不妨来看一张图：</p>
+<div id="attachment_1705" style="width: 571px" class="wp-caption aligncenter"><a href="../wp-content/uploads/2018/02/5.png"><img aria-describedby="caption-attachment-1705" src="../wp-content/uploads/2018/02/5.png" alt="飘叶的问题" width="561" height="536" class="size-full wp-image-1705" /></a><p id="caption-attachment-1705" class="wp-caption-text">图中是同一段数据在我司内部通讯工具和Mac版微信中的表现。</p></div>
+<p>抛去格式不太友好之外，有一处特别的地方是emoji的两片飘叶显示不对。实际上除了微信，这个emoji在几乎哪都不显示。这就奇怪了，我特地把两个软件中的飘叶都复制出来，结果发现他们压根连码点都不同：</p>
+<ul>
+<li>&#x1f343;: U+1F343</li>
+<li>: U+E447</li>
+</ul>
+<p>emmmm&#8230;同一个emoji怎么会变码点呢？emoji的特殊规则？没听说啊。。</p>
+<p>几经搜索，我终于找到了原因。原来iPhone中使用的emoji最早是软银的一套编码，飘叶在这套编码中的码点正是U+E447。这个码点位于用户可自定义的私有码位区域，因此现今以Unicode的角度来看这个字符，它是没有确切的字形的。现在绝大部分软件也都不再支持这套老emoji了。这个emoji来自于一位微信用户的昵称，恰好微信还支持这套老emoji，于是能够显示出来。</p>
+<div id="attachment_1706" style="width: 776px" class="wp-caption aligncenter"><a href="../wp-content/uploads/2018/02/6.png"><img aria-describedby="caption-attachment-1706" src="../wp-content/uploads/2018/02/6.png" alt="非标准emoji的码点" width="766" height="465" class="size-full wp-image-1706" /></a><p id="caption-attachment-1706" class="wp-caption-text">从图中可以看到，飘叶在这套编码里恰好是U+E447。</p></div>
+<p>从图中可以看到，飘叶在这套编码里恰好是U+E447。</p>
+<h3>单色与彩色</h3>
+<p>如果emoji就这点玩法的话，也不至于写这么一章了。实际上emoji比我最初的认识还要复杂很多。Unicode的emoji除了可以使用大家平时见到的彩色来展示，还可以用单色来展示，以适应一些非常简单的显示设备。</p>
+<p>怎么做呢？规则就是在普通的emoji码点之后，紧跟一个用来表示颜色版本的“变幻符”，这个变幻符有两个取值：VS15（U+FE0E）和VS16（U+FE0F）。其中VS15表示强制使用单色版，而VS16则表示强制使用彩色版。如果没有变幻符呢，每个emoji可以使用自己默认的展示。</p>
+<p>举个例子来说，U+26A0这个emoji可以有两种样子：</p>
+<ul>
+<li>&#x26a0;︎(U+26A0 + U+FE0E)</li>
+<li>&#x26a0;&#xfe0f;(U+26A0 + U+FE0F)</li>
+</ul>
+<p>各位还记得Unicode当中的“组合字”么，异曲同工。</p>
+<h3>肤色</h3>
+<p>想必大家已经见过了，现在每个人类emoji都有很多种肤色版本。Unicode从8.0开始，为所有展示人或人体部位的emoji都增加了肤色控制。</p>
+<p>在普通人物的emoji码点之后如果跟上一个肤色码点，那么这个emoji就会采用相应的肤色。举个例子：</p>
+<p>&#x1f443;&#x1f3ff; = &#x1f443;(U+1F443) + &#x1f3ff;(U+1F3FF)</p>
+<p>实际上不管emoji中的人是否露出皮肤，都可以这样组合，画emoji的人可以去抉择如何去表现。无论如何，现在用emoji已经可以这么干了：</p>
+<p>&#x1f385;&#x1f3ff;???</p>
+<h3>emoji里的全家福</h3>
+<p>上面的emoji组合，都是同一个emoji内部的事情，然而实际上多个独立的emoji也可以进行组合。</p>
+<p>在Unicode中，存在一个特殊的码点，被称为零宽字符（ZWJ），其码点为U+200D。这个零宽字符在平时是不会显示出来的，不然也不会叫零宽字符了。之前网上有人贴出“空字符串”几百个字节，就是用它了。</p>
+<p>零宽字符在emoji中的作用，就是可以i将多个emoji组合成一个更大的emoji。大家平时在网上看到的全家福emoji，正是这样做出来的：</p>
+<p>&#x1f468;&#x200d;&#x2764;&#xfe0f;&#x200d;&#x1f48b;&#x200d;&#x1f468; = &#x1f468;(U+1F468) + ZWJ(U+200D) + &#x2764;(U+2764) + ZWJ(U+200D) + VS16(U+FE0F) + ZWJ(U+200D) +&#x1f48b;(U+1F48B)+ ZWJ(U+200D) +&#x1f468;(U+1F468)</p>
+<p>可以说是很解耦了。。</p>
+<p>当然也不是所有的软件现在都支持ZWJ这种玩法，对于不支持的软件，全家福就会被打散。</p>
+<h2>Unicode &amp;&amp; JavaScript</h2>
+<p>那么作为一个前端，JavaScript对Unicode的支持是怎样的呢？事实是，JavaScript的字符串使用UTF-16来存储字符。在我印象里，有这么几个函数与Unicode关系最大：</p>
+<ul>
+<li>String.prototype.charAt()
+<ul>
+<li>返回指定位置的字符</li>
+</ul>
+</li>
+<li>String.prototype.charCodeAt()
+<ul>
+<li>返回指定位置的UTF-16编码</li>
+</ul>
+</li>
+<li>String.prototype.codePointAt()
+<ul>
+<li>返回指定位置的Unicode码点</li>
+</ul>
+</li>
+<li>String.length
+<ul>
+<li>返回对象中字符串所占的UTF-16单元数量</li>
+</ul>
+</li>
+</ul>
+<p>干说没用，来考虑一下下面这段代码：</p>
+<pre>
+// U+1F4A9
+const str = '&#x1f4a9;';
+console.log(str.charCodeAt(0));
+console.log(str.charAt(0));
+console.log(str.codePointAt(0));
+</pre>
+<p>这是一坨屎无误，第一行log的情况是：</p>
+<pre>
+console.log(str.charCodeAt(0));
+// 55357
+// 0xD83D
+</pre>
+<p>嗯？好像和码点对不上？答案是这样的：</p>
+<pre>
+'&#x1f4a9;' === '\u{1F4A9}'
+'&#x1f4a9;' === '\uD83D\uDCA9'
+</pre>
+<p>哦，原来这坨屎已经超出了UTF-16最初支持的2字节表示，因此需要使用代理对来表示，这样一来就不是直接给出码点了。</p>
+<p>这样的话，第二行log输出也就很好理解了：</p>
+<pre>
+console.log(str.charAt(0));
+// ‘?'
+</pre>
+<p><code>charAt</code>比较简单，只是单纯地将UTF-16字符串按下标返回对应的字符，这里会打出一个代理对的一半，所以显示不出来。也就是说<code>chartAt</code>是不会完整吐出一个需要代理对的字来的。</p>
+<p>第三个log给出了你可能最想要的：</p>
+<pre>
+console.log(str.codePointAt(0));
+// 128169
+// 0x1F4A9
+</pre>
+<p>这是真正的Unicode码点无误了。那么<code>console.log(str.length);</code>的话，会输出什么呢？由于这个属性返回的是UTF-16单元的数量，而这坨屎需要2个UTF-16单元，因此其输出会是2。这可不是字节数哦。</p>
+<p>那么，既然<code>str.codePointAt(0)</code>能够返回出整坨屎的Unicode码点，那<code>str.codePointAt(1)</code>会返回什么呢？ES标准说了，如果这个下标不是代理对的开头，那么只返回指向的UTF-16单元，也就是说：</p>
+<pre>
+console.log(str.codePointAt(1));
+// 56489
+// 0xDCA9
+</pre>
+<p>最后说一下for循环的区别：</p>
+<ul>
+<li><code>for(...i++;...)...str[i</code>]: 按<code>charCodeAt()</code>进行循环</li>
+<li><code>for…in</code>: 按<code>charCodeAt()</code>进行循环</li>
+<li><code>for…of</code>: 按<code>codePointAt()</code>进行循环</li>
+</ul>
+<p>所以只有<code>for...of</code>是真正理解Unicode的。大家用for来循环的时候，可要小心了，否则一不小心就会把代理对给拆开。</p>
+<h2>细节是魔鬼</h2>
+<p>计算机的历史只有短短不到100年的时间，而互联网则只有不到30年。因为历史很短，很多时候我们会产生一种假象，那就是计算机的历史好像是笔直的，一切设计都很合理、恰到好处，只需理解一下高抽象层次的概念和原理即可。而事实上则恰好相反，计算机世界的历史崎岖不平，充满了错误和因为错误而颠簸的设计，这里面隐藏了大量的细节。有时我们假装自己已经对程序了如指掌，“啊，编码嘛，不就是映射一下嘛；哦，HTTP协议嘛，很简单啊，就是个抽象层而已啊”，假装自己是高级程序员，因此好像可以忽略这些细节。实际呢，到处都是坑！</p>
+<p>细节就是魔鬼，即使在看起来并不复杂的字符编码上也是如此。如果你忽视了这些，就只有用户来替你承担了。</p>
+<h2>参考</h2>
+<p>以下是我写这篇文章时用到的部分参考，另有一些可能没有列出。</p>
+<ul>
+<li>https://zh.wikipedia.org/wiki/Unicode</li>
+<li>https://zh.wikipedia.org/wiki/Unicode%E5%AD%97%E7%AC%A6%E5%B9%B3%E9%9D%A2%E6%98%A0%E5%B0%84</li>
+<li>https://zh.wikipedia.org/wiki/ASCII</li>
+<li>https://en.wikipedia.org/wiki/GBK</li>
+<li>https://en.wikipedia.org/wiki/Code_page</li>
+<li>http://www.unicode.org/versions/Unicode10.0.0/</li>
+<li>http://reedbeta.com/blog/programmers-intro-to-unicode/</li>
+<li>http://www.babelstone.co.uk/Unicode/HowMany.html</li>
+<li>https://en.wikipedia.org/wiki/UTF-8</li>
+<li>https://en.wikipedia.org/wiki/Emoji</li>
+<li>https://en.wikipedia.org/wiki/Variant<em>form</em>(Unicode)</li>
+<li>https://betterexplained.com/articles/unicode/</li>
+<li>http://www.unicode.org/~scherer/emoji4unicode/snapshot/full.html</li>
+<li>https://blog.ernest.me/post/emoji-remapping-solution</li>
+<li>http://www.unicode.org/reports/tr51/#Diversity</li>
+<li>http://blog.jonnew.com/posts/poo-dot-length-equals-two</li>
+<li>http://michaelthelin.se/security/2014/06/08/web-security-cross-site-scripting-attacks-using-utf-7.html</li>
+</ul>
+  </div> <!-- end .entry-content -->
+  
+    
+  <div class="entry-meta-bottom">
+  <span class="cat-links"><span class="entry-utility-prep entry-utility-prep-cat-links">Posted in:</span> <a href="../category/javascirpt/page/1/index.html" rel="category tag">JavaScirpt</a>, <a href="../category/编程理念/index.html" rel="category tag">编程理念</a></span><span class="entry-meta-sep"> &sdot; </span><span class="tag-links"><span class="entry-utility-prep entry-utility-prep-tag-links">Tagged:</span> <a href="../tag/emoji/index.html" rel="tag">emoji</a>, <a href="../tag/javascript/page/1/index.html" rel="tag">javascript</a>, <a href="../tag/unicode/index.html" rel="tag">unicode</a></span>  </div><!-- .entry-meta -->
+
+</article> <!-- end #post-1698 .post_class -->
+
+<div id="author-info" class="clearfix">
+
+  <div id="author-avatar" class="grid_2 alpha">
+    <div id="author-avatar-inside">
+	  <img alt='' src='https://secure.gravatar.com/avatar/83794b0ea1170a337e4782048cdaa928?s=80&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/83794b0ea1170a337e4782048cdaa928?s=160&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' />    </div>
+  </div> <!-- #author-avatar -->
+
+  <div id="author-description" class="grid_8 omega">
+      <h3>About liuyanghejerry</h3>
+      <p>富有激情的前端工程师，专注GUI开发。</p>
+      <div id="author-link">
+        <a href="../author/admin/page/1/index.html" rel="author">View all posts by liuyanghejerry <span class="meta-nav">&rarr;</span></a>
+      </div> <!-- #author-link	-->
+  </div> <!-- #author-description -->
+
+</div> <!-- #author-info -->
+ 
+
+<div id="comments" class="grid_inside">
+  
+  
+    <p class="nocomments">Comments are closed.</p>
+  
+  
+</div><!-- #comments -->              
+                          
+                      
+          <div id="loop-nav-singlular-post" class="clearfix">
+  <h3 class="assistive-text">Post Navigation</h3>
+  <div class="loop-nav-previous grid_5 alpha">
+    <a href="../screen-readers-and-css/" rel="prev"><span class="meta-nav">&larr;</span> Previous Post</a>  </div>
+  <div class="loop-nav-next grid_5 omega">
+	<a href="../102-programming-fonts/" rel="next">Next Post <span class="meta-nav">&rarr;</span></a>  </div>
+</div><!-- end #loop-nav-singular-post -->
+      
+        </main><!-- #main -->
+      </div><!-- #primary -->
+    
+    </div> <!-- end .grid_11 -->
+    
+    <div id="secondary" class="grid_5 widget-area" role="complementary">
+  <div id="sidebar">
+  
+	<aside id="text-3" class="widget widget_text widget-widget_text clearfix"><div class="widget-wrap widget-inside"><h3 class="widget-title">赞助广告</h3>			<div class="textwidget"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-3299450050937314";
+/* newhtml */
+google_ad_slot = "5721301653";
+google_ad_width = 125;
+google_ad_height = 125;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+		</div></aside>		<aside id="recent-posts-3" class="widget widget_recent_entries widget-widget_recent_entries clearfix"><div class="widget-wrap widget-inside">		<h3 class="widget-title">近期文章</h3>		<ul>
+											<li>
+					<a href="../102-programming-fonts/">102款最适合编程的字体</a>
+									</li>
+											<li>
+					<a href="../from-unicode-to-emoji/" aria-current="page">从Unicode到emoji</a>
+									</li>
+											<li>
+					<a href="../screen-readers-and-css/">读屏器与CSS</a>
+									</li>
+											<li>
+					<a href="../html-preload-prefetch/">HTML Preload 文章两篇</a>
+									</li>
+											<li>
+					<a href="../v8-about-to-have-new-engine-turbofan-ignition/">V8即将启用新的引擎 &#8211; TurboFan &#038; Ignition</a>
+									</li>
+											<li>
+					<a href="../typedarray-vs-dataview/">TypedArray vs. DataView</a>
+									</li>
+											<li>
+					<a href="../cache-control-immutable/">Cache-Control新成员：immutable</a>
+									</li>
+											<li>
+					<a href="../js-error-capturestacktrace/">有关Error.captureStackTrace</a>
+									</li>
+											<li>
+					<a href="../gh-html/">有关line-height</a>
+									</li>
+											<li>
+					<a href="../x-htm/">8款纯CSS模拟移动设备</a>
+									</li>
+					</ul>
+		</div></aside><aside id="search-4" class="widget widget_search widget-widget_search clearfix"><div class="widget-wrap widget-inside"><div class="search">
+  <form method="get" class="searchform" action="https://www.google.com/search">
+    <label for="s" class="assistive-text">Search for:</label>
+    <input type="text" class="field" name="q" id="s" value="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
+    <input type="hidden" name="sitesearch" value="newhtml.net" />
+    <input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+  </form>
+</div><!-- end .search --></div></aside><aside id="tag_cloud-4" class="widget widget_tag_cloud widget-widget_tag_cloud clearfix"><div class="widget-wrap widget-inside"><h3 class="widget-title">标签</h3><div class="tagcloud"><a href="../tag/3d/index.html" class="tag-cloud-link tag-link-79 tag-link-position-1" style="font-size: 9.7379310344828pt;" aria-label="3D (5个项目)">3D</a>
+<a href="../tag/animated-buttons/index.html" class="tag-cloud-link tag-link-6 tag-link-position-2" style="font-size: 8pt;" aria-label="animated buttons (3个项目)">animated buttons</a>
+<a href="../tag/bootstrap/index.html" class="tag-cloud-link tag-link-217 tag-link-position-3" style="font-size: 8.9655172413793pt;" aria-label="bootstrap (4个项目)">bootstrap</a>
+<a href="../tag/canvas/index.html" class="tag-cloud-link tag-link-104 tag-link-position-4" style="font-size: 8pt;" aria-label="canvas (3个项目)">canvas</a>
+<a href="../tag/css/page/1/index.html" class="tag-cloud-link tag-link-10 tag-link-position-5" style="font-size: 16.496551724138pt;" aria-label="CSS (29个项目)">CSS</a>
+<a href="../tag/css3/page/1/index.html" class="tag-cloud-link tag-link-423 tag-link-position-6" style="font-size: 20.358620689655pt;" aria-label="CSS3 (74个项目)">CSS3</a>
+<a href="../tag/css3-animation/page/1/index.html" class="tag-cloud-link tag-link-34 tag-link-position-7" style="font-size: 14.372413793103pt;" aria-label="CSS3 animation (17个项目)">CSS3 animation</a>
+<a href="../tag/css3-transform/page/1/index.html" class="tag-cloud-link tag-link-7 tag-link-position-8" style="font-size: 15.144827586207pt;" aria-label="css3 transform (21个项目)">css3 transform</a>
+<a href="../tag/font-face/index.html" class="tag-cloud-link tag-link-13 tag-link-position-9" style="font-size: 11.862068965517pt;" aria-label="font-face (9个项目)">font-face</a>
+<a href="../tag/hover-effect/index.html" class="tag-cloud-link tag-link-31 tag-link-position-10" style="font-size: 10.413793103448pt;" aria-label="hover effect (6个项目)">hover effect</a>
+<a href="../tag/html5/page/1/index.html" class="tag-cloud-link tag-link-425 tag-link-position-11" style="font-size: 19.779310344828pt;" aria-label="HTML5 (65个项目)">HTML5</a>
+<a href="../tag/icon/page/1/index.html" class="tag-cloud-link tag-link-11 tag-link-position-12" style="font-size: 13.310344827586pt;" aria-label="icon (13个项目)">icon</a>
+<a href="../tag/icon-font/index.html" class="tag-cloud-link tag-link-118 tag-link-position-13" style="font-size: 8.9655172413793pt;" aria-label="icon font (4个项目)">icon font</a>
+<a href="../tag/javascript/page/1/index.html" class="tag-cloud-link tag-link-21 tag-link-position-14" style="font-size: 21.51724137931pt;" aria-label="javascript (98个项目)">javascript</a>
+<a href="../tag/jquery-2/page/1/index.html" class="tag-cloud-link tag-link-22 tag-link-position-15" style="font-size: 18.234482758621pt;" aria-label="jquery (45个项目)">jquery</a>
+<a href="../tag/jquery-plugin/page/1/index.html" class="tag-cloud-link tag-link-125 tag-link-position-16" style="font-size: 13.793103448276pt;" aria-label="jquery plugin (15个项目)">jquery plugin</a>
+<a href="../tag/node-js/index.html" class="tag-cloud-link tag-link-370 tag-link-position-17" style="font-size: 10.413793103448pt;" aria-label="node.js (6个项目)">node.js</a>
+<a href="../tag/ui/index.html" class="tag-cloud-link tag-link-132 tag-link-position-18" style="font-size: 9.7379310344828pt;" aria-label="UI (5个项目)">UI</a>
+<a href="../tag/v8/index.html" class="tag-cloud-link tag-link-367 tag-link-position-19" style="font-size: 10.413793103448pt;" aria-label="V8 (6个项目)">V8</a>
+<a href="../tag/v8解析/index.html" class="tag-cloud-link tag-link-368 tag-link-position-20" style="font-size: 8.9655172413793pt;" aria-label="V8解析 (4个项目)">V8解析</a>
+<a href="../tag/web-audio-api/index.html" class="tag-cloud-link tag-link-47 tag-link-position-21" style="font-size: 10.413793103448pt;" aria-label="Web Audio API (6个项目)">Web Audio API</a>
+<a href="../tag/web-font/page/1/index.html" class="tag-cloud-link tag-link-178 tag-link-position-22" style="font-size: 13.6pt;" aria-label="web font (14个项目)">web font</a>
+<a href="../tag/下载/page/1/index.html" class="tag-cloud-link tag-link-28 tag-link-position-23" style="font-size: 12.924137931034pt;" aria-label="下载 (12个项目)">下载</a>
+<a href="../tag/免费/page/1/index.html" class="tag-cloud-link tag-link-92 tag-link-position-24" style="font-size: 20.648275862069pt;" aria-label="免费 (80个项目)">免费</a>
+<a href="../tag/典范/page/1/index.html" class="tag-cloud-link tag-link-39 tag-link-position-25" style="font-size: 14.951724137931pt;" aria-label="典范 (20个项目)">典范</a>
+<a href="../tag/创意/page/1/index.html" class="tag-cloud-link tag-link-69 tag-link-position-26" style="font-size: 19.296551724138pt;" aria-label="创意 (58个项目)">创意</a>
+<a href="../tag/图标/page/1/index.html" class="tag-cloud-link tag-link-424 tag-link-position-27" style="font-size: 15.144827586207pt;" aria-label="图标 (21个项目)">图标</a>
+<a href="../tag/字体/page/1/index.html" class="tag-cloud-link tag-link-42 tag-link-position-28" style="font-size: 16.013793103448pt;" aria-label="字体 (26个项目)">字体</a>
+<a href="../tag/工具/page/1/index.html" class="tag-cloud-link tag-link-429 tag-link-position-29" style="font-size: 17.558620689655pt;" aria-label="工具 (38个项目)">工具</a>
+<a href="../tag/手机网页/page/1/index.html" class="tag-cloud-link tag-link-48 tag-link-position-30" style="font-size: 12.924137931034pt;" aria-label="手机网页 (12个项目)">手机网页</a>
+<a href="../tag/按钮/index.html" class="tag-cloud-link tag-link-9 tag-link-position-31" style="font-size: 8pt;" aria-label="按钮 (3个项目)">按钮</a>
+<a href="../tag/插件/page/1/index.html" class="tag-cloud-link tag-link-54 tag-link-position-32" style="font-size: 17.075862068966pt;" aria-label="插件 (34个项目)">插件</a>
+<a href="../tag/效果/page/1/index.html" class="tag-cloud-link tag-link-20 tag-link-position-33" style="font-size: 19.489655172414pt;" aria-label="效果 (60个项目)">效果</a>
+<a href="../tag/教程/page/1/index.html" class="tag-cloud-link tag-link-426 tag-link-position-34" style="font-size: 14.951724137931pt;" aria-label="教程 (20个项目)">教程</a>
+<a href="../tag/浏览器/index.html" class="tag-cloud-link tag-link-428 tag-link-position-35" style="font-size: 10.896551724138pt;" aria-label="浏览器 (7个项目)">浏览器</a>
+<a href="../tag/移动应用/page/1/index.html" class="tag-cloud-link tag-link-50 tag-link-position-36" style="font-size: 12.634482758621pt;" aria-label="移动应用 (11个项目)">移动应用</a>
+<a href="../tag/网页/page/1/index.html" class="tag-cloud-link tag-link-37 tag-link-position-37" style="font-size: 14.08275862069pt;" aria-label="网页 (16个项目)">网页</a>
+<a href="../tag/翻译/page/1/index.html" class="tag-cloud-link tag-link-15 tag-link-position-38" style="font-size: 15.531034482759pt;" aria-label="翻译 (23个项目)">翻译</a>
+<a href="../tag/翻页/index.html" class="tag-cloud-link tag-link-138 tag-link-position-39" style="font-size: 8pt;" aria-label="翻页 (3个项目)">翻页</a>
+<a href="../tag/翻页效果/index.html" class="tag-cloud-link tag-link-190 tag-link-position-40" style="font-size: 8pt;" aria-label="翻页效果 (3个项目)">翻页效果</a>
+<a href="../tag/色彩/index.html" class="tag-cloud-link tag-link-68 tag-link-position-41" style="font-size: 10.413793103448pt;" aria-label="色彩 (6个项目)">色彩</a>
+<a href="../tag/设计/page/1/index.html" class="tag-cloud-link tag-link-38 tag-link-position-42" style="font-size: 17.558620689655pt;" aria-label="设计 (38个项目)">设计</a>
+<a href="../tag/资源/page/1/index.html" class="tag-cloud-link tag-link-427 tag-link-position-43" style="font-size: 22pt;" aria-label="资源 (111个项目)">资源</a>
+<a href="../tag/适应性设计/page/1/index.html" class="tag-cloud-link tag-link-164 tag-link-position-44" style="font-size: 12.924137931034pt;" aria-label="适应性设计 (12个项目)">适应性设计</a>
+<a href="../tag/页面/page/1/index.html" class="tag-cloud-link tag-link-18 tag-link-position-45" style="font-size: 15.820689655172pt;" aria-label="页面 (25个项目)">页面</a></div>
+</div></aside><aside id="linkcat-242" class="widget widget_links widget-widget_links clearfix"><div class="widget-wrap widget-inside"><h3 class="widget-title">酷站推荐</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.canvasdemos.com/">CanvasDemos</a></li>
+<li><a href="http://codevisually.com/">CodeVisually</a></li>
+<li><a href="http://tympanus.net/codrops/" title="Codrops &#8211; useful drops of code" target="_blank">Codrops</a></li>
+<li><a href="http://css-tricks.com/">CSS-Tricks</a></li>
+<li><a href="http://www.css3.info/">CSS3.info</a></li>
+<li><a href="http://designlol.net/" title="Design lol 全球设计精华分享" target="_blank">Designlol</a></li>
+<li><a href="http://designmodo.com/">DesignModo</a></li>
+<li><a href="http://html5demos.com/">HTML 5 Demos and Examples</a></li>
+<li><a href="http://html5doctor.com/" target="_blank">HTML5 Doctor</a></li>
+<li><a href="http://www.html5rocks.com/">HTML5 Rocks</a></li>
+<li><a href="http://ilovetypography.com/">I love Typography</a></li>
+<li><a href="http://www.inserthtml.com/">InsertHTML</a></li>
+<li><a href="http://www.paulund.co.uk/">Paulund</a></li>
+<li><a href="http://spyrestudios.com">SpyreStudios</a></li>
+<li><a href="http://www.thinkingwithtype.com/" target="_blank">Thinking with Type</a></li>
+<li><a href="http://typographica.org/">Typographica.</a></li>
+<li><a href="http://typophile.com/blog">Typophile</a></li>
+<li><a href="http://vector.me" target="_blank">Vector.me</a></li>
+<li><a href="http://www.webdesigntoolslist.com/">Web Design Tools</a></li>
+<li><a href="http://www.zhouwenbin.com/" target="_blank">前端开发-周文斌</a></li>
+
+	</ul>
+</div></aside>
+<aside id="linkcat-2" class="widget widget_links widget-widget_links clearfix"><div class="widget-wrap widget-inside"><h3 class="widget-title">友情链接</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://yangjiayu.com/" rel="friend co-worker" title="Mr Yang&#8217;s Eome &#8211; 杨加玉" target="_blank">Mr Yang&#039;s Eome</a></li>
+<li><a href="http://www.w3cplus.com/" target="_blank">W3cplus</a></li>
+<li><a href="http://www.html-js.com/" target="_blank">前端乱炖</a></li>
+<li><a href="http://blog.zzjin.net" rel="friend" target="_blank">空空的blog</a></li>
+<li><a href="http://huangyang.me" rel="friend" title="黄杨的前端技术博客" target="_blank">黄杨的博客</a></li>
+
+	</ul>
+</div></aside>
+<aside id="meta-4" class="widget widget_meta widget-widget_meta clearfix"><div class="widget-wrap widget-inside"><h3 class="widget-title">杂项</h3>			<ul>
+			<li><a href="https://newhtml.net/feed.xml">项目feed</a></li>
+			<li><a href="https://newhtml.net/comments/feed.xml">评论feed</a></li>
+			<li><a href="https://cn.wordpress.org/">WordPress.org</a></li>			</ul>
+			</div></aside><aside id="text-4" class="widget widget_text widget-widget_text clearfix"><div class="widget-wrap widget-inside">			<div class="textwidget"><span style="color:hsl(0, 0%, 40%);">苏ICP备12058838号</span></div>
+		</div></aside>  
+  </div> <!-- end #sidebar -->
+</div>  <!-- end .grid_5 -->
+  </div> <!-- end .container_16 -->
+
+</div><!-- #content -->
+  
+  <div class="container_16 containter_footer">
+    <footer id="colophon" class="grid_16 site-footer" role="contentinfo">
+      <div class="copyright clearfix">
+  <div class="copyright_inside">
+     &copy; Copyright 2017 - <a href="../index.html">NewHTML</a>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27466992-1', 'auto');
+  ga('send', 'pageview');
+
+</script>  </div>
+</div>
+<div class="credit clearfix">
+  <div class="credit_inside">
+    <a href="http://designorbital.com/contango/" title="Contango Theme">Contango Theme</a> &sdot; Powered by <a href="http://wordpress.org/" title="WordPress">WordPress</a>
+  </div>
+</div>
+    </footer>
+  </div>
+
+</div> <!-- end .wrapper -->
+
+<script type='text/javascript' src='../wp-content/themes/contango/lib/js/superfish/superfish-combine.min.js'></script>
+<script type='text/javascript' src='../wp-content/themes/contango/lib/js/common.js'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.min.js'></script>
+</body>
+</html>

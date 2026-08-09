@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="stylesheet" href="../wp-content/themes/contango/style.css" type="text/css" media="all" />
+
+<title>简易入门：剑走偏锋的 Native Client &#8211; NewHTML</title>
+<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="NewHTML &raquo; Feed" href="https://newhtml.net/feed.xml" />
+<link rel="alternate" type="application/rss+xml" title="NewHTML &raquo; 评论Feed" href="https://newhtml.net/comments/feed.xml" />
+<link rel="alternate" type="application/rss+xml" title="NewHTML &raquo; 简易入门：剑走偏锋的 Native Client评论Feed" href="https://newhtml.net/feed.xml" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/newhtml.net\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='../wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contango-css-960-css'  href='../wp-content/themes/contango/lib/css/960.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contango-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%7CNixie+One&#038;ver=5.3.2' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='5个有用的CSS工具网站' href='../5个有用的css工具网站/' />
+<link rel='next' title='minjs &#8211; 一组简单、轻巧的JavaScript模块' href='../minjs-javascript/' />
+<link rel="canonical" href="../native-client/" />
+<link rel='shortlink' href='../native-client/' />
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("../wp-content/themes/contango/images/bg-pattern.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }
+</style>
+	</head>
+
+<body class="post-template-default single single-post postid-878 single-format-standard custom-background">
+<div id="page" class="wrapper hfeed site">
+
+  <header id="masthead" class="site-header" role="banner">
+    <div class="container_16 clearfix">
+      <div class="grid_16">
+        <div id="headimg">
+
+    
+  <div id="logo-text">
+    <span class="site-name"><a href="../page/1/index.html" title="NewHTML" rel="home">NewHTML</a></span>
+    <span class="site-description">全新的互联网体验</span>
+  </div><!-- end of #logo -->
+  
+  
+</div>      </div>
+    </div>
+  </header><!-- #masthead -->
+
+
+  <div class="container_16 clearfix">
+    <nav id="site-navigation" class="grid_16 main-navigation" role="navigation">
+      <div class="menu clearfix"><ul id="menu-%e9%a6%96%e9%a1%b5" class="sf-menu"><li id="menu-item-60" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-60"><a href="../category/html5/page/1/index.html">HTML5</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19"><a href="../category/css3/page/1/index.html">CSS3</a></li>
+<li id="menu-item-77" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-77"><a href="../category/jquery/page/1/index.html">jQuery</a>
+<ul class="sub-menu">
+	<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a href="../jquery-plugins/">jQuery plugins</a></li>
+</ul>
+</li>
+<li id="menu-item-1527" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1527"><a href="../category/v8专题/index.html">V8专题</a></li>
+<li id="menu-item-61" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61"><a href="http://paletton.com/">配色</a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20"><a href="../category/about-us/index.html">关于我们</a></li>
+</ul></div>    </nav><!-- #site-navigation -->
+  </div>
+<div id="content" class="site-content clearfix">
+
+      
+  <div class="container_16 clearfix">
+    
+    <div class="grid_11">
+      
+      <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+  	  
+      	  
+                      
+                            
+                <article id="post-878" class="post-878 post type-post status-publish format-standard hentry category-25 category-72 tag-google-native-client tag-nacl tag-native-client tag-pnacl">
+  
+  <div class="entry-meta-group clearfix">
+    <div class="grid_2 alpha">
+      <time class="entry-date entry-time updated" datetime="2012-05-23T22:42:07+08:00"><a href="../native-client/" title="2012 年 5 月 23 日 22:42" rel="bookmark"><span class="entry-date-day">23</span><span class="entry-date-month-year">5月 2012</span></a></time>    </div>
+    <div class="grid_8 omega">
+      <h1 class="entry-title entry-title-single">简易入门：剑走偏锋的 Native Client</h1>
+      <div class="entry-meta">    
+		<span class="entry-author author vcard">by <a href="../author/admin/page/1/index.html" title="by liuyanghejerry" rel="author"><span class="entry-author-name fn">liuyanghejerry</span></a></span>      </div><!-- .entry-meta -->
+    </div>
+  </div>
+  
+  <div class="entry-content clearfix">
+  	<p>不知不觉，Google已经正式推出其Native Client (NaCl)过去约7个月之久。而目前国内似乎还没有多少关于NaCl的资料，所以在这里面向Web开发者做一下简单的介绍，希望能够起到一个抛砖引玉的效果。<br />
+<span id="more-878"></span></p>
+<p style="margin-left:30px;"><em>本文的所有代码均来自于<a href="https://developers.google.com/native-client/devguide/tutorial" target="_blank">https://developers.google.com/native-client/devguide/tutorial</a>，如果您对其中的任何技术细节存在疑问，请以原文为准。</em></p>
+<h2>何谓NaCl</h2>
+<p>NaCl是一项能让C/C++代码运行在浏览器当中的技术。这是一个最通俗的说法，但不够精确。严格来说，NaCl技术在理论上能够实现任何编译型语言都在其之上运行。</p>
+<p>但是目前由于技术上的原因，NaCl还做不到任何语言任何平台的编译型语言支持。</p>
+<p>因为NaCl所憧憬的实际是LLVM技术，LLVM技术的要点即在于能将编译型语言转化为一个统一的中间语言，NaCl通过对这个中间语言的执行，即可达成任何编译型语言的运行。换句话说，NaCl实际上希望搭建一个虚拟机。</p>
+<p>不过LLVM现在还不够成熟，NaCl不得不先使用GNU的编译套件，使用LLVM技术的版本被称为了PNaCl，目前还没有正式推出。同时也因为这个原因，ARM架构没能正式支持。</p>
+<h2>为什么NaCl</h2>
+<p>在开发层面上，NaCl希望解决一个问题：JavaScript的低效率。当然，从经营策略上来说，Google可能还希望籍此将桌面领域的成熟软件快速移植到其Chrome OS当中，不过这不是我们讨论的重点。</p>
+<p>JavaScript毕竟是一门解释型语言，只有当浏览器执行到代码的时刻才能够看到代码，因此在执行优化上力度非常小。</p>
+<p>但是Web应用发展至今，效率已经必须拿到桌面上考虑，如果你还想在浏览器里面看到更多优质的游戏的话。</p>
+<h2>有关限制</h2>
+<ul>
+<li>缺乏能够切合的IDE</li>
+<li>不支持硬件异常</li>
+<li>不支持创建子进程</li>
+<li>不支持原生TCP/UDP操作（但已提供了websocket支持）</li>
+<li>不支持同步I/O</li>
+<li>不支持内存剩余查询</li>
+<li>内联汇编代码必须通过NaCl验证</li>
+<li>NaCl的Pepper API必须通过主线程使用</li>
+</ul>
+<h2>如何使用</h2>
+<p>上面那些对于行动主义来说其实都是P，真正需要聚焦的还是如何使用。</p>
+<p>NaCl的典型项目由三个部分组成：</p>
+<ul>
+<li>网页（<code>*.html</code>）。这里所指的网页是一个泛指，它包括JS代码、CSS样式表已经HTML代码。</li>
+<li>NaCl模块（<code>*.c;*.cc</code>）。这是C/C++代码的文件。</li>
+<li>清单（<code>*.nmf</code>）。这份清单类似于Chrome Extension的清单，主要用于指明在不同架构的机器上调用什么模块。</li>
+</ul>
+<p>在真正开始之前，我们还需要安装一个NaCl的SDK。这个SDK当中主要包含了NaCl的模块编译工具链。大家可以从这里下载：<a href="https://developers.google.com/native-client/sdk/download" target="_blank">https://developers.google.com/native-client/sdk/download</a></p>
+<p>安装之前，确保一下机器上有一个可用的Python 2.7，并加入到环境变量当中。</p>
+<p>而SDK的安装则相当简单，只需要使用<code>naclsdk update</code>命令即可。</p>
+<p>下面，创建一个名为hello_tutorial的目录，我们来搭建一个简单的demo。</p>
+<h3>网页</h3>
+<pre>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>hello_tutorial</title>
+
+  <script type="text/javascript">
+    hello_tutorialModule = null;  // 模块的全局对象
+    statusText = 'NO-STATUS';
+
+    // 更新状态
+    function moduleDidLoad() {
+      hello_tutorialModule = document.getElementById('hello_tutorial');
+      updateStatus('SUCCESS');
+	  // 向模块发送消息
+	  hello_tutorialModule.postMessage('hello');
+    }
+
+    // 消息句柄函数。句柄在NaCl模块发送相应消息时自动唤起。
+	// 在C中是PPB_Messaging.PostMessage()，C++中则是pp::Instance.PostMessage()
+	// 在这个demo当中，我们收到消息之后弹窗示意
+
+    function handleMessage(message_event) {
+      alert(message_event.data);
+    }
+
+    // 页面载入时很可能NaCl模块还没有载入，因此我们将状态写为正在读取；
+	// 而如果模块已经载入，则什么都不做。
+    function pageDidLoad() {
+      if (hello_tutorialModule == null) {
+        updateStatus('LOADING...');
+      } else {
+		// 事实上，NaCl模块的载入成功事件是不可能在页面载入成功事件之前就发生的，
+		// 因此我们这里简单的认为页面载入之后所更新显示的消息仍旧是当前消息，而不是'SUCCESS'。
+        updateStatus();
+      }
+    }
+
+	// 设置状态。如果存在id为'statusField'的元素，那么将其设置为参数携带的状态
+    function updateStatus(opt_message) {
+      if (opt_message)
+        statusText = opt_message;
+      var statusField = document.getElementById('status_field');
+      if (statusField) {
+        statusField.innerHTML = statusText;
+      }
+    }
+  </script>
+</head>
+<body onload="pageDidLoad()">
+
+<h1>Native Client Module hello_tutorial</h1>
+<p>
+  <!-- 读取.nexe文件。通过.nmf，浏览器将结合目前所处的CPU架构来读取不同的模块文件。
+  于此同时，<embed>元素之外的<div>还绑定着两个事件监听（'load'以及'message'），
+  之所以绑定在div上，而不是embed之上，是为了确保模块在载入之前就可以将监听的绑定彻底完成，
+  同时也确保了开发者可以在模块内部的初始化阶段调用API发送消息。
+  -->
+  <div id="listener">
+    <script type="text/javascript">
+      var listener = document.getElementById('listener');
+      listener.addEventListener('load', moduleDidLoad, true);
+      listener.addEventListener('message', handleMessage, true);
+    </script>
+
+    <embed name="nacl_module"
+       id="hello_tutorial"
+       width=0 height=0
+       src="https://newhtml.net/native-client/hello_tutorial.nmf"
+       type="application/x-nacl" />
+  </div>
+</p>
+
+<h2>Status</h2>
+<div id="status_field">NO-STATUS</div>
+</body>
+</html>
+</pre>
+<h3>NaCl模块</h3>
+<pre>
+/// @file hello_tutorial.cc
+/// 载入NaCl模块时，浏览器首先将搜索CreateModule()方法，CreateModule()会返回一个对象实例，
+/// 之后浏览器会调用该实例的CreateInstance()方法，这时浏览器每遇到一次相应的<embed>就会调用一次。
+///
+/// 浏览器通过Javascript的postMessage()函数与NaCl通信。
+/// 当调用postMessage()时，浏览器会转而调用pp::Instance的HandleMessage()方法。
+/// 而如果模块需要与外界主动通信，则是使用pp::Instance的postMessage()方法。
+/// 注意，这两个postMessage()都是异步的，因此两者在调用之后迅速返回。
+
+#include <cstdio>
+#include <string>
+#include "ppapi/cpp/instance.h"
+#include "ppapi/cpp/module.h"
+#include "ppapi/cpp/var.h"
+
+namespace {
+// 这个字符串用来判断消息是否是我们期望的内容
+const char* const kHelloString = "hello";
+// 这个字符串用来向浏览器返回内容
+const char* const kReplyString = "hello from NaCl";
+} // namespace
+
+/// 每一个NaCl模块都将有一个相应的pp::Instance子类实例对应，
+/// 为了与浏览器进行通信，你必须重载 HandleMessage()方法以及PostMessage()方法
+class hello_tutorialInstance : public pp::Instance {
+ public:
+
+  explicit hello_tutorialInstance(PP_Instance instance) : pp::Instance(instance)
+  {}
+  virtual ~hello_tutorialInstance() {}
+
+  /// HandleMessage() 负责接收浏览器中postMessage()发送的消息内容
+  /// 其中的参数几乎可以表示任何东西，但通常都是JSON字符串，比如这样：
+  ///   var json_message = JSON.stringify({ "myMethod" : "3.14159" });
+  ///   nacl_module.postMessage(json_message);
+  virtual void HandleMessage(const pp::Var& var_message) {
+    // 这里是处理消息的代码了
+	if (!var_message.is_string())
+		return;
+	std::string message = var_message.AsString();
+	pp::Var var_reply;
+	if (message == kHelloString) {
+		var_reply = pp::Var(kReplyString);
+		PostMessage(var_reply);
+	}
+  }
+};
+
+
+class hello_tutorialModule : public pp::Module {
+ public:
+  hello_tutorialModule() : pp::Module() {}
+  virtual ~hello_tutorialModule() {}
+
+  virtual pp::Instance* CreateInstance(PP_Instance instance) {
+    return new hello_tutorialInstance(instance);
+  }
+};
+
+namespace pp {
+Module* CreateModule() {
+  return new hello_tutorialModule();
+}
+}  // namespace pp
+</pre>
+<h3>Makefile</h3>
+<p>Makefile是C\C++编译指令的存放文件，这份文件将指引编译器、链接器如何工作。因为我们现在所处情况特殊，所以Makefile需要自己编写。</p>
+<pre>
+# Copyright (c) 2012 The Native Client Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+#
+# GNU Make based build file.  For details on GNU Make see:
+# http://www.gnu.org/software/make/manual/make.html
+#
+
+#
+# Project information
+#
+# 这里的变量将指出每个项目的编译信息，如项目名、编译标志等等。
+# 通常每个项目都将有所不同。这里只是作为一个demo，因此只有一些最简单的信息。
+# 注意，编辑这里的内容需要你对编译器有足够的了解
+#
+PROJECT:=hello_tutorial
+LDFLAGS:=-lppapi_cpp -lppapi
+CXX_SOURCES:=$(PROJECT).cc
+
+
+#
+# 设置pepper目录
+#
+THIS_MAKEFILE:=$(abspath $(lastword $(MAKEFILE_LIST)))
+NACL_SDK_ROOT?=$(abspath $(dir $(THIS_MAKEFILE))../..)
+
+# Project Build flags
+WARNINGS:=-Wno-long-long -Wall -Wswitch-enum -pedantic -Werror
+CXXFLAGS:=-pthread -std=gnu++98 $(WARNINGS)
+
+#
+# 设置工具路径
+#
+#
+OSNAME:=$(shell python $(NACL_SDK_ROOT)/tools/getos.py)
+TC_PATH:=$(abspath $(NACL_SDK_ROOT)/toolchain/$(OSNAME)_x86_newlib)
+CXX:=$(TC_PATH)/bin/i686-nacl-g++
+
+#
+# Cygwin专用设置
+#
+CYGWIN ?= nodosfilewarning
+export CYGWIN
+
+
+# Declare the ALL target first, to make the 'all' target the default build
+all: $(PROJECT)_x86_32.nexe $(PROJECT)_x86_64.nexe
+
+# 32位文件生成规则
+x86_32_OBJS:=$(patsubst %.cc,%_32.o,$(CXX_SOURCES))
+$(x86_32_OBJS) : %_32.o : %.cc $(THIS_MAKE)
+        $(CXX) -o $@ -c $< -m32 -O0 -g $(CXXFLAGS)
+
+$(PROJECT)_x86_32.nexe : $(x86_32_OBJS)
+        $(CXX) -o $@ $^ -m32 -O0 -g $(CXXFLAGS) $(LDFLAGS)
+
+# 64位文件生成规则
+x86_64_OBJS:=$(patsubst %.cc,%_64.o,$(CXX_SOURCES))
+$(x86_64_OBJS) : %_64.o : %.cc $(THIS_MAKE)
+        $(CXX) -o $@ -c $< -m64 -O0 -g $(CXXFLAGS)
+
+$(PROJECT)_x86_64.nexe : $(x86_64_OBJS)
+        $(CXX) -o $@ $^ -m64 -O0 -g $(CXXFLAGS) $(LDFLAGS)
+
+# Define a phony rule so it always runs, to build nexe and start up server.
+.PHONY: RUN 
+RUN: all
+  python ../httpd.py
+</pre>
+<h3>清单文件</h3>
+<p>清单中指出了不同架构所使用的模块。</p>
+<pre>
+{
+  "program": {
+    "x86-64": {"url": "hello_tutorial_x86_64.nexe"},
+    "x86-32": {"url": "hello_tutorial_x86_32.nexe"}
+  }
+}
+</pre>
+<p>所有这些文件齐全之后，只需要<code>make</code>即可完成自动编译。</p>
+<h2>如何运行</h2>
+<p>在编译之后，双击html页面打开其实并不会载入模块运行，这是由于浏览器的访问域规则不允许直接在用户的本地读取文件。因此，我们需要让本机成为一个服务器，以远程服务器的身份来读取模块最终传送给浏览器。</p>
+<p>这很容易，SDK当中已经包含了提供http服务的python脚本：</p>
+<pre>
+cd pepper_18/examples #注意，pepper的版本号应该依据你现有的情况来定
+python httpd.py
+</pre>
+<p>这样，<code>http://localhost:5103</code>就成为了我们的服务器地址。注意，http服务的根目录的位置位于examples目录。</p>
+<p>现在，我们在浏览器的<code>chrome://flags</code>和<code>chrome://plugins</code>页面中打开NaCl的几个相关选项，就可以成功运行了。</p>
+  </div> <!-- end .entry-content -->
+  
+    
+  <div class="entry-meta-bottom">
+  <span class="cat-links"><span class="entry-utility-prep entry-utility-prep-cat-links">Posted in:</span> <a href="../category/教程/page/1/index.html" rel="category tag">教程</a>, <a href="../category/浏览器/page/1/index.html" rel="category tag">浏览器</a></span><span class="entry-meta-sep"> &sdot; </span><span class="tag-links"><span class="entry-utility-prep entry-utility-prep-tag-links">Tagged:</span> <a href="../tag/google-native-client/index.html" rel="tag">Google Native Client</a>, <a href="../tag/nacl/index.html" rel="tag">NaCl</a>, <a href="../tag/native-client/index.html" rel="tag">Native Client</a>, <a href="../tag/pnacl/index.html" rel="tag">PNaCl</a></span>  </div><!-- .entry-meta -->
+
+</article> <!-- end #post-878 .post_class -->
+
+<div id="author-info" class="clearfix">
+
+  <div id="author-avatar" class="grid_2 alpha">
+    <div id="author-avatar-inside">
+	  <img alt='' src='https://secure.gravatar.com/avatar/83794b0ea1170a337e4782048cdaa928?s=80&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/83794b0ea1170a337e4782048cdaa928?s=160&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' />    </div>
+  </div> <!-- #author-avatar -->
+
+  <div id="author-description" class="grid_8 omega">
+      <h3>About liuyanghejerry</h3>
+      <p>富有激情的前端工程师，专注GUI开发。</p>
+      <div id="author-link">
+        <a href="../author/admin/page/1/index.html" rel="author">View all posts by liuyanghejerry <span class="meta-nav">&rarr;</span></a>
+      </div> <!-- #author-link	-->
+  </div> <!-- #author-description -->
+
+</div> <!-- #author-info -->
+ 
+
+<div id="comments" class="grid_inside">
+  
+  
+    
+  <h3 id="comments-title">
+    3 Thoughts on &ldquo;<span>简易入门：剑走偏锋的 Native Client</span>&rdquo;  </h3>
+
+  <ol class="commentlist">
+    			<li class="post pingback">
+				<p>Pingback: <a href='http://www.guao.hk/posts/cutting-edge-native-client.html' rel='external nofollow ugc' class='url'>剑走偏锋的 Native Client | 谷奥——探寻谷歌的奥秘</a> </p>
+		</li><!-- #comment-## -->
+			<li class="post pingback">
+				<p>Pingback: <a href='http://silentlistener.freehosterz.com/WP/?p=68' rel='external nofollow ugc' class='url'>谷奥: 剑走偏锋的 Native Client | The World of Yesterday</a> </p>
+		</li><!-- #comment-## -->
+			<li class="post pingback">
+				<p>Pingback: <a href='http://digest.definite.name/valley-austria-sword-easy-road-native-the-client.html' rel='external nofollow ugc' class='url'>Definite Digest &raquo; 谷奥: 剑走偏锋的 Native Client</a> </p>
+		</li><!-- #comment-## -->
+  </ol>
+
+  
+  
+  
+</div><!-- #comments -->              
+                          
+                      
+          <div id="loop-nav-singlular-post" class="clearfix">
+  <h3 class="assistive-text">Post Navigation</h3>
+  <div class="loop-nav-previous grid_5 alpha">
+    <a href="../5个有用的css工具网站/" rel="prev"><span class="meta-nav">&larr;</span> Previous Post</a>  </div>
+  <div class="loop-nav-next grid_5 omega">
+	<a href="../minjs-javascript/" rel="next">Next Post <span class="meta-nav">&rarr;</span></a>  </div>
+</div><!-- end #loop-nav-singular-post -->
+      
+        </main><!-- #main -->
+      </div><!-- #primary -->
+    
+    </div> <!-- end .grid_11 -->
+    
+    <div id="secondary" class="grid_5 widget-area" role="complementary">
+  <div id="sidebar">
+  
+	<aside id="text-3" class="widget widget_text widget-widget_text clearfix"><div class="widget-wrap widget-inside"><h3 class="widget-title">赞助广告</h3>			<div class="textwidget"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-3299450050937314";
+/* newhtml */
+google_ad_slot = "5721301653";
+google_ad_width = 125;
+google_ad_height = 125;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+		</div></aside>		<aside id="recent-posts-3" class="widget widget_recent_entries widget-widget_recent_entries clearfix"><div class="widget-wrap widget-inside">		<h3 class="widget-title">近期文章</h3>		<ul>
+											<li>
+					<a href="../102-programming-fonts/">102款最适合编程的字体</a>
+									</li>
+											<li>
+					<a href="../from-unicode-to-emoji/">从Unicode到emoji</a>
+									</li>
+											<li>
+					<a href="../screen-readers-and-css/">读屏器与CSS</a>
+									</li>
+											<li>
+					<a href="../html-preload-prefetch/">HTML Preload 文章两篇</a>
+									</li>
+											<li>
+					<a href="../v8-about-to-have-new-engine-turbofan-ignition/">V8即将启用新的引擎 &#8211; TurboFan &#038; Ignition</a>
+									</li>
+											<li>
+					<a href="../typedarray-vs-dataview/">TypedArray vs. DataView</a>
+									</li>
+											<li>
+					<a href="../cache-control-immutable/">Cache-Control新成员：immutable</a>
+									</li>
+											<li>
+					<a href="../js-error-capturestacktrace/">有关Error.captureStackTrace</a>
+									</li>
+											<li>
+					<a href="../gh-html/">有关line-height</a>
+									</li>
+											<li>
+					<a href="../x-htm/">8款纯CSS模拟移动设备</a>
+									</li>
+					</ul>
+		</div></aside><aside id="search-4" class="widget widget_search widget-widget_search clearfix"><div class="widget-wrap widget-inside"><div class="search">
+  <form method="get" class="searchform" action="https://www.google.com/search">
+    <label for="s" class="assistive-text">Search for:</label>
+    <input type="text" class="field" name="q" id="s" value="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
+    <input type="hidden" name="sitesearch" value="newhtml.net" />
+    <input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+  </form>
+</div><!-- end .search --></div></aside><aside id="tag_cloud-4" class="widget widget_tag_cloud widget-widget_tag_cloud clearfix"><div class="widget-wrap widget-inside"><h3 class="widget-title">标签</h3><div class="tagcloud"><a href="../tag/3d/index.html" class="tag-cloud-link tag-link-79 tag-link-position-1" style="font-size: 9.7379310344828pt;" aria-label="3D (5个项目)">3D</a>
+<a href="../tag/animated-buttons/index.html" class="tag-cloud-link tag-link-6 tag-link-position-2" style="font-size: 8pt;" aria-label="animated buttons (3个项目)">animated buttons</a>
+<a href="../tag/bootstrap/index.html" class="tag-cloud-link tag-link-217 tag-link-position-3" style="font-size: 8.9655172413793pt;" aria-label="bootstrap (4个项目)">bootstrap</a>
+<a href="../tag/canvas/index.html" class="tag-cloud-link tag-link-104 tag-link-position-4" style="font-size: 8pt;" aria-label="canvas (3个项目)">canvas</a>
+<a href="../tag/css/page/1/index.html" class="tag-cloud-link tag-link-10 tag-link-position-5" style="font-size: 16.496551724138pt;" aria-label="CSS (29个项目)">CSS</a>
+<a href="../tag/css3/page/1/index.html" class="tag-cloud-link tag-link-423 tag-link-position-6" style="font-size: 20.358620689655pt;" aria-label="CSS3 (74个项目)">CSS3</a>
+<a href="../tag/css3-animation/page/1/index.html" class="tag-cloud-link tag-link-34 tag-link-position-7" style="font-size: 14.372413793103pt;" aria-label="CSS3 animation (17个项目)">CSS3 animation</a>
+<a href="../tag/css3-transform/page/1/index.html" class="tag-cloud-link tag-link-7 tag-link-position-8" style="font-size: 15.144827586207pt;" aria-label="css3 transform (21个项目)">css3 transform</a>
+<a href="../tag/font-face/index.html" class="tag-cloud-link tag-link-13 tag-link-position-9" style="font-size: 11.862068965517pt;" aria-label="font-face (9个项目)">font-face</a>
+<a href="../tag/hover-effect/index.html" class="tag-cloud-link tag-link-31 tag-link-position-10" style="font-size: 10.413793103448pt;" aria-label="hover effect (6个项目)">hover effect</a>
+<a href="../tag/html5/page/1/index.html" class="tag-cloud-link tag-link-425 tag-link-position-11" style="font-size: 19.779310344828pt;" aria-label="HTML5 (65个项目)">HTML5</a>
+<a href="../tag/icon/page/1/index.html" class="tag-cloud-link tag-link-11 tag-link-position-12" style="font-size: 13.310344827586pt;" aria-label="icon (13个项目)">icon</a>
+<a href="../tag/icon-font/index.html" class="tag-cloud-link tag-link-118 tag-link-position-13" style="font-size: 8.9655172413793pt;" aria-label="icon font (4个项目)">icon font</a>
+<a href="../tag/javascript/page/1/index.html" class="tag-cloud-link tag-link-21 tag-link-position-14" style="font-size: 21.51724137931pt;" aria-label="javascript (98个项目)">javascript</a>
+<a href="../tag/jquery-2/page/1/index.html" class="tag-cloud-link tag-link-22 tag-link-position-15" style="font-size: 18.234482758621pt;" aria-label="jquery (45个项目)">jquery</a>
+<a href="../tag/jquery-plugin/page/1/index.html" class="tag-cloud-link tag-link-125 tag-link-position-16" style="font-size: 13.793103448276pt;" aria-label="jquery plugin (15个项目)">jquery plugin</a>
+<a href="../tag/node-js/index.html" class="tag-cloud-link tag-link-370 tag-link-position-17" style="font-size: 10.413793103448pt;" aria-label="node.js (6个项目)">node.js</a>
+<a href="../tag/ui/index.html" class="tag-cloud-link tag-link-132 tag-link-position-18" style="font-size: 9.7379310344828pt;" aria-label="UI (5个项目)">UI</a>
+<a href="../tag/v8/index.html" class="tag-cloud-link tag-link-367 tag-link-position-19" style="font-size: 10.413793103448pt;" aria-label="V8 (6个项目)">V8</a>
+<a href="../tag/v8解析/index.html" class="tag-cloud-link tag-link-368 tag-link-position-20" style="font-size: 8.9655172413793pt;" aria-label="V8解析 (4个项目)">V8解析</a>
+<a href="../tag/web-audio-api/index.html" class="tag-cloud-link tag-link-47 tag-link-position-21" style="font-size: 10.413793103448pt;" aria-label="Web Audio API (6个项目)">Web Audio API</a>
+<a href="../tag/web-font/page/1/index.html" class="tag-cloud-link tag-link-178 tag-link-position-22" style="font-size: 13.6pt;" aria-label="web font (14个项目)">web font</a>
+<a href="../tag/下载/page/1/index.html" class="tag-cloud-link tag-link-28 tag-link-position-23" style="font-size: 12.924137931034pt;" aria-label="下载 (12个项目)">下载</a>
+<a href="../tag/免费/page/1/index.html" class="tag-cloud-link tag-link-92 tag-link-position-24" style="font-size: 20.648275862069pt;" aria-label="免费 (80个项目)">免费</a>
+<a href="../tag/典范/page/1/index.html" class="tag-cloud-link tag-link-39 tag-link-position-25" style="font-size: 14.951724137931pt;" aria-label="典范 (20个项目)">典范</a>
+<a href="../tag/创意/page/1/index.html" class="tag-cloud-link tag-link-69 tag-link-position-26" style="font-size: 19.296551724138pt;" aria-label="创意 (58个项目)">创意</a>
+<a href="../tag/图标/page/1/index.html" class="tag-cloud-link tag-link-424 tag-link-position-27" style="font-size: 15.144827586207pt;" aria-label="图标 (21个项目)">图标</a>
+<a href="../tag/字体/page/1/index.html" class="tag-cloud-link tag-link-42 tag-link-position-28" style="font-size: 16.013793103448pt;" aria-label="字体 (26个项目)">字体</a>
+<a href="../tag/工具/page/1/index.html" class="tag-cloud-link tag-link-429 tag-link-position-29" style="font-size: 17.558620689655pt;" aria-label="工具 (38个项目)">工具</a>
+<a href="../tag/手机网页/page/1/index.html" class="tag-cloud-link tag-link-48 tag-link-position-30" style="font-size: 12.924137931034pt;" aria-label="手机网页 (12个项目)">手机网页</a>
+<a href="../tag/按钮/index.html" class="tag-cloud-link tag-link-9 tag-link-position-31" style="font-size: 8pt;" aria-label="按钮 (3个项目)">按钮</a>
+<a href="../tag/插件/page/1/index.html" class="tag-cloud-link tag-link-54 tag-link-position-32" style="font-size: 17.075862068966pt;" aria-label="插件 (34个项目)">插件</a>
+<a href="../tag/效果/page/1/index.html" class="tag-cloud-link tag-link-20 tag-link-position-33" style="font-size: 19.489655172414pt;" aria-label="效果 (60个项目)">效果</a>
+<a href="../tag/教程/page/1/index.html" class="tag-cloud-link tag-link-426 tag-link-position-34" style="font-size: 14.951724137931pt;" aria-label="教程 (20个项目)">教程</a>
+<a href="../tag/浏览器/index.html" class="tag-cloud-link tag-link-428 tag-link-position-35" style="font-size: 10.896551724138pt;" aria-label="浏览器 (7个项目)">浏览器</a>
+<a href="../tag/移动应用/page/1/index.html" class="tag-cloud-link tag-link-50 tag-link-position-36" style="font-size: 12.634482758621pt;" aria-label="移动应用 (11个项目)">移动应用</a>
+<a href="../tag/网页/page/1/index.html" class="tag-cloud-link tag-link-37 tag-link-position-37" style="font-size: 14.08275862069pt;" aria-label="网页 (16个项目)">网页</a>
+<a href="../tag/翻译/page/1/index.html" class="tag-cloud-link tag-link-15 tag-link-position-38" style="font-size: 15.531034482759pt;" aria-label="翻译 (23个项目)">翻译</a>
+<a href="../tag/翻页/index.html" class="tag-cloud-link tag-link-138 tag-link-position-39" style="font-size: 8pt;" aria-label="翻页 (3个项目)">翻页</a>
+<a href="../tag/翻页效果/index.html" class="tag-cloud-link tag-link-190 tag-link-position-40" style="font-size: 8pt;" aria-label="翻页效果 (3个项目)">翻页效果</a>
+<a href="../tag/色彩/index.html" class="tag-cloud-link tag-link-68 tag-link-position-41" style="font-size: 10.413793103448pt;" aria-label="色彩 (6个项目)">色彩</a>
+<a href="../tag/设计/page/1/index.html" class="tag-cloud-link tag-link-38 tag-link-position-42" style="font-size: 17.558620689655pt;" aria-label="设计 (38个项目)">设计</a>
+<a href="../tag/资源/page/1/index.html" class="tag-cloud-link tag-link-427 tag-link-position-43" style="font-size: 22pt;" aria-label="资源 (111个项目)">资源</a>
+<a href="../tag/适应性设计/page/1/index.html" class="tag-cloud-link tag-link-164 tag-link-position-44" style="font-size: 12.924137931034pt;" aria-label="适应性设计 (12个项目)">适应性设计</a>
+<a href="../tag/页面/page/1/index.html" class="tag-cloud-link tag-link-18 tag-link-position-45" style="font-size: 15.820689655172pt;" aria-label="页面 (25个项目)">页面</a></div>
+</div></aside><aside id="linkcat-242" class="widget widget_links widget-widget_links clearfix"><div class="widget-wrap widget-inside"><h3 class="widget-title">酷站推荐</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.canvasdemos.com/">CanvasDemos</a></li>
+<li><a href="http://codevisually.com/">CodeVisually</a></li>
+<li><a href="http://tympanus.net/codrops/" title="Codrops &#8211; useful drops of code" target="_blank">Codrops</a></li>
+<li><a href="http://css-tricks.com/">CSS-Tricks</a></li>
+<li><a href="http://www.css3.info/">CSS3.info</a></li>
+<li><a href="http://designlol.net/" title="Design lol 全球设计精华分享" target="_blank">Designlol</a></li>
+<li><a href="http://designmodo.com/">DesignModo</a></li>
+<li><a href="http://html5demos.com/">HTML 5 Demos and Examples</a></li>
+<li><a href="http://html5doctor.com/" target="_blank">HTML5 Doctor</a></li>
+<li><a href="http://www.html5rocks.com/">HTML5 Rocks</a></li>
+<li><a href="http://ilovetypography.com/">I love Typography</a></li>
+<li><a href="http://www.inserthtml.com/">InsertHTML</a></li>
+<li><a href="http://www.paulund.co.uk/">Paulund</a></li>
+<li><a href="http://spyrestudios.com">SpyreStudios</a></li>
+<li><a href="http://www.thinkingwithtype.com/" target="_blank">Thinking with Type</a></li>
+<li><a href="http://typographica.org/">Typographica.</a></li>
+<li><a href="http://typophile.com/blog">Typophile</a></li>
+<li><a href="http://vector.me" target="_blank">Vector.me</a></li>
+<li><a href="http://www.webdesigntoolslist.com/">Web Design Tools</a></li>
+<li><a href="http://www.zhouwenbin.com/" target="_blank">前端开发-周文斌</a></li>
+
+	</ul>
+</div></aside>
+<aside id="linkcat-2" class="widget widget_links widget-widget_links clearfix"><div class="widget-wrap widget-inside"><h3 class="widget-title">友情链接</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://yangjiayu.com/" rel="friend co-worker" title="Mr Yang&#8217;s Eome &#8211; 杨加玉" target="_blank">Mr Yang&#039;s Eome</a></li>
+<li><a href="http://www.w3cplus.com/" target="_blank">W3cplus</a></li>
+<li><a href="http://www.html-js.com/" target="_blank">前端乱炖</a></li>
+<li><a href="http://blog.zzjin.net" rel="friend" target="_blank">空空的blog</a></li>
+<li><a href="http://huangyang.me" rel="friend" title="黄杨的前端技术博客" target="_blank">黄杨的博客</a></li>
+
+	</ul>
+</div></aside>
+<aside id="meta-4" class="widget widget_meta widget-widget_meta clearfix"><div class="widget-wrap widget-inside"><h3 class="widget-title">杂项</h3>			<ul>
+			<li><a href="https://newhtml.net/feed.xml">项目feed</a></li>
+			<li><a href="https://newhtml.net/comments/feed.xml">评论feed</a></li>
+			<li><a href="https://cn.wordpress.org/">WordPress.org</a></li>			</ul>
+			</div></aside><aside id="text-4" class="widget widget_text widget-widget_text clearfix"><div class="widget-wrap widget-inside">			<div class="textwidget"><span style="color:hsl(0, 0%, 40%);">苏ICP备12058838号</span></div>
+		</div></aside>  
+  </div> <!-- end #sidebar -->
+</div>  <!-- end .grid_5 -->
+  </div> <!-- end .container_16 -->
+
+</div><!-- #content -->
+  
+  <div class="container_16 containter_footer">
+    <footer id="colophon" class="grid_16 site-footer" role="contentinfo">
+      <div class="copyright clearfix">
+  <div class="copyright_inside">
+     &copy; Copyright 2017 - <a href="../index.html">NewHTML</a>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27466992-1', 'auto');
+  ga('send', 'pageview');
+
+</script>  </div>
+</div>
+<div class="credit clearfix">
+  <div class="credit_inside">
+    <a href="http://designorbital.com/contango/" title="Contango Theme">Contango Theme</a> &sdot; Powered by <a href="http://wordpress.org/" title="WordPress">WordPress</a>
+  </div>
+</div>
+    </footer>
+  </div>
+
+</div> <!-- end .wrapper -->
+
+<script type='text/javascript' src='../wp-content/themes/contango/lib/js/superfish/superfish-combine.min.js'></script>
+<script type='text/javascript' src='../wp-content/themes/contango/lib/js/common.js'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.min.js'></script>
+</body>
+</html>

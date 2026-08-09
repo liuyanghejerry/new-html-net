@@ -1,0 +1,1636 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>NewHTML</title>
+	<atom:link href="https://newhtml.net/feed.xml" rel="self" type="application/rss+xml" />
+	<link>https://newhtml.net</link>
+	<description>全新的互联网体验</description>
+	<lastBuildDate>Fri, 23 Feb 2018 06:28:50 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+	<item>
+		<title>102款最适合编程的字体</title>
+		<link>https://newhtml.net/102-programming-fonts/</link>
+				<pubDate>Fri, 23 Feb 2018 06:28:50 +0000</pubDate>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+				<category><![CDATA[字体推荐]]></category>
+		<category><![CDATA[快速分享]]></category>
+		<category><![CDATA[资源]]></category>
+		<category><![CDATA[web font]]></category>
+		<category><![CDATA[免费]]></category>
+		<category><![CDATA[字体]]></category>
+		<category><![CDATA[编程字体]]></category>
+
+		<guid isPermaLink="false">https://newhtml.net/?p=1710</guid>
+				<description><![CDATA[102款最适合编程的字体]]></description>
+								<content:encoded><![CDATA[<p><span id="more-1710"></span><br />
+<a href="https://www.slant.co/topics/67/~best-programming-fonts" rel="noopener" target="_blank">102款最适合编程的字体</a></p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>从Unicode到emoji</title>
+		<link>https://newhtml.net/from-unicode-to-emoji/</link>
+				<pubDate>Sun, 18 Feb 2018 07:47:21 +0000</pubDate>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+				<category><![CDATA[JavaScirpt]]></category>
+		<category><![CDATA[编程理念]]></category>
+		<category><![CDATA[emoji]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[unicode]]></category>
+
+		<guid isPermaLink="false">https://newhtml.net/?p=1698</guid>
+				<description><![CDATA[字符编码是计算机中非常重要的一环。过去，中国程序员经常需要做的一件事情就是处理中文在他们自己程序中是否可用。现 <span class="ellipsis">&#8230;</span> <span class="more-link-wrap"><a href="https://newhtml.net/from-unicode-to-emoji/" class="more-link"><span>Read More &#8594;</span></a></span>]]></description>
+								<content:encoded><![CDATA[<p>字符编码是计算机中非常重要的一环。过去，中国程序员经常需要做的一件事情就是处理中文在他们自己程序中是否可用。现如今我们很少和GBK较劲了，但字符编码并不等于不存在了。相反，随着emoji的出现，编码变得越来越有趣。</p>
+<p><span id="more-1698"></span></p>
+<h2>你知道吗</h2>
+<p>很难说大家对编码的理解到底达到怎样一个程度，因此我准备了一份问题列表，各位可以看看自己能答上来多少：</p>
+<ul>
+<li>ASCII为什么不能表达所有的字符</li>
+<li>Windows上的“乱码”是怎么来的</li>
+<li>Unicode到底涵盖哪些字符</li>
+<li>UTF-8和UTF-16有什么区别，UTF-32呢</li>
+<li>UTF-7是怎么回事，为什么没有人用了</li>
+<li>emoji是Unicode的一部分吗</li>
+<li>为什么不同的emoji的字节数并不相等</li>
+<li>JavaScript对Unicode的支持度如何</li>
+</ul>
+<p>也许有人能够全部立刻给出答案。如果你达到了这样的水平，麻烦在阅读时能够给出宝贵意见，指出文中的不实之处。如果绝大部分问题你都需要抓耳挠腮，那这篇文章就是为你准备的了。</p>
+<h2>编码到底是什么</h2>
+<p>我是个粗人，我就按自己的理解来说吧。编码就是把信息“格式化”。例如我心里想着，晚上要吃点好的，比如北京烤鸭。这个信息如果我用中文说出来，那么汉语其实就是一种“编码”，相应地，如果我用英语说出来，虽然意思一样，但编码不同，最终写在纸上就长的不一样。</p>
+<p>计算机世界里的字符编码有类似的原理。同样“ABCD”四个字母，虽然在各位的脑海里是一样的，但如果这个信息要在计算机里表达，那么它必然要经过某种形式的编码。或者干脆说的具体一些，如果要把ABCD存储成文件落地在磁盘中，那么他们必定会成为一串二进制，而这个“内容”=&gt;“二进制”的映射关系，就是编码了。一般来说，编码有两个重要的步骤：一是给每个字符一个确切的编号；二是将这个编号序列化成无歧义的二进制序列。</p>
+<h2>ASCII和代码页</h2>
+<p>ASCII基本上是所有程序员都能熟知的编码，这个编码本身的规则也比较简单：</p>
+<ul>
+<li>ASCII使用一个字节来表示一个字符，一个字节一共有256种可能性，</li>
+<li>其中第0~31种可能性，用来表示各种控制符，例如换行符</li>
+<li>32~126用于表达可见字符，包括字母、数字、常用标点等</li>
+<li>第127种可能性是删除符，也属于一个控制符</li>
+</ul>
+<p>不过问题在于，这种映射关系无法容纳中文、日语以及所有其他非英语国家的文字。以母语中文为例，现代汉语的常用字有2500个，次常用字有1000个，加起来远远超过了256种可能性，这就更别说其他文化下的文字了。</p>
+<p>那么一个字节不够，用两个呗？</p>
+<p>如果一个字符映射一个字节行不通，那么两个字节总该够了吧，掰手指头也能知道，两个字节多达65536种可能性，涵盖中文可以说是绰绰有余了。如果要纳入其他国家文字，说不定也够？</p>
+<p>这个想法基本没错，实现也不复杂，但最大的阻碍来自于兼容性。在ASCII通行的年代里，已经有相当多的电子内容使用了ASCII来表达，如果现在突然改换编码，那么以前的文件恐怕就无法轻易读取了。更何况如果没有妥善的打上标签，一个文件到底是什么编码，也没有人知道了，总不能看一个文件像什么就用什么来解析吧。在这种情形之下，设计新的编码就要求必须能够兼容ASCII——亦即，新编码必须能够支持以前那套ASCII的映射关系。</p>
+<p>所以这就出现了“代码页”。</p>
+<p>在ASCII中，256种可能性只占用了128种，这128种可能性实际都位于1个字节的低7位中，最高位并没有内容。那么我们就可以在最高位做手脚，来识别一个字节究竟是ASCII，还是新编码2个字节中的第一个。</p>
+<p>至于2个字节组合起来到底是什么字符，不同国家、地区以及公司，都有不同的安排，这个安排就是所谓的代码页了。因此，代码页不是一种编码，而是一系列编码所采用的方法。GBK这样的编码，就是在这个时代背景下诞生的。</p>
+<p>下图是GBK编码对2个字节的使用情况，这张图来自于维基百科。</p>
+<div id="attachment_1701" style="width: 655px" class="wp-caption aligncenter"><a href="https://newhtml.net/wp-content/uploads/2018/02/1.png"><img aria-describedby="caption-attachment-1701" src="https://newhtml.net/wp-content/uploads/2018/02/1.png" alt="GBK编码对2个字节的使用情况" width="645" height="599" class="size-full wp-image-1701" /></a><p id="caption-attachment-1701" class="wp-caption-text">GBK编码对2个字节的使用情况</p></div>
+<p>不过，代码页并没有完全解决编码问题。</p>
+<p>首先，代码页逐渐成为了操作系统、文字软件中，语言设置的一部分，并不在文件或字符当中。这就是说，在日文操作系统下产生的含有日文文字的文件，传输到中文操作系统下打开，就会因为彼此系统的代码页不同，而无法正常显示，俗称乱码。不过这还不是最惨的。</p>
+<p>其次，单单Windows就有一百余种代码页，IBM、HP等厂商也有自己规定的代码页。IBM大型机上甚至有一千多种代码页。这就使得代码页的自动推导，很难施行。机器无法仅仅根据内容来准确判断文件所使用的代码页。当然，这个问题在今天看来未必完全不可行，毕竟现在人人都说自己在搞机器学习。我不是这方面的专家，我和当时的程序员一样一筹莫展。</p>
+<p>最致命的一点是，各个组织、标准、国家，无法在哪个字符如何表达上达成一致，同一个二进制序列所代表的意思，产生了很大的歧义。即使2个字节能够涵盖现今文化中的所有字符，但大家无法妥善规范，又有什么意义呢。</p>
+<h2>Unicode，给每个字符一个无独立歧义的编号</h2>
+<p>Unicode是将一切字符编码到同一个编码体系的结果。这个规范有很多定义，大家如果想知道细节，可以去它的官网直接翻看定义。我这里不会说的特别准确和详细。</p>
+<p>Unicode给每个字形一个独立的表示，叫做“码点”（code point）。为了方便表示，码点一般写作“U+xxxxx”，其中x为16进制表示的数字。例如U+54C8，就是“哈”。</p>
+<p>用途或意思相近的码点被划分到不同的组当中，叫做“平面”（plane）。目前一共规定了16个平面，目前只使用到了其中少数几个。</p>
+<div id="attachment_1702" style="width: 960px" class="wp-caption aligncenter"><a href="https://newhtml.net/wp-content/uploads/2018/02/2.png"><img aria-describedby="caption-attachment-1702" src="https://newhtml.net/wp-content/uploads/2018/02/2.png" alt="目前的平面分布" width="950" height="506" class="size-full wp-image-1702" /></a><p id="caption-attachment-1702" class="wp-caption-text">目前的平面分布</p></div>
+<p>截至Unicode 10.0，Unicode一共规定了136,690个不重复字符。</p>
+<p>可以看出，目前我们使用到的绝大部分字符，都放在BMP当中。</p>
+<p>这里面有一个非常眼熟的缩写：CJKV。程序员老鸟可能见过CJK，CJK是什么呢？CJK特指中国（China）、日本（Japan）、韩国（Korea）这三国的表意文字。那么CJKV是什么意思呢？我特地查了一下，原来越南曾经也使用过汉字，被称为喃字。Unicode后来也包含了喃字，因此有了CJKV这个缩写。</p>
+<div id="attachment_1703" style="width: 285px" class="wp-caption aligncenter"><a href="https://newhtml.net/wp-content/uploads/2018/02/3.png"><img aria-describedby="caption-attachment-1703" src="https://newhtml.net/wp-content/uploads/2018/02/3.png" alt="汉字标准中的变体" width="275" height="100" class="size-full wp-image-1703" /></a><p id="caption-attachment-1703" class="wp-caption-text">汉字标准中的变体。图片来自维基百科。</p></div>
+<h3>组合与拆分</h3>
+<p>Unicode不仅给每个字符分配了编号，而且为了适应一些语言的特殊性，还创造了一些新的花样。</p>
+<p>Unicode中存在“组合字”的概念。使用者可以通过组合多个码点，“拼”出一个完整的字。</p>
+<p>例如，Á 实际可以由U+0041（“A”）与U+0301 （“◌́” ）组合而成。在不同的环境里，U+0301可能会展示成不同的样子，不过如果你的软件支持，它应该会很像是一个拼音二声的样子。</p>
+<p>那么哪些地方会出现这种“组合字”呢？我查到的是包括希伯来语、阿拉伯语、印度语和韩语，都有这样的场景。所以并不是多余的设计呢。</p>
+<p>不过虽然已经有了拆分的概念，实际上Unicode还为某些常用字提供了“预组合”的写法。</p>
+<p>例如刚才的Á，实际也有单独对应的码点：U+00C1。也就是说，同一个字，出现了两种写法。有点厉害了，但这还不是最厉害的，最厉害的是，这种组合拆分不一定发生在两个“半字”之间，还有可能更多个！</p>
+<p>例如“ệ”这个越南字母，可以有多达5种组合方式：</p>
+<ul>
+<li>U+1EC7 “ệ”</li>
+<li>U+1EB9 “ẹ” + U+0302 “◌̂”</li>
+<li>U+00EA “ê” + U+0323 “◌̣”</li>
+<li>U+0065 “e” + U+0323 “◌̣” + U+0302 “◌̂”</li>
+<li>U+0065 “e” + U+0302 “◌̂” + U+0323 “◌̣”</li>
+</ul>
+<div id="attachment_1704" style="width: 883px" class="wp-caption aligncenter"><a href="https://newhtml.net/wp-content/uploads/2018/02/4.png"><img aria-describedby="caption-attachment-1704" src="https://newhtml.net/wp-content/uploads/2018/02/4.png" alt="喷射出的文字" width="873" height="434" class="size-full wp-image-1704" /></a><p id="caption-attachment-1704" class="wp-caption-text">实际上不止一种文化当中存在组合字的概念。这组图片的的来源我不小心给忘了。</p></div>
+<h2>UTF一家子</h2>
+<p>上面的Unicode编码完成了给每个字符，甚至每个字形、字元一个编号的过程。但正如之前所说，编码的第二步，是还需要将这些编号能够序列化，否则这些编码只能停留于理论，无法进行传输和传播了。</p>
+<p>不过在讲如何序列化Unicode之前，需要先稍微卖个关子，说一下字节序。</p>
+<p>字节序是要解决一个问题：如果一次读取多个字节，组合成一个更大的数字时，哪部分在低位，哪部分在高位？</p>
+<p>计算机世界里有两种主流字节序：大端序、小端序。大端序的意思是，先序列化的是大端，因此大端在前面传输；而小端序的意思是，先序列化的是小端，因此小端在前面传输。</p>
+<p>例如，0x0A0B0C0D，这么长一个数字，在大端序和小端序的样子就是：</p>
+<ul>
+<li>大端序：0A 0B 0C 0D</li>
+<li>小端序：0D 0C 0B 0A</li>
+</ul>
+<p>因为Unicode要使用不止一个字节来表示一个字符，字节序就成为了序列化时一个重要的考量点。</p>
+<h3>UTF-32</h3>
+<p>尽管UTF-8是大家最熟悉的Unicode序列化格式，但我想先说说UTF-32，这个编码是最为简单的。</p>
+<p>UTF-32每个字符固定使用4个字节，因此理论上最多表达256^4种字符。然而实际上UFT-32要求每个字符最高位必须为0，所以比256^4稍微要少一些，不过仍然足以覆盖Unicode。</p>
+<p>那么字节序怎么去考虑呢？</p>
+<p>如果一个文件使用UTF-32存储，通常需要以U+FEFF来开头。如果程序读出的是0x00 0x00 0xFE 0xFF，则表示文件内容是小端序，反之则说明是大端序（0xFF 0xFE 0x00 0x00）。</p>
+<p>这个特殊的四字节，被称为BOM。</p>
+<h3>UTF-16</h3>
+<p>UTF-16就比UTF-32要复杂一些了，不过大体上来说，除了构成“代理编码对”（surrogate pair）的情况以外，每个字符使用2个字节存储。而且和你想的一样，UTF-16也需要BOM，只不过BOM缩减到了2个字节。</p>
+<p>那么什么是“代理编码对”呢？</p>
+<p>最早UTF-16可以像UTF-32一样简单，只计划包含6万多个码点。令人意外的是，Unicode后来超过了这个数量，于是就有了代理编码对这样的技巧。</p>
+<p>原理上来说，就是将一部分字符的表达，拆成了4个字节来表示。而为了不造成混淆，之前一些有效的2字节组合，也不再对应真实字符。</p>
+<p>因此UTF-16的解码和编码，并不是简单地查表翻译，而存在一个“if”的情况。具体的算法并不复杂，大家可以自己搜索一下如何实现。维基百科上有一个非常不错的例子。</p>
+<h3>UTF-8</h3>
+<p>UTF-8可能是最常用的Unicode传输格式了，别看名字上是“8”，但实际只有ASCII涵盖的那些字符，才是真正1个字节。而Unicode里的其他字符，可能占用2个字节，也可能占用3个甚至4个字节。</p>
+<p>UTF-8的算法比较精巧，在算法执行过程中，需要根据特定的情况来决定一个字符是否已经读完。而且算法当中也已经囊括了字节序相关的信息，因此UTF-8并不需要BOM。</p>
+<p>由于兼容ASCII，UTF-8对于以英文为主的文本，最节省存储空间。这里特别注意下，UTF-16和UTF-32是不兼容ASCII的哦。</p>
+<h3>UTF-7</h3>
+<p>下面来说说这个异类。早期一些软件及协议对字符的限制很严格，导致使用了最高位的UTF-8在这些软件或协议中就会出现问题。UTF-7就是只使用低7位来进行编码。</p>
+<p>具体的编码规则在这就不赘述了，我自己也没有深入去看，大体上来说，就是将一部分合法的ASCII字符用作转义，类似于base64。</p>
+<p>不过值得一提的是，由于UTF-7中的转义规则，一些ASCII字符也可以被转义。例如“&lt;”和“&gt;”可以被转义为“+ADw-”“+AD4-”。这曾经导致过一些网站遭受UTF-7 XSS攻击，攻击者利用UTF-7编码逃过了敏感字符过滤，进而大摇大摆地向页面注入了自己的JS代码。关于这一点，感兴趣的各位可以自己搜索一下。</p>
+<h3>UCS与UTF</h3>
+<p>如今在一些很有来历的文本编辑器中，还可以看到一类编码，叫做UCS编码。UCS和UTF又是什么关系呢？</p>
+<p>历史上曾经有两个国际组织都试图统一编码：一方是ISO的某个工作小组，另一方则是由Xerox和苹果等软件尝试组织起的联盟。后来毕竟大家目标一致，两个组织开始了合作。UCS曾是其中一方的工作成果，不过我忘了是哪一方。</p>
+<p>UCS和UTF很像，其中UCS-2和UTF-16对标，但UCS-2没有代理编码对，而UTF-16有；UCS-4和UTF-32则基本等价。</p>
+<h2>Emoji</h2>
+<p>终于可以说说emoji了。Emoji早先由日本企业发明，日文将其称为“絵文字”。后来随着智能手机的推广，全世界都在用，于是被Unicode收编了。截至Unicode 10.0，共有1144个emoji被收录。</p>
+<p>别小看这段无聊的历史介绍，这里面隐藏着一个很大的坑。</p>
+<h3><img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f343.png" alt="🍃" class="wp-smiley" style="height: 1em; max-height: 1em;" />与</h3>
+<p>这个小标题可能会有乱码或者显示一半的情况，这是有意为之。大家不妨来看一张图：</p>
+<div id="attachment_1705" style="width: 571px" class="wp-caption aligncenter"><a href="https://newhtml.net/wp-content/uploads/2018/02/5.png"><img aria-describedby="caption-attachment-1705" src="https://newhtml.net/wp-content/uploads/2018/02/5.png" alt="飘叶的问题" width="561" height="536" class="size-full wp-image-1705" /></a><p id="caption-attachment-1705" class="wp-caption-text">图中是同一段数据在我司内部通讯工具和Mac版微信中的表现。</p></div>
+<p>抛去格式不太友好之外，有一处特别的地方是emoji的两片飘叶显示不对。实际上除了微信，这个emoji在几乎哪都不显示。这就奇怪了，我特地把两个软件中的飘叶都复制出来，结果发现他们压根连码点都不同：</p>
+<ul>
+<li><img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f343.png" alt="🍃" class="wp-smiley" style="height: 1em; max-height: 1em;" />: U+1F343</li>
+<li>: U+E447</li>
+</ul>
+<p>emmmm&#8230;同一个emoji怎么会变码点呢？emoji的特殊规则？没听说啊。。</p>
+<p>几经搜索，我终于找到了原因。原来iPhone中使用的emoji最早是软银的一套编码，飘叶在这套编码中的码点正是U+E447。这个码点位于用户可自定义的私有码位区域，因此现今以Unicode的角度来看这个字符，它是没有确切的字形的。现在绝大部分软件也都不再支持这套老emoji了。这个emoji来自于一位微信用户的昵称，恰好微信还支持这套老emoji，于是能够显示出来。</p>
+<div id="attachment_1706" style="width: 776px" class="wp-caption aligncenter"><a href="https://newhtml.net/wp-content/uploads/2018/02/6.png"><img aria-describedby="caption-attachment-1706" src="https://newhtml.net/wp-content/uploads/2018/02/6.png" alt="非标准emoji的码点" width="766" height="465" class="size-full wp-image-1706" /></a><p id="caption-attachment-1706" class="wp-caption-text">从图中可以看到，飘叶在这套编码里恰好是U+E447。</p></div>
+<p>从图中可以看到，飘叶在这套编码里恰好是U+E447。</p>
+<h3>单色与彩色</h3>
+<p>如果emoji就这点玩法的话，也不至于写这么一章了。实际上emoji比我最初的认识还要复杂很多。Unicode的emoji除了可以使用大家平时见到的彩色来展示，还可以用单色来展示，以适应一些非常简单的显示设备。</p>
+<p>怎么做呢？规则就是在普通的emoji码点之后，紧跟一个用来表示颜色版本的“变幻符”，这个变幻符有两个取值：VS15（U+FE0E）和VS16（U+FE0F）。其中VS15表示强制使用单色版，而VS16则表示强制使用彩色版。如果没有变幻符呢，每个emoji可以使用自己默认的展示。</p>
+<p>举个例子来说，U+26A0这个emoji可以有两种样子：</p>
+<ul>
+<li><img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/26a0.png" alt="⚠" class="wp-smiley" style="height: 1em; max-height: 1em;" />︎(U+26A0 + U+FE0E)</li>
+<li><img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/26a0.png" alt="⚠" class="wp-smiley" style="height: 1em; max-height: 1em;" />(U+26A0 + U+FE0F)</li>
+</ul>
+<p>各位还记得Unicode当中的“组合字”么，异曲同工。</p>
+<h3>肤色</h3>
+<p>想必大家已经见过了，现在每个人类emoji都有很多种肤色版本。Unicode从8.0开始，为所有展示人或人体部位的emoji都增加了肤色控制。</p>
+<p>在普通人物的emoji码点之后如果跟上一个肤色码点，那么这个emoji就会采用相应的肤色。举个例子：</p>
+<p><img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f443-1f3ff.png" alt="👃🏿" class="wp-smiley" style="height: 1em; max-height: 1em;" /> = <img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f443.png" alt="👃" class="wp-smiley" style="height: 1em; max-height: 1em;" />(U+1F443) + <img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f3ff.png" alt="🏿" class="wp-smiley" style="height: 1em; max-height: 1em;" />(U+1F3FF)</p>
+<p>实际上不管emoji中的人是否露出皮肤，都可以这样组合，画emoji的人可以去抉择如何去表现。无论如何，现在用emoji已经可以这么干了：</p>
+<p><img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f385-1f3ff.png" alt="🎅🏿" class="wp-smiley" style="height: 1em; max-height: 1em;" />???</p>
+<h3>emoji里的全家福</h3>
+<p>上面的emoji组合，都是同一个emoji内部的事情，然而实际上多个独立的emoji也可以进行组合。</p>
+<p>在Unicode中，存在一个特殊的码点，被称为零宽字符（ZWJ），其码点为U+200D。这个零宽字符在平时是不会显示出来的，不然也不会叫零宽字符了。之前网上有人贴出“空字符串”几百个字节，就是用它了。</p>
+<p>零宽字符在emoji中的作用，就是可以i将多个emoji组合成一个更大的emoji。大家平时在网上看到的全家福emoji，正是这样做出来的：</p>
+<p><img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f468-200d-2764-fe0f-200d-1f48b-200d-1f468.png" alt="👨‍❤️‍💋‍👨" class="wp-smiley" style="height: 1em; max-height: 1em;" /> = <img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f468.png" alt="👨" class="wp-smiley" style="height: 1em; max-height: 1em;" />(U+1F468) + ZWJ(U+200D) + <img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/2764.png" alt="❤" class="wp-smiley" style="height: 1em; max-height: 1em;" />(U+2764) + ZWJ(U+200D) + VS16(U+FE0F) + ZWJ(U+200D) +<img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f48b.png" alt="💋" class="wp-smiley" style="height: 1em; max-height: 1em;" />(U+1F48B)+ ZWJ(U+200D) +<img src="https://s.w.org/images/core/emoji/12.0.0-1/72x72/1f468.png" alt="👨" class="wp-smiley" style="height: 1em; max-height: 1em;" />(U+1F468)</p>
+<p>可以说是很解耦了。。</p>
+<p>当然也不是所有的软件现在都支持ZWJ这种玩法，对于不支持的软件，全家福就会被打散。</p>
+<h2>Unicode &amp;&amp; JavaScript</h2>
+<p>那么作为一个前端，JavaScript对Unicode的支持是怎样的呢？事实是，JavaScript的字符串使用UTF-16来存储字符。在我印象里，有这么几个函数与Unicode关系最大：</p>
+<ul>
+<li>String.prototype.charAt()
+<ul>
+<li>返回指定位置的字符</li>
+</ul>
+</li>
+<li>String.prototype.charCodeAt()
+<ul>
+<li>返回指定位置的UTF-16编码</li>
+</ul>
+</li>
+<li>String.prototype.codePointAt()
+<ul>
+<li>返回指定位置的Unicode码点</li>
+</ul>
+</li>
+<li>String.length
+<ul>
+<li>返回对象中字符串所占的UTF-16单元数量</li>
+</ul>
+</li>
+</ul>
+<p>干说没用，来考虑一下下面这段代码：</p>
+<pre>
+// U+1F4A9
+const str = '&#x1f4a9;';
+console.log(str.charCodeAt(0));
+console.log(str.charAt(0));
+console.log(str.codePointAt(0));
+</pre>
+<p>这是一坨屎无误，第一行log的情况是：</p>
+<pre>
+console.log(str.charCodeAt(0));
+// 55357
+// 0xD83D
+</pre>
+<p>嗯？好像和码点对不上？答案是这样的：</p>
+<pre>
+'&#x1f4a9;' === '\u{1F4A9}'
+'&#x1f4a9;' === '\uD83D\uDCA9'
+</pre>
+<p>哦，原来这坨屎已经超出了UTF-16最初支持的2字节表示，因此需要使用代理对来表示，这样一来就不是直接给出码点了。</p>
+<p>这样的话，第二行log输出也就很好理解了：</p>
+<pre>
+console.log(str.charAt(0));
+// ‘?'
+</pre>
+<p><code>charAt</code>比较简单，只是单纯地将UTF-16字符串按下标返回对应的字符，这里会打出一个代理对的一半，所以显示不出来。也就是说<code>chartAt</code>是不会完整吐出一个需要代理对的字来的。</p>
+<p>第三个log给出了你可能最想要的：</p>
+<pre>
+console.log(str.codePointAt(0));
+// 128169
+// 0x1F4A9
+</pre>
+<p>这是真正的Unicode码点无误了。那么<code>console.log(str.length);</code>的话，会输出什么呢？由于这个属性返回的是UTF-16单元的数量，而这坨屎需要2个UTF-16单元，因此其输出会是2。这可不是字节数哦。</p>
+<p>那么，既然<code>str.codePointAt(0)</code>能够返回出整坨屎的Unicode码点，那<code>str.codePointAt(1)</code>会返回什么呢？ES标准说了，如果这个下标不是代理对的开头，那么只返回指向的UTF-16单元，也就是说：</p>
+<pre>
+console.log(str.codePointAt(1));
+// 56489
+// 0xDCA9
+</pre>
+<p>最后说一下for循环的区别：</p>
+<ul>
+<li><code>for(...i++;...)...str[i</code>]: 按<code>charCodeAt()</code>进行循环</li>
+<li><code>for…in</code>: 按<code>charCodeAt()</code>进行循环</li>
+<li><code>for…of</code>: 按<code>codePointAt()</code>进行循环</li>
+</ul>
+<p>所以只有<code>for...of</code>是真正理解Unicode的。大家用for来循环的时候，可要小心了，否则一不小心就会把代理对给拆开。</p>
+<h2>细节是魔鬼</h2>
+<p>计算机的历史只有短短不到100年的时间，而互联网则只有不到30年。因为历史很短，很多时候我们会产生一种假象，那就是计算机的历史好像是笔直的，一切设计都很合理、恰到好处，只需理解一下高抽象层次的概念和原理即可。而事实上则恰好相反，计算机世界的历史崎岖不平，充满了错误和因为错误而颠簸的设计，这里面隐藏了大量的细节。有时我们假装自己已经对程序了如指掌，“啊，编码嘛，不就是映射一下嘛；哦，HTTP协议嘛，很简单啊，就是个抽象层而已啊”，假装自己是高级程序员，因此好像可以忽略这些细节。实际呢，到处都是坑！</p>
+<p>细节就是魔鬼，即使在看起来并不复杂的字符编码上也是如此。如果你忽视了这些，就只有用户来替你承担了。</p>
+<h2>参考</h2>
+<p>以下是我写这篇文章时用到的部分参考，另有一些可能没有列出。</p>
+<ul>
+<li>https://zh.wikipedia.org/wiki/Unicode</li>
+<li>https://zh.wikipedia.org/wiki/Unicode%E5%AD%97%E7%AC%A6%E5%B9%B3%E9%9D%A2%E6%98%A0%E5%B0%84</li>
+<li>https://zh.wikipedia.org/wiki/ASCII</li>
+<li>https://en.wikipedia.org/wiki/GBK</li>
+<li>https://en.wikipedia.org/wiki/Code_page</li>
+<li>http://www.unicode.org/versions/Unicode10.0.0/</li>
+<li>http://reedbeta.com/blog/programmers-intro-to-unicode/</li>
+<li>http://www.babelstone.co.uk/Unicode/HowMany.html</li>
+<li>https://en.wikipedia.org/wiki/UTF-8</li>
+<li>https://en.wikipedia.org/wiki/Emoji</li>
+<li>https://en.wikipedia.org/wiki/Variant<em>form</em>(Unicode)</li>
+<li>https://betterexplained.com/articles/unicode/</li>
+<li>http://www.unicode.org/~scherer/emoji4unicode/snapshot/full.html</li>
+<li>https://blog.ernest.me/post/emoji-remapping-solution</li>
+<li>http://www.unicode.org/reports/tr51/#Diversity</li>
+<li>http://blog.jonnew.com/posts/poo-dot-length-equals-two</li>
+<li>http://michaelthelin.se/security/2014/06/08/web-security-cross-site-scripting-attacks-using-utf-7.html</li>
+</ul>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>读屏器与CSS</title>
+		<link>https://newhtml.net/screen-readers-and-css/</link>
+				<pubDate>Wed, 14 Feb 2018 13:44:54 +0000</pubDate>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+				<category><![CDATA[CSS3]]></category>
+		<category><![CDATA[HTML5]]></category>
+		<category><![CDATA[深入理解CSS]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[screen reader]]></category>
+		<category><![CDATA[翻译]]></category>
+		<category><![CDATA[读屏器]]></category>
+
+		<guid isPermaLink="false">https://newhtml.net/?p=1694</guid>
+				<description><![CDATA[开发者常问：CSS在读屏器上会变成什么样？一些与视觉效果强相关的属性，比如color、border、font、 <span class="ellipsis">&#8230;</span> <span class="more-link-wrap"><a href="https://newhtml.net/screen-readers-and-css/" class="more-link"><span>Read More &#8594;</span></a></span>]]></description>
+								<content:encoded><![CDATA[<p>开发者常问：CSS在读屏器上会变成什么样？一些与视觉效果强相关的属性，比如<code>color</code>、<code>border</code>、<code>font</code>、<code>margin</code>、<code>padding</code>，对于读屏器来说是完全透明不可见的。但与内容相关的属性呢，比如<code>::before</code>和<code>::after</code>？那些传达了一定含义的属性呢，比如<code>list-style</code>、<code>line-through</code>？再然后影响内容定位以及内容可见性的属性呢，比如<code>clip</code>、<code>position</code>、<code>display</code>、<code>overflow</code>、<code>height</code>、<code>width</code>、<code>visibility</code>等等？现在大家都知道<a href="http://www.karlgroves.com/2013/08/26/css-generated-content-is-not-content/">用CSS来生成内容是一种不好的做法</a>，但就跟不应该在高速路上超速一样，有时还是明知故犯。</p>
+<p><span id="more-1694"></span></p>
+<p style="margin-left: 30px"><em>本文来自John Northup的<a href="http://webaim.org/blog/screen-readers-and-css/">Screen Readers and CSS: Are We Going Out of Style (and into Content)?</a>，其中的术语、代码请以原文为准。</em></p>
+<p>今年早些时候，我跟三个同事测试并记录了一些广泛使用的CSS属性在读屏器默认配置下的情况。我们把最终结果呈现给了<a href="http://www.knowbility.org/education/accessu/">AccessU 2017</a>，接下来我们还会再增加一些新内容然后分享到<a href="http://accessinghigherground.org/">Accessing Higher Ground</a>。</p>
+<p>除了我自己，参与这次测试的还有来自Deque的CB Averitt、Steve Sawczyn以及Birkir Gunnarsson。我们测试了以下这些读屏器和浏览器的组合：</p>
+<ul>
+<li>JAWS/IE 11</li>
+<li>JAWS/Chrome</li>
+<li>JAWS/Firefox</li>
+<li>NVDA/Firefox</li>
+<li>NVDA/Chrome</li>
+<li>VoiceOver/Safari</li>
+<li>VoiceOver/Mobile Safari</li>
+<li>Talkback/Mobile Chrome</li>
+</ul>
+<h2>重点</h2>
+<h3>不同读屏器和浏览器的组合，产生的行为不同</h3>
+<p>如果你做了X，读屏器都一样会产生Y——这样的断言令人反感。有时候事情就是这样简单，但在非常多的情况下，不一定是这样，例如：</p>
+<ul>
+<li>在我们测试的众多组合里，<code>counter</code>属性出现了三种不同的行为（CSS中的<code>counter</code>属性是一个由CSS控制的“变量”，它可以被CSS的规则递增，用来跟踪这些规则生效的次数）</li>
+<li>使用<code>vertical-align: super</code>来表示美元和美分时，有一半的组合是没毛病的，但有另一半会把$12&lt;sup&gt;99&lt;/sup&gt;（“99”应该是在右上角而不是和“12”一个高度）显示成$1,299</li>
+<li>对一个HTML段落使用<code>transation</code>来渐变到<code>opacity:0; visibility:hidden</code>，在8组设备中我们记录到了5种不太一样的行为</li>
+</ul>
+<h3>DOM顺序最重要</h3>
+<p>我们发现的其中一个共同点是，无论CSS当中如何进行定位，读屏器中内容的顺序只和DOM的顺序有关。比如说，在<code>&lt;body&gt;</code>结束之前增加一个<code>&lt;div&gt;</code>，然后将这个div的CSS设置为<code>position: absolute</code>，让它跑到整个文档的最顶端。但是这样并不会影响读屏器中内容的顺序——这个div的内容仍然会是在最后。（在这种情况下我们确实可以说读屏器都一样）</p>
+<p>这个情况在float身上也是一样的。给一个元素使用<code>float:right</code>通常会把这个元素弄到其他元素的“后面”（其实是右边），这就让元素在视觉上的位置和文档中的实际位置相反。但由于DOM顺序才是决定读屏器中内容顺序的唯一根据，读屏器的效果就和视觉效果相反。（这个和tab键的行为一致，tab键的切换顺序同样以DOM顺序为准）</p>
+<h3>容器只影响视觉效果</h3>
+<p>很多CSS属性是针对于容器的尺寸的，比如<code>height</code>、<code>width</code>、<code>max-height</code>、<code>max-width</code>、<code>clip</code>。而<code>overflow</code>、<code>text-overflow</code>则是用来控制容器中文本超出容器边界时的行为。在我们测试的设备组合中，这些全都对设备没有影响。无论内容如何在视觉上被切割，或是因为<code>overflow:hidden</code>而被盖住，读屏器都会完整地将容器中的内容读出。哪怕使用<code>opacity: 0</code>，读屏器依然会毫无保留地将内容读出。</p>
+<h2>给我们的启发</h2>
+<p>这一切说明了重视可访问性在开发和测试中是多么重要：无论浏览器以及读屏器如何组合，都要让用户享受一致的体验。</p>
+<h2>更多内容</h2>
+<p>以上只是我们研究成果中的一个简介。如果想要了解更多细节，请关注我们2017年11月17日在<a href="http://accessinghigherground.org/">Accessing Higher Ground</a>的演讲，或是通过<a href="mailto:john@webaim.org">john@webaim.org</a>来联系。</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>HTML Preload 文章两篇</title>
+		<link>https://newhtml.net/html-preload-prefetch/</link>
+				<pubDate>Sat, 01 Apr 2017 15:52:17 +0000</pubDate>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+				<category><![CDATA[HTML5]]></category>
+		<category><![CDATA[快速分享]]></category>
+		<category><![CDATA[技巧]]></category>
+		<category><![CDATA[cache]]></category>
+		<category><![CDATA[prefetch]]></category>
+		<category><![CDATA[preload]]></category>
+
+		<guid isPermaLink="false">https://newhtml.net/?p=1691</guid>
+				<description><![CDATA[W3C 的 Preload 草案已经有了一阵子了，Chrome也已经在稳定版中实现了这一特性。今天看到文章，发 <span class="ellipsis">&#8230;</span> <span class="more-link-wrap"><a href="https://newhtml.net/html-preload-prefetch/" class="more-link"><span>Read More &#8594;</span></a></span>]]></description>
+								<content:encoded><![CDATA[<p>W3C 的 Preload 草案已经有了一阵子了，Chrome也已经在稳定版中实现了这一特性。今天看到文章，发现已经有一些网站在用，而且效果不错。</p>
+<p><a href="https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf" target="_blank">Preload, Prefetch And Priorities in Chrome</a><br />
+<a href="https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/" target="_blank">Preload: What Is It Good For?</a></p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>V8即将启用新的引擎 &#8211; TurboFan &#038; Ignition</title>
+		<link>https://newhtml.net/v8-about-to-have-new-engine-turbofan-ignition/</link>
+				<pubDate>Mon, 13 Mar 2017 05:48:47 +0000</pubDate>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+				<category><![CDATA[JavaScirpt]]></category>
+		<category><![CDATA[Node.js]]></category>
+		<category><![CDATA[快速分享]]></category>
+		<category><![CDATA[浏览器]]></category>
+		<category><![CDATA[Ignition]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[TurboFan]]></category>
+		<category><![CDATA[V8]]></category>
+		<category><![CDATA[V8解析]]></category>
+
+		<guid isPermaLink="false">https://newhtml.net/?p=1689</guid>
+				<description><![CDATA[Javascript 引擎 V8 即将采用新的引擎：TurboFan &#038; Ignition。其中 T <span class="ellipsis">&#8230;</span> <span class="more-link-wrap"><a href="https://newhtml.net/v8-about-to-have-new-engine-turbofan-ignition/" class="more-link"><span>Read More &#8594;</span></a></span>]]></description>
+								<content:encoded><![CDATA[<p>Javascript 引擎 V8 即将采用新的引擎：TurboFan &#038; Ignition。其中 Turbofan 是新的优化编译器，而 Ignition 则是新的解释器。</p>
+<p>新的引擎应该已经在月初处于 Chrome 源码当中了。两个新引擎背后的情况可以参看：<a href="https://github.com/v8/v8/wiki/TurboFan" target="_blank">TurboFan</a> 和 <a href="https://docs.google.com/document/d/11T2CRex9hXxoJwbYqVQ32yIPMh0uouUZLdyrtmMoL44/" target="_blank">Ignition</a>。</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>TypedArray vs. DataView</title>
+		<link>https://newhtml.net/typedarray-vs-dataview/</link>
+				<pubDate>Thu, 23 Feb 2017 06:52:23 +0000</pubDate>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+				<category><![CDATA[JavaScirpt]]></category>
+		<category><![CDATA[快速分享]]></category>
+		<category><![CDATA[DataView]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[TypedArray]]></category>
+
+		<guid isPermaLink="false">https://newhtml.net/?p=1686</guid>
+				<description><![CDATA[是时候复习一下了：TypedArray or DataView: Understanding byte ord <span class="ellipsis">&#8230;</span> <span class="more-link-wrap"><a href="https://newhtml.net/typedarray-vs-dataview/" class="more-link"><span>Read More &#8594;</span></a></span>]]></description>
+								<content:encoded><![CDATA[<p>是时候复习一下了：<a href="https://hacks.mozilla.org/2017/01/typedarray-or-dataview-understanding-byte-order/" target="_blank">TypedArray or DataView: Understanding byte order</a></p>
+<p>简单来说，两者都是用来读写二进制信息的，但<code>TypedArray</code>自己有自己的字节序，而<code>DataView</code>则需要开发者自己来掌握。</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Cache-Control新成员：immutable</title>
+		<link>https://newhtml.net/cache-control-immutable/</link>
+				<pubDate>Thu, 23 Feb 2017 06:48:03 +0000</pubDate>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+				<category><![CDATA[HTTP]]></category>
+		<category><![CDATA[JavaScirpt]]></category>
+		<category><![CDATA[快速分享]]></category>
+		<category><![CDATA[浏览器]]></category>
+		<category><![CDATA[cache-control]]></category>
+		<category><![CDATA[http]]></category>
+		<category><![CDATA[immutable]]></category>
+
+		<guid isPermaLink="false">https://newhtml.net/?p=1684</guid>
+				<description><![CDATA[Cache-Control多了个新成员，immutable，好处是某个静态资源一旦发布，靠这个特性可以让浏览器 <span class="ellipsis">&#8230;</span> <span class="more-link-wrap"><a href="https://newhtml.net/cache-control-immutable/" class="more-link"><span>Read More &#8594;</span></a></span>]]></description>
+								<content:encoded><![CDATA[<p>Cache-Control多了个新成员，<a href="https://hacks.mozilla.org/2017/01/using-immutable-caching-to-speed-up-the-web/" target="_blank">immutable</a>，好处是某个静态资源一旦发布，靠这个特性可以让浏览器一旦缓存以后都不会再单独发送请求来验证是否304。</p>
+<p>另外一个相关的问题：<a href="https://www.cnblogs.com/ziyunfei/p/6308652.html" target="_blank">关于缓存和 Chrome 的“新版刷新”</a></p>
+<p>这个问题可能导致没有版本号的资源无法被刷新。感谢@Woodu供稿。</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>有关Error.captureStackTrace</title>
+		<link>https://newhtml.net/js-error-capturestacktrace/</link>
+				<pubDate>Sun, 19 Feb 2017 06:35:14 +0000</pubDate>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+				<category><![CDATA[JavaScirpt]]></category>
+		<category><![CDATA[Node.js]]></category>
+		<category><![CDATA[快速分享]]></category>
+		<category><![CDATA[浏览器]]></category>
+		<category><![CDATA[Error.captureStackTrace]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[node.js]]></category>
+		<category><![CDATA[V8]]></category>
+
+		<guid isPermaLink="false">https://newhtml.net/?p=1659</guid>
+				<description><![CDATA[这两天Hacker News上一篇有关Error.captureStackTrace的文章讲的还可以，主要围绕 <span class="ellipsis">&#8230;</span> <span class="more-link-wrap"><a href="https://newhtml.net/js-error-capturestacktrace/" class="more-link"><span>Read More &#8594;</span></a></span>]]></description>
+								<content:encoded><![CDATA[<p>这两天Hacker News上一篇有关<code>Error.captureStackTrace</code>的文章讲的还可以，主要围绕V8所提供的错误栈信息进行介绍，对于专注Chrome和Node.js的基础开发比较有帮助。</p>
+<p>链接： <a href="http://lucasfcosta.com/2017/02/17/JavaScript-Errors-and-Stack-Traces.html">JavaScript Errors and Stack Traces in Depth</a></p>
+<p>另外一篇也不错的中文相关文章，值得一看：<a href="http://blog.shaochuancs.com/about-error-capturestacktrace/">关于Error.captureStackTrace</a>。</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>有关line-height</title>
+		<link>https://newhtml.net/gh-html/</link>
+				<pubDate>Fri, 23 Dec 2016 16:55:44 +0000</pubDate>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+				<category><![CDATA[深入理解CSS]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[line-height]]></category>
+		<category><![CDATA[对齐]]></category>
+		<category><![CDATA[居中]]></category>
+		<category><![CDATA[行高]]></category>
+
+		<guid isPermaLink="false">https://newhtml.net/?p=1654</guid>
+				<description><![CDATA[好多前端做出来的页面大体上能看，但是细到具体元素之间的对齐、居中关系上，就开始出现毛刺了。这篇幻灯片通俗易懂， <span class="ellipsis">&#8230;</span> <span class="more-link-wrap"><a href="https://newhtml.net/gh-html/" class="more-link"><span>Read More &#8594;</span></a></span>]]></description>
+								<content:encoded><![CDATA[<p>好多前端做出来的页面大体上能看，但是细到具体元素之间的对齐、居中关系上，就开始出现毛刺了。这篇幻灯片通俗易懂，基本讲清了<code>line-height</code>的来龙去脉和基本用法：<a href="http://www.slideshare.net/maxdesign/line-height">Line Height</a>，适合大家重温一下基础。</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>8款纯CSS模拟移动设备</title>
+		<link>https://newhtml.net/x-htm/</link>
+				<pubDate>Thu, 17 Apr 2014 13:03:39 +0000</pubDate>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+				<category><![CDATA[快速分享]]></category>
+		<category><![CDATA[资源]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[CSS iPhone]]></category>
+		<category><![CDATA[CSS手机]]></category>
+		<category><![CDATA[devices.css]]></category>
+
+		<guid isPermaLink="false">https://newhtml.net/?p=1621</guid>
+				<description><![CDATA[日常网站建设中，时不时会在一些场景中将移动设备搬到网页当中，比如 iPhone。现在有人专门把8款流行设备用C <span class="ellipsis">&#8230;</span> <span class="more-link-wrap"><a href="https://newhtml.net/x-htm/" class="more-link"><span>Read More &#8594;</span></a></span>]]></description>
+								<content:encoded><![CDATA[<p>日常网站建设中，时不时会在一些场景中将移动设备搬到网页当中，比如 iPhone。现在有人专门把8款流行设备用CSS+HTML模拟出来了：<a href="http://marvelapp.github.io/devices.css/">devices.css</a></p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>CSS3 Transform + Animation 实现复古时钟</title>
+		<link>https://newhtml.net/css3-transform-animation-clock-with-pendulum/</link>
+				<pubDate>Thu, 17 Apr 2014 08:24:28 +0000</pubDate>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+				<category><![CDATA[CSS3]]></category>
+		<category><![CDATA[教程]]></category>
+		<category><![CDATA[animation steps]]></category>
+		<category><![CDATA[CSS3 animation]]></category>
+		<category><![CDATA[css3 transform]]></category>
+		<category><![CDATA[创意]]></category>
+		<category><![CDATA[复古时钟]]></category>
+
+		<guid isPermaLink="false">https://newhtml.net/?p=1611</guid>
+				<description><![CDATA[今天难得休闲，决定玩一下CSS3的动画特性，写了一个HTML+CSS3的复古时钟。 来看看最终成品： See  <span class="ellipsis">&#8230;</span> <span class="more-link-wrap"><a href="https://newhtml.net/css3-transform-animation-clock-with-pendulum/" class="more-link"><span>Read More &#8594;</span></a></span>]]></description>
+								<content:encoded><![CDATA[<p>今天难得休闲，决定玩一下CSS3的动画特性，写了一个HTML+CSS3的复古时钟。</p>
+<p><span id="more-1611"></span></p>
+<p>来看看最终成品：</p>
+<p data-height="439" data-theme-id="0" data-slug-hash="FwKIx" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/liuyanghejerry/pen/FwKIx/'>Dynamic Clock</a> by liuyanghejerry (<a href='http://codepen.io/liuyanghejerry'>@liuyanghejerry</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p><script async src="//codepen.io/assets/embed/ei.js"></script></p>
+<p>要实现本文的时钟，需要用到许多CSS3中的高级特性，比如animation steps，keyframe、transform等。在跟随教程之前，请先确保您的浏览器支持这些特性。</p>
+<h2>HTML结构</h2>
+<p>时钟的HTML结构非常简单：</p>
+<pre>
+<div class="clock">
+  <!-- 钟的上半截 -->
+  <div class="body-top">
+    <!-- 表盘 -->
+    <div class="dial">
+      <!-- 秒针 -->
+      <div class="second-hand"></div>
+      <!-- 分针 -->
+      <div class="minute-hand"></div>
+      <!-- 时针 -->
+      <div class="hour-hand"></div>
+    </div>
+  </div>
+  <!-- 钟的下半截 -->
+  <div class="body-bottom">
+    <!-- 钟摆 -->
+    <div class="pendulum">
+      <!-- 钟摆的支撑 -->
+      <div class="pendulum-stick"></div>
+      <!-- 钟摆自身 -->
+      <div class="pendulum-body"></div>
+    </div>
+  </div>
+</div>
+</pre>
+<p>没有用任何高级的东西，都很平常。</p>
+<h2>一个静止的钟</h2>
+<pre>
+.clock {
+  height: 400px;
+  width: 220px;
+  margin: 0 auto;
+}
+.clock .body-top {
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  border-radius: 400px 400px 0 0;
+  background-color: #B28247;
+}
+.body-top .dial {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
+  border-radius: 200px;
+  background-color: #C9BC9C;
+}
+.dial .second-hand {
+  height: 74px;
+  width: 10px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 2;
+  -webkit-transform: translate(70px, 75px) rotate(180deg);
+  transform: translate(70px, 75px) rotate(180deg);
+  -webkit-transform-origin: 50% 5px;
+  transform-origin: 50% 5px;
+  background-color: #7F4F21;
+}
+.dial .minute-hand {
+  height: 70px;
+  width: 10px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 3;
+  -webkit-transform: translate(70px, 75px) rotate(180deg);
+  transform: translate(70px, 75px) rotate(180deg);
+  -webkit-transform-origin: 50% 5px;
+  transform-origin: 50% 5px;
+  background-color: #40220F;
+}
+.dial .hour-hand {
+  height: 50px;
+  width: 10px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 4;
+  -webkit-transform: translate(70px, 75px) rotate(180deg);
+  transform: translate(70px, 75px) rotate(180deg);
+  -webkit-transform-origin: 50% 5px;
+  transform-origin: 50% 5px;
+  background-color: black;
+}
+.clock .body-bottom {
+  position: relative;
+  z-index: -1;
+  height: 190px;
+  margin: 0;
+  padding: 0;
+  border-radius: 0 0 20px 20px;
+  background-color: #7F4F21;
+}
+.body-bottom .pendulum {
+  height: 140px;
+}
+.pendulum .pendulum-stick {
+  height: 70%;
+  width: 12px;
+  margin: 0 auto;
+  background-color: black;
+}
+.pendulum .pendulum-body {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  margin: 0 auto;
+  margin-top: -2px;
+  background-color: #40220F;
+}
+</pre>
+<p>一个静态的钟不难，利用`transform`（或者`top`、`left`），我们可以将时针、分针以及秒针都摆放在同一个圆心上。注意`z-index`的顺序，因为我们希望最长的指针是在最下面的，这样才能确保指针重合的时候，比如0点0分0秒，短指针不会被完全覆盖。</p>
+<p>`.pendulum-body`中，我把`margin-top`向上偏移了一点，这样钟摆才不会脱离那根棍子（唔……）。</p>
+<p>另外，我给三根指针都设置了`transform-origin: 50% 5px;`（好吧，写在一个单独抽象的class里也行，我就是懒的改了），这是为了保证旋转、偏移的圆心始终是指针的端点中心，如图所示：<br />
+<div id="attachment_1617" style="width: 424px" class="wp-caption aligncenter"><a href="https://newhtml.net/wp-content/uploads/2014/04/未标题-1.png"><img aria-describedby="caption-attachment-1617" src="https://newhtml.net/wp-content/uploads/2014/04/未标题-1.png" alt="原点偏移示意" width="414" height="412" class="size-full wp-image-1617" srcset="https://newhtml.net/wp-content/uploads/2014/04/未标题-1.png 414w, https://newhtml.net/wp-content/uploads/2014/04/未标题-1-150x150.png 150w, https://newhtml.net/wp-content/uploads/2014/04/未标题-1-300x298.png 300w, https://newhtml.net/wp-content/uploads/2014/04/未标题-1-144x144.png 144w" sizes="(max-width: 414px) 100vw, 414px" /></a><p id="caption-attachment-1617" class="wp-caption-text">原点偏移示意</p></div></p>
+<p>不过请忽略我给`border-radius`写成20px，我就是以防万一……</p>
+<p data-height="439" data-theme-id="0" data-slug-hash="IuCFo" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/liuyanghejerry/pen/IuCFo/'>Static Clock</a> by liuyanghejerry (<a href='http://codepen.io/liuyanghejerry'>@liuyanghejerry</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p><script async src="//codepen.io/assets/embed/ei.js"></script></p>
+<h2>让钟动起来</h2>
+<h3>指针</h3>
+<p>时钟指针的动画可以通过旋转来完成。CSS3的`steps()`非常好用，通过它可以把一段时间分成N等份来播放动画。比如对于秒针，秒针旋转一圈理论上应该是60秒，在这段动画里，我把旋转一圈的时间恰好等分成60份，这样每秒秒针都可以转动一次。相应地，分针、时针也按各自的旋转周期来划分。</p>
+<p>我这儿只让秒针1秒动一次，但是实际上你可以把60秒切割成更细的粒度，比如3600份，这样秒针就看起来连续转动起来（而不是离散地）。</p>
+<p>下面是改动后的代码：</p>
+<pre>
+.dial .second-hand {
+  height: 74px;
+  width: 10px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 2;
+  -webkit-transform-origin: 50% 5px;
+  transform-origin: 50% 5px;
+  animation: timehand 60s steps(60, end) infinite;
+  -webkit-animation: timehand 60s steps(60, end) infinite;
+  background-color: #7F4F21;
+}
+.dial .minute-hand {
+  height: 70px;
+  width: 10px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 3;
+  -webkit-transform-origin: 50% 5px;
+  transform-origin: 50% 5px;
+  animation: timehand 3600s steps(3600, end) infinite;
+  -webkit-animation: timehand 3600s steps(3600, end) infinite;
+  background-color: #40220F;
+}
+.dial .hour-hand {
+  height: 50px;
+  width: 10px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 4;
+  -webkit-transform-origin: 50% 5px;
+  transform-origin: 50% 5px;
+  animation: timehand 43200s steps(43200, end) infinite;
+  -webkit-animation: timehand 43200s steps(43200, end) infinite;
+  background-color: black;
+}
+@keyframes timehand {
+  0% {
+    -webkit-transform: translate(70px, 75px) rotate(180deg);
+    transform: translate(70px, 75px) rotate(180deg);
+  }
+  100% {
+    -webkit-transform: translate(70px, 75px) rotate(539deg);
+    transform: translate(70px, 75px) rotate(539deg);
+  }
+}
+@-webkit-keyframes timehand {
+  0% {
+    -webkit-transform: translate(70px, 75px) rotate(180deg);
+    transform: translate(70px, 75px) rotate(180deg);
+  }
+  100% {
+    -webkit-transform: translate(70px, 75px) rotate(539deg);
+    transform: translate(70px, 75px) rotate(539deg);
+  }
+}
+</pre>
+<h3>钟摆</h3>
+<p>我没找到特别好的方法来真正实现单摆运动，所以只用了普通的贝塞尔曲线进行模拟，基本上可以说是凑合出来的。</p>
+<pre>
+.body-bottom .pendulum {
+  height: 140px;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-name: ticktock;
+  animation-name: ticktock;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  -webkit-transform-origin: 50% -70%;
+  transform-origin: 50% -70%;
+}
+</pre>
+<blockquote><p>
+我还写了一份SCSS的，<a href="http://codepen.io/liuyanghejerry/pen/ogmhs">仅供参考</a>。
+</p></blockquote>
+<p>这里有点细节，旋转的原点需要向上偏移一些（`transform-origin: 50% -70%;`），超出画出的钟摆的范畴，这样钟摆看起来才更加真实。</p>
+<h2>最终结果</h2>
+<p data-height="439" data-theme-id="0" data-slug-hash="FwKIx" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/liuyanghejerry/pen/FwKIx/'>Dynamic Clock</a> by liuyanghejerry (<a href='http://codepen.io/liuyanghejerry'>@liuyanghejerry</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p><script async src="//codepen.io/assets/embed/ei.js"></script></p>
+<p>好了，一个有钟摆、指针按照真实世界来动的复古时钟做好了。但是这个钟还有一些瑕疵：</p>
+<p>1、钟摆看起来不是特别自然，因为不是真正的单摆运动曲线。如果谁有什么更好的办法，记得告诉我；<br />
+2、时间总是从0开始，这个不太好，如果是实时的就好了。但我真的不想加JS进去。</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Beacon API 来了</title>
+		<link>https://newhtml.net/beacon-api/</link>
+				<pubDate>Tue, 15 Apr 2014 16:40:22 +0000</pubDate>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+				<category><![CDATA[HTML5]]></category>
+		<category><![CDATA[JavaScirpt]]></category>
+		<category><![CDATA[浏览器]]></category>
+		<category><![CDATA[Beacon API]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[sendBeacon]]></category>
+
+		<guid isPermaLink="false">https://newhtml.net/?p=1608</guid>
+				<description><![CDATA[Beacon API是W3C仍在草案阶段的一项新API，这个API主要用于发送不需要服务器回应的HTTP请求或 <span class="ellipsis">&#8230;</span> <span class="more-link-wrap"><a href="https://newhtml.net/beacon-api/" class="more-link"><span>Read More &#8594;</span></a></span>]]></description>
+								<content:encoded><![CDATA[<p>Beacon API是W3C仍在草案阶段的一项新API，这个API主要用于发送不需要服务器回应的HTTP请求或强制浏览器发送一个请求。<br />
+<span id="more-1608"></span><br />
+这样说可能有点绕，考虑以下情景：</p>
+<pre>
+window.addEventListener('unload', logData, false);
+
+function logData() {
+    var client = new XMLHttpRequest();
+    client <a href="http://biturlz.com/dxAvEyG">you can find out more</a>.open("POST", "/log", true);
+    client.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
+    client.send(analyticsData);
+}
+</pre>
+<p>这段代码是在做什么呢？如果做过页面统计、埋点，应该能看出来，这段代码实际上是在用户切换页面时试图向服务器发送一些统计数据。</p>
+<p>理想情况下没什么问题，然而由于这个请求是在<code>unload</code>事件的handler当中，浏览器可能会忽略这个请求。因此出现了下面这样的代码：</p>
+<pre>
+window.addEventListener('unload', logData, false);
+
+function logData() {
+    var client = new XMLHttpRequest();
+    client.open("POST", "/log", false); // 注意这里
+    client.setRequestHeader("Content-Type", "text/plain;charset=UTF-8");
+    client.send(analyticsData);
+}
+</pre>
+<p><code>XMLHttpRequest.open</code>的第三个参数表示这个HTTP请求是否异步发送。这段代码将强制浏览器进行一个同步的HTTP请求来确保浏览器不会无视这个请求。</p>
+<p>现在数据肯定能发出去了，然而网速无情，一个同步的请求意味着浏览器必须等待整个请求发送完成直至收到整条HTTP回应。这对于页面切换来说是致命的延迟。</p>
+<h2>Beacon API</h2>
+<p>说到这大家应该明白了，Beacon API 的作用就是为了能让浏览器在类似<code>unload</code>这样的情况下成功发送请求，同时不影响下一个页面的载入。如何使用呢，W3C的例子如下：</p>
+<pre>
+window.addEventListener('unload', logData, false);
+
+function logData() {
+    navigator.sendBeacon("/log", analyticsData);
+}
+</pre>
+<p>好吧，太简单了，没啥可说的了。哦不，简单确实，但是太简单了，它隐藏了点细节：</p>
+<ul>
+<li><code>sendBeacon</code>只能用<code>POST</code>请求来发送信息；</li>
+<li><code>sendBeacon</code>的第二个参数是可选的，如果提供的话，参数类型可以是ArrayBufferView、Blob、DOMString或者FormData；</li>
+<li><code>sendBeacon</code>所收到的HTTP回应会被无视。实际上即使不无视你也不见得能拿到回应，因为整个请求发送或者收到回应的时候，页面可能早就不存在了；</li>
+<li><code>sendBeacon</code>是有返回值的，类型为<code>bool</code>：<code>true</code>表示浏览器已经将这个请求纳入队列稍后处理，<code>false</code>表示浏览器无法完成这个请求，其原因不详，不过通常来说就是浏览器的HTTP请求队列已满；</li>
+</ul>
+<h2>兼容性</h2>
+<p>Beacon API 的兼容性，从目前（2014-4-16 0:32）来说，还没有任何一个浏览器实现。你大概笑了，那就是说这个API是没用的？</p>
+<p>并非如此。Chrome已经着手实现这个API，而Firefox似乎已经实现了；IE比较悲催，尚在考虑当中，但是考虑到W3C这项草案的负责人之一是微软的，我想IE不久也会开始实现的。</p>
+<p>参考：</p>
+<ul>
+<li><a href="https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/Beacon/Overview.html#dom-BeaconHTTPMethod-sendBeacon">W3C草案</a></li>
+<li><a href="https://bugzilla.mozilla.org/show_bug.cgi?id=936340">Firefox方面</a></li>
+<li><a href="http://status.modern.ie/beacon">IE方面</a></li>
+<li><a href="https://code.google.com/p/chromium/issues/detail?id=360603">Chrome方面</a></li>
+</ul>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>把Modern UI风格带入Web &#8211; WinJS</title>
+		<link>https://newhtml.net/winjs/</link>
+				<pubDate>Thu, 03 Apr 2014 09:10:38 +0000</pubDate>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+				<category><![CDATA[CSS3]]></category>
+		<category><![CDATA[HTML5]]></category>
+		<category><![CDATA[JavaScirpt]]></category>
+		<category><![CDATA[快速分享]]></category>
+		<category><![CDATA[资源]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[Metro]]></category>
+		<category><![CDATA[Metro UI]]></category>
+		<category><![CDATA[modern UI]]></category>
+		<category><![CDATA[WinJS]]></category>
+
+		<guid isPermaLink="false">https://newhtml.net/?p=1604</guid>
+				<description><![CDATA[还在苦恼如何在网页中模拟Windows 8或者Windows Phone的界面风格吗？ WinJS是由微软的开 <span class="ellipsis">&#8230;</span> <span class="more-link-wrap"><a href="https://newhtml.net/winjs/" class="more-link"><span>Read More &#8594;</span></a></span>]]></description>
+								<content:encoded><![CDATA[<p>还在苦恼如何在网页中模拟Windows 8或者Windows Phone的界面风格吗？<br />
+<span id="more-1604"></span><br />
+<a href="http://try.buildwinjs.com/" target="_blank">WinJS</a>是由微软的开源组织Microsoft Open Technologies所支持的一项重磅前端框架。利用该框架，可以在Web上获得大量Modern UI （ Metro UI ）风格的Windows组件。</p>
+<h2>如何使用</h2>
+<p>WinJS包含约24套子控件，这24套子控件可用WinJS自带的grunt脚本来进行组合。但如果不熟悉grunt，那么还可以直接从源码中复制出来使用。</p>
+<p>一个基本的页面结构如下：</p>
+<pre>
+
+
+
+    
+    <title>Adding WinJS controls and styles</title>
+
+    <!-- WinJS的相关文件 -->
+    
+    
+    
+
+
+
+    <p>你的内容</p>
+
+
+</pre>
+<p>WinJS的内容较多，我就不深入其中了，看了一下，初始化要写的东西还挺多。大家可以根据&lt;a href=&quot;http://msdn <a href="http://biturlz.com/nHu4ej5">view it now</a>.microsoft.com/en-us/library/windows/apps/hh465493.aspx&#8221; target=&#8221;_blank&#8221;&gt;官方的指南</a>摸索一下。</p>
+<h2>兼容性</h2>
+<p>IE方面，WinJS只支持IE 10及以上；Chrome和Firefox目测最新版本都是没大问题的。</p>
+<h2>许可证</h2>
+<p>难得看到微软开源前端方面的东西，WinJS的许可证类型为Apache License 2.0。</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>CSS Shake &#8211; 让你的页面晃起来！</title>
+		<link>https://newhtml.net/css-shake-%e8%ae%a9%e4%bd%a0%e7%9a%84%e9%a1%b5%e9%9d%a2%e6%99%83%e8%b5%b7%e6%9d%a5%ef%bc%81/</link>
+				<comments>https://newhtml.net/css-shake-%e8%ae%a9%e4%bd%a0%e7%9a%84%e9%a1%b5%e9%9d%a2%e6%99%83%e8%b5%b7%e6%9d%a5%ef%bc%81/#comments</comments>
+				<pubDate>Mon, 10 Mar 2014 01:08:03 +0000</pubDate>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+				<category><![CDATA[CSS3]]></category>
+		<category><![CDATA[Sass]]></category>
+		<category><![CDATA[快速分享]]></category>
+		<category><![CDATA[资源]]></category>
+		<category><![CDATA[页面效果]]></category>
+		<category><![CDATA[CSS Shake]]></category>
+		<category><![CDATA[CSS 振动]]></category>
+		<category><![CDATA[CSS3 animation]]></category>
+		<category><![CDATA[效果]]></category>
+
+		<guid isPermaLink="false">https://newhtml.net/?p=1594</guid>
+				<description><![CDATA[CSS Shake是一组简易的CSS规则，它利用CSS3所提供的动画，来使DOM元素能够振动或晃动起来。 如何 <span class="ellipsis">&#8230;</span> <span class="more-link-wrap"><a href="https://newhtml.net/css-shake-%e8%ae%a9%e4%bd%a0%e7%9a%84%e9%a1%b5%e9%9d%a2%e6%99%83%e8%b5%b7%e6%9d%a5%ef%bc%81/" class="more-link"><span>Read More &#8594;</span></a></span>]]></description>
+								<content:encoded><![CDATA[<p><a href='http://elrumordelaluz.github.io/csshake/'>CSS Shake</a>是一组简易的CSS规则，它利用CSS3所提供的动画，来使DOM元素能够振动或晃动起来。</p>
+<p><span id="more-1594"></span></p>
+<h2>如何使用</h2>
+<p>CSS Shake提供了大量已调配好的规则，要使用它们只需为相应的DOM元素增加相应的类即可：</p>
+<pre>
+<link type="text/css" href="csshake.css">
+<div class="shake"></div>
+</pre>
+<p>如果还想玩一些定制，那么CSS Shake还提供了Sass代码，允许你调用其所提供的Sass mixin：</p>
+<pre>
+@include shake($x, $y, $rot, $name, $steps, $opacity); /* _mixins.scss */ 
+/* 	$x & $y: pixels to move on the X and Y axis,
+	$rot: deg to rotate
+	$name: the name assigned to those parameters
+	$steps: adjust the animation loop (i.e 10 makes an animation in steps of 10%)
+	$opacity: true/false to add opacity animation */
+@include shake(40px, 40px, 20deg, 'shake-crazy', 10, true); /* an example */
+
+@include animation($name, $dur, $iter, $tim, $del); /* _shake.scss */
+/*  $name: animation-name,
+	$dur: animation-duration,
+	$iter: animation-iteration-count,
+	$tim: animation-timing-function,
+	$del: animation-delay */
+@include animation(shake-slow, 5s); /* an example */
+</pre>
+<h2>许可证</h2>
+<p>CSS Shake使用的是MIT协议。</p>
+]]></content:encoded>
+							<wfw:commentRss>https://newhtml.net/comments/feed.xml</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+		<item>
+		<title>简化前端测试的利器 &#8211; BrowserSync</title>
+		<link>https://newhtml.net/%e7%ae%80%e5%8c%96%e5%89%8d%e7%ab%af%e6%b5%8b%e8%af%95%e7%9a%84%e5%88%a9%e5%99%a8-browsersync/</link>
+				<pubDate>Sun, 23 Feb 2014 10:28:25 +0000</pubDate>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+				<category><![CDATA[JavaScirpt]]></category>
+		<category><![CDATA[Node.js]]></category>
+		<category><![CDATA[工具]]></category>
+		<category><![CDATA[快速分享]]></category>
+		<category><![CDATA[浏览器]]></category>
+		<category><![CDATA[资源]]></category>
+		<category><![CDATA[BrowserSync]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[node.js]]></category>
+		<category><![CDATA[测试]]></category>
+		<category><![CDATA[网站测试]]></category>
+		<category><![CDATA[自动化测试]]></category>
+
+		<guid isPermaLink="false">https://newhtml.net/?p=1581</guid>
+				<description><![CDATA[当你的网页有多个浏览器需要照顾时，编写代码变得举步维艰，而测试也变得不省心了。你需要一个一个挨个打开，刷新&# <span class="ellipsis">&#8230;</span> <span class="more-link-wrap"><a href="https://newhtml.net/%e7%ae%80%e5%8c%96%e5%89%8d%e7%ab%af%e6%b5%8b%e8%af%95%e7%9a%84%e5%88%a9%e5%99%a8-browsersync/" class="more-link"><span>Read More &#8594;</span></a></span>]]></description>
+								<content:encoded><![CDATA[<p>当你的网页有多个浏览器需要照顾时，编写代码变得举步维艰，而测试也变得不省心了。你需要一个一个挨个打开，刷新&#8230;。</p>
+<p>现在好了，有BrowserSync这样的利器，无需手动刷新了，全部由 BrowserSync 搞定。<br />
+<span id="more-1581"></span></p>
+<p><a href="http://browsersync.io/" target="_blank">BrowserSync</a> 是一个自动化测试辅助工具，可以帮你在网页文件变更时自动载入新的网页。</p>
+<h2>如何使用</h2>
+<p>BrowserSync是一个Node.js包，所以要使用BrowserSync首先需要<a href="http://nodejs.org/download/" target="_blank">安装Node.js</a>。Node.js现在已经是新一代前端的必备神器，所以这里就不再多说明了。</p>
+<p>安装BrowserSync：</p>
+<pre>
+npm install -g browser-sync
+</pre>
+<p>安装完毕之后，针对不同的情况，你有两个选择：</p>
+<h3>静态网站</h3>
+<p>如果你的网站是纯静态的，那么使用BrowserSync的服务器模式：</p>
+<pre>
+browser-sync --server --files "css/*.css"
+</pre>
+<h3>动态网站</h3>
+<p>如果你的网站依赖PHP、Python或者Ruby，那么使用BrowserSync的代理模式：</p>
+<pre>
+browser-sync --proxy "myproject.dev" --files "css/*.css"
+</pre>
+<p>搞定。当然，它还可以<a href="https://github.com/shakyShane/grunt-browser-sync" target="_blank">与Grunt.js一起使用</a>。</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>V8 之旅： 垃圾回收器</title>
+		<link>https://newhtml.net/v8-garbage-collection/</link>
+				<comments>https://newhtml.net/v8-garbage-collection/#comments</comments>
+				<pubDate>Fri, 13 Dec 2013 16:02:10 +0000</pubDate>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+				<category><![CDATA[JavaScirpt]]></category>
+		<category><![CDATA[V8专题]]></category>
+		<category><![CDATA[garbage collection]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[node.js]]></category>
+		<category><![CDATA[Scavenge]]></category>
+		<category><![CDATA[V8]]></category>
+		<category><![CDATA[V8解析]]></category>
+		<category><![CDATA[垃圾回收]]></category>
+		<category><![CDATA[增量标记]]></category>
+		<category><![CDATA[惰性清理]]></category>
+		<category><![CDATA[标记-清理]]></category>
+		<category><![CDATA[标记-紧缩]]></category>
+		<category><![CDATA[翻译]]></category>
+
+		<guid isPermaLink="false">https://newhtml.net/?p=1521</guid>
+				<description><![CDATA[在之前的几篇文章当中，我们深入了V8引擎的实现，讨论了Full Compiler、Crankshaft以及对象 <span class="ellipsis">&#8230;</span> <span class="more-link-wrap"><a href="https://newhtml.net/v8-garbage-collection/" class="more-link"><span>Read More &#8594;</span></a></span>]]></description>
+								<content:encoded><![CDATA[<p>在之前的几篇文章当中，我们深入了V8引擎的实现，讨论了<a href="https://newhtml.net/v8-full-compiler/">Full Compiler</a>、<a href="https://newhtml.net/v8-crankshaft-the-optimizing-compiler/">Crankshaft</a>以及<a href="https://newhtml.net/v8-object-representation/">对象的内部表达</a>。在这篇文章当中，我们来看看V8的 垃圾回收器 。</p>
+<p><span id="more-1521"></span></p>
+<p style="margin-left: 30px"><em>本文来自Jay Conrod的<a href="http://www.jayconrod.com/posts/55/a-tour-of-v8-garbage-collection">A tour of V8: Garbage Collection</a>，其中的术语、代码请以原文为准。</em></p>
+<p>垃圾回收器是一把十足的双刃剑。其好处是可以大幅简化程序的内存管理代码，因为内存管理无需程序员来操作，由此也减少了（但没有根除）长时间运转的程序的内存泄漏。对于某些程序员来说，它甚至能够提升代码的性能。</p>
+<p>另一方面，选择垃圾回收器也就意味着程序当中无法完全掌控内存，而这正是移动终端开发的症结。对于JavaScript，程序中没有任何内存管理的可能——ECMAScript标准中没有暴露任何垃圾回收器的接口。网页应用既没有办法管理内存，也没办法给垃圾回收器进行提示。</p>
+<p>严格来讲，使用垃圾回收器的语言在性能上并不一定比不使用垃圾回收器的语言好或者差。在C语言中，分配和释放内存有可能是非常昂贵的操作，为了使分配的内存能够在将来释放，堆的管理会趋于复杂。而在托管内存的语言中，分配内存往往只是增加一个指针。但随后我们就会看到，当内存耗尽时，垃圾回收器介入回收所产生的巨大代价。一个未经琢磨的垃圾回收器，会致使程序在运行中出现长时间、无法预期的停顿，这直接影响到交互系统（特别是带有动画效果的）在使用上的体验。引用计数系统时常被吹捧为垃圾回收机制的替代品，但当大型子图中的最后一个对象的引用解除后，同样也会有无法预期的停顿。而且引用计数系统在频繁执行读取、改写、存储操作时，也会有可观的性能负担。</p>
+<p>或好或坏，JavaScript需要一个垃圾回收器。V8的垃圾回收器实现现在已经成熟，其性能优异，停顿短暂，性能负担也非常可控。</p>
+<h2>基本概念</h2>
+<p>垃圾回收器要解决的最基本问题就是，辨别需要回收的内存。一旦辨别完毕，这些内存区域即可在未来的分配中重用，或者是返还给操作系统。一个对象当它不是处于活跃状态的时候它就死了（废话）。一个对象处于活跃状态，当且仅当它被一个根对象或另一个活跃对象指向。根对象被定义为处于活跃状态，是浏览器或V8所引用的对象。比如说，被局部变量所指向的对象属于根对象，因为它们的栈被视为根对象；全局对象属于根对象，因为它们始终可被访问；浏览器对象，如DOM元素，也属于根对象，尽管在某些场合下它们只是弱引用。</p>
+<p>从侧面来说，上面的定义非常宽松。实际上我们可以说，当一个对象可被程序引用时，它就是活跃的。比如：</p>
+<pre>
+	function f() {
+	  var obj = {x: 12};
+	  g();   // 可能包含一个死循环
+	  return obj.x;
+	}
+</pre>
+<p><em>译注：这里的<code>obj.x</code>和<code>obj</code>都是活跃的，尽管对其的再度引用是在死循环之后。</em></p>
+<p>很遗憾，我们无法精确地解决这个问题，因为这个问题实际等价于停机问题，无法确定。因此我们做一个等价约定：如果一个对象可经由某个被定义为活跃对象的对象，通过某个指针链所访问，则它就是活跃的。其他的都被视为垃圾。</p>
+<h2>堆的构成</h2>
+<p>在我们深入研究垃圾回收器的内部工作原理之前，首先来看看堆是如何组织的。V8将堆分为了几个不同的区域：</p>
+<ul>
+<li><strong>新生区</strong>：大多数对象被分配在这里。新生区是一个很小的区域，垃圾回收在这个区域非常频繁，与其他区域相独立。</li>
+<li><strong>老生指针区</strong>：这里包含大多数可能存在指向其他对象的指针的对象。大多数在新生区存活一段时间之后的对象都会被挪到这里。</li>
+<li><strong>老生数据区</strong>：这里存放只包含原始数据的对象（这些对象没有指向其他对象的指针）。字符串、封箱的数字以及未封箱的双精度数字数组，在新生区存活一段时间后会被移动到这里。</li>
+<li><strong>大对象区</strong>：这里存放体积超越其他区大小的对象。每个对象有自己<code>mmap</code>产生的内存。垃圾回收器从不移动大对象。</li>
+<li><strong>代码区</strong>：代码对象，也就是包含JIT之后指令的对象，会被分配到这里。这是唯一拥有执行权限的内存区（不过如果代码对象因过大而放在大对象区，则该大对象所对应的内存也是可执行的。<em>译注：但是大对象内存区本身不是可执行的内存区</em>）。</li>
+<li><strong>Cell区、属性Cell区、Map区</strong>：这些区域存放Cell、属性Cell和Map，每个区域因为都是存放相同大小的元素，因此内存结构很简单。</li>
+</ul>
+<p>每个区域都由一组内存页构成。内存页是一块连续的内存，经<code>mmap</code>（或者Windows的什么等价物）由操作系统分配而来。除大对象区的内存页较大之外，每个区的内存页都是1MB大小，且按1MB内存对齐。除了存储对象，内存页还含有一个页头（包含一些元数据和标识信息）以及一个位图区（用以标记哪些对象是活跃的）。另外，每个内存页还有一个单独分配在另外内存区的槽缓冲区，里面放着一组对象，这些对象可能指向其他存储在该页的对象。这就是一套经典配置方案，其他的方案我们稍后讨论。</p>
+<p>有了这些背景知识，我们可以来深入垃圾回收器了。</p>
+<h2>识别指针</h2>
+<p>垃圾回收器面临的第一个问题是，如何才能在堆中区分指针和数据，因为指针指向着活跃的对象。大多数垃圾回收算法会将对象在内存中挪动（以便减少内存碎片，使内存紧凑），因此即使不区分指针和数据，我们也常常需要对指针进行改写。</p>
+<p>目前主要有三种方法来识别指针：</p>
+<ul>
+<li><strong>保守法</strong>：这种方法对于缺少编译器支持的情况非常必要。大体上，我们将所有堆上对齐的字都认为是指针，这就意味着有些数据也会被误认为是指针。于是某些实际是数字的假指针，会被误认为指向活跃的对象，则我们会时常出现一些奇异的内存泄漏。（<em>译注：因为垃圾回收器会以为死对象仍然还有指针指向，错将死对象误认为活跃对象</em>）而且我们也不能移动任何内存区域，因为这很可能会导致数据遭到破坏。这样，我们便无法通过紧凑内存来获得任何好处（比如更容易的内存分配、更少的内存访问、更有效的内存局部性缓存）。C/C++的垃圾回收器扩展会采用这种方式，比如<a href="http://www.hpl.hp.com/personal/Hans_Boehm/gc/" target="_blank">Boehm-Demers-Weiser</a>。<br />
+<em>译注：如果内存是紧凑的，则内存分配时可以更容易分配较大片的内存，而无需因内存碎片而不断查找；同时，由于已分配的内存是连续或近似连续的，而Cahce所能缓存的内存有限，如果内存被Cache缓存起来，无需频繁地迫使Cache更换缓存的内存。C/C++由于指针算术的存在，编译器无法确定哪些内存是真正的垃圾，因而无法给垃圾回收器有效的提示，进而导致垃圾回收器不得不采取这样的保守策略。</em></li>
+<li><strong>编译器提示法</strong>：如果我们和静态语言打交道，则编译器能够准确地告诉我们每个类当中指针的具体位置。而一旦我们知道对象是哪个类实例化得到的，我们就能知道对象中所有的指针。JVM选择了这样的方法来进行垃圾回收。可惜，这种方法对于JS这样的动态语言来说不太好使，因为JS中对象的任何属性既可能是指针，也可能是数据。</li>
+<li><strong>标记指针法</strong>：这种方法需要在每个字的末位预留一位来标记这个字代表的是指针抑或数据。这种方法需要一定的编译器支持，但实现简单，而且性能不俗。V8采用的就是这种方法。某些静态语言也采用了这样的方法，如OCaml。</li>
+</ul>
+<p>V8将所有属于-2<sup>30</sup>&#8230;2<sup>30</sup>-1范围内的小整数（V8内部称其为Smis）以32bit字宽来存储，其中的最低一位保持为<code>0</code>，而指针的最低两位则为<code>01</code>。由于对象以4字节对齐，因此这样表达指针没有任何问题。大多数对象所含有的只是一组标记后的字，因此垃圾回收可以进行的很快。而有些类型的对象，比如字符串，我们确定它只含有数据，因此无需标记。</p>
+<h2>分代回收</h2>
+<p>脚本中，绝大多数对象的生存期很短，只有某些对象的生存期较长。为利用这一特点，V8将堆进行了分代。对象起初会被分配在新生区（通常很小，只有1-8 MB，具体根据行为来进行启发）。在新生区的内存分配非常容易：我们只需保有一个指向内存区的指针，不断根据新对象的大小对其进行递增即可。当该指针达到了新生区的末尾，就会有一次清理（小周期），清理掉新生区中不活跃的死对象。对于活跃超过2个小周期的对象，则需将其移动至老生区。老生区在<em>标记－清除</em>或<em>标记－紧缩</em>（大周期）的过程中进行回收。大周期进行的并不频繁。一次大周期通常是在移动足够多的对象至老生区后才会发生。至于足够多到底是多少，则根据老生区自身的大小和程序的动向来定。</p>
+<p>由于清理发生的很频繁，清理必须进行的非常快速。V8中的清理过程称为Scavenge算法，是按照<a href="http://en.wikipedia.org/wiki/Cheney's_algorithm">Cheney</a>的算法实现的。这个算法大致是，新生区被划分为两个等大的子区：出区、入区。绝大多数内存的分配都会在出区发生（但某些特定类型的对象，如可执行的代码对象是分配在老生区的），当出区耗尽时，我们交换出区和入区（这样所有的对象都归属在入区当中），然后将入区中活跃的对象复制至出区或老生区当中。在这时我们会对活跃对象进行紧缩，以便提升Cache的内存局部性，保持内存分配的简洁快速。</p>
+<p>以下是这个算法的伪代码描述：</p>
+<pre>
+	def scavenge():
+	  swap(fromSpace, toSpace)
+	  allocationPtr = toSpace.bottom
+	  scanPtr = toSpace.bottom
+
+	  for i = 0..len(roots):
+	    root = roots[i]
+	    if inFromSpace(root):
+	      rootCopy = copyObject(&allocationPtr, root)
+	      setForwardingAddress(root, rootCopy)
+	      roots[i] = rootCopy
+
+	  while scanPtr < allocationPtr:
+	    obj = object at scanPtr
+	    scanPtr += size(obj)
+	    n = sizeInWords(obj)
+	    for i = 0..n:
+	      if isPointer(obj[i]) and not inOldSpace(obj[i]):
+	        fromNeighbor = obj[i]
+	        if hasForwardingAddress(fromNeighbor):
+	          toNeighbor = getForwardingAddress(fromNeighbor)
+	        else:
+	          toNeighbor = copyObject(&#038;allocationPtr, fromNeighbor)
+	          setForwardingAddress(fromNeighbor, toNeighbor)
+	        obj[i] = toNeighbor
+
+	def copyObject(*allocationPtr, object):
+	  copy = *allocationPtr
+	  *allocationPtr += size(object)
+	  memcpy(copy, object, size(object))
+	  return copy
+</pre>
+<p>在这个算法的执行过程中，我们始终维护两个出区中的指针：<code>allocationPtr</code>指向我们即将为新对象分配内存的地方，<code>scanPtr</code>指向我们即将进行活跃检查的下一个对象。<code>scanPtr</code>所指向地址之前的对象是处理过的对象，它们及其邻接都在出区，其指针都是更新过的，位于<code>scanPtr</code>和<code>allocationPtr</code>之间的对象，会被复制至出区，但这些对象内部所包含的指针如果指向入区中的对象，则这些入区中的对象不会被复制。逻辑上，你可以将<code>scanPtr</code>和<code>allocationPtr</code>之间的对象想象为一个广度优先搜索用到的对象队列。</p>
+<p><em>译注：广度优先搜索中，通常会将节点从队列头部取出并展开，将展开得到的子节点存入队列末端，周而复始进行。这一过程与更新两个指针间对象的过程相似。</em></p>
+<p>我们在算法的初始时，复制新区所有可从根对象达到的对象，之后进入一个大的循环。在循环的每一轮，我们都会从队列中删除一个对象，也就是对<code>scanPtr</code>增量，然后跟踪访问对象内部的指针。如果指针并不指向入区，则不管它，因为它必然指向老生区，而这就不是我们的目标了。而如果指针指向入区中某个对象，但我们还没有复制（未设置转发地址），则将这个对象复制至出区，即增加到我们队列的末端，同时也就是对<code>allocationPtr</code>增量。这时我们还会将一个转发地址存至出区对象的首字，替换掉Map指针。这个转发地址就是对象复制后所存放的地址。垃圾回收器可以轻易将转发地址与Map指针分清，因为Map指针经过了标记，而这个地址则未标记。如果我们发现一个指针，而其指向的对象已经复制过了（设置过转发地址），我们就把这个指针更新为转发地址，然后打上标记。</p>
+<p>算法在所有对象都处理完毕时终止（即<code>scanPtr</code>和<code>allocationPtr</code>相遇）。这时入区的内容都可视为垃圾，可能会在未来释放或重用。</p>
+<h2>秘密武器：写屏障</h2>
+<p>上面有一个细节被忽略了：如果新生区中某个对象，只有一个指向它的指针，而这个指针恰好是在老生区的对象当中，我们如何才能知道新生区中那个对象是活跃的呢？显然我们并不希望将老生区再遍历一次，因为老生区中的对象很多，这样做一次消耗太大。</p>
+<p>为了解决这个问题，实际上在写缓冲区中有一个列表，列表中记录了所有老生区对象指向新生区的情况。新对象诞生的时候，并不会有指向它的指针，而当有老生区中的对象出现指向新生区对象的指针时，我们便记录下来这样的跨区指向。由于这种记录行为总是发生在写操作时，它被称为写屏障——因为每个写操作都要经历这样一关。</p>
+<p>你可能好奇，如果每次进行写操作都要经过写屏障，岂不是会多出大量的代码么？没错，这就是我们这种垃圾回收机制的代价之一。但情况没你想象的那么严重，写操作毕竟比读操作要少。某些垃圾回收算法（不是V8的）会采用读屏障，而这需要硬件来辅助才能保证一个较低的消耗。V8也有一些优化来降低写屏障带来的消耗：</p>
+<ul>
+<li>大多数的脚本执行时间都是发生在Crankshaft当中的，而Crankshaft常常能静态地判断出某个对象是否处于新生区。对于指向这些对象的写操作，可以无需写屏障。</li>
+<li>Crankshaft中新出现了一种优化，即在对象不存在指向它的非局部引用时，该对象会被分配在栈上。而一个栈上对象的相关写操作显然无需写屏障。（<em>译注：新生区和老生区在堆上。</em>）</li>
+<li>“老→新”这样的情况相对较为少见，因此通过将“新→新”和“老→老”两种常见情况的代码做优化，可以相对提升多数情形下的性能。每个页都以1MB对齐，因此给定一个对象的内存地址，通过将低20bit滤除来快速定位其所在的页；而页头有相关的标识来表明其属于新生区还是老生区，因此通过判断两个对象所属的区域，也可以快速确定是否是“老→新”。</li>
+<li>一旦我们找到“老→新”的指针，我们就可以将其记录在写缓冲区的末端。经过一定的时间（写缓冲区满的时候），我们将其排序，合并相同的项目，然后再除去已经不符合“老→新”这一情形的指针。（<em>译注：这样指针的数目就会减少，写屏障的时间相应也会缩短</em>）</li>
+</ul>
+<h2>“标记－清除”算法与“标记－紧缩”算法</h2>
+<p>Scavenge算法对于快速回收、紧缩小片内存效果很好，但对于大片内存则消耗过大。因为Scavenge算法需要出区和入区两个区域，这对于小片内存尚可，而对于超过数MB的内存就开始变得不切实际了。老生区包含有上百MB的数据，对于这么大的区域，我们采取另外两种相互较为接近的算法：“标记－清除”算法与“标记－紧缩”算法。</p>
+<p>这两种算法都包括两个阶段：标记阶段，清除或紧缩阶段。</p>
+<p>在标记阶段，所有堆上的活跃对象都会被标记。每个页都会包含一个用来标记的位图，位图中的每一位对应页中的一字（<em>译注：一个指针就是一字大小</em>）。这个标记非常有必要，因为指针可能会在任何字对齐的地方出现。显然，这样的位图要占据一定的空间（32位系统上占据3.1%，64位系统上占据1.6%），但所有的内存管理机制都需要这样占用，因此这种做法并不过分。除此之外，另有2位来表示标记对象的状态。由于对象至少有2字长，因此这些位不会重叠。状态一共有三种：如果一个对象的状态为白，那么它尚未被垃圾回收器发现；如果一个对象的状态为灰，那么它已被垃圾回收器发现，但它的邻接对象仍未全部处理完毕；如果一个对象的状态为黑，则它不仅被垃圾回收器发现，而且其所有邻接对象也都处理完毕。</p>
+<p>如果将堆中的对象看作由指针相互联系的有向图，标记算法的核心实际是深度优先搜索。在标记的初期，位图是空的，所有对象也都是白的。从根可达的对象会被染色为灰色，并被放入标记用的一个单独分配的双端队列。标记阶段的每次循环，GC会将一个对象从双端队列中取出，染色为黑，然后将它的邻接对象染色为灰，并把邻接对象放入双端队列。这一过程在双端队列为空且所有对象都变黑时结束。特别大的对象，如长数组，可能会在处理时分片，以防溢出双端队列。如果双端队列溢出了，则对象仍然会被染为灰色，但不会再被放入队列（这样他们的邻接对象就没有机会再染色了）。因此当双端队列为空时，GC仍然需要扫描一次，确保所有的灰对象都成为了黑对象。对于未被染黑的灰对象，GC会将其再次放入队列，再度处理。</p>
+<p>以下是标记算法的伪码：</p>
+<pre>
+	markingDeque = []
+	overflow = false
+
+	def markHeap():
+	  for root in roots:
+	    mark(root)
+
+	  do:
+	    if overflow:
+	      overflow = false
+	      refillMarkingDeque()
+
+	    while !markingDeque.isEmpty():
+	      obj = markingDeque.pop()
+	      setMarkBits(obj, BLACK)
+	      for neighbor in neighbors(obj):
+	        mark(neighbor)
+	  while overflow
+	    
+
+	def mark(obj):
+	  if markBits(obj) == WHITE:
+	    setMarkBits(obj, GREY)
+	    if markingDeque.isFull():
+	      overflow = true
+	    else:
+	      markingDeque.push(obj)
+
+	def refillMarkingDeque():
+	  for each obj on heap:
+	    if markBits(obj) == GREY:
+	      markingDeque.push(obj)
+	      if markingDeque.isFull():
+	        overflow = true
+	        return
+</pre>
+<p>标记算法结束时，所有的活跃对象都被染为了黑色，而所有的死对象则仍是白的。这一结果正是清理和紧缩两个阶段所期望的。</p>
+<p>标记算法执行完毕后，我们可以选择清理或是紧缩，这两个算法都可以收回内存，而且两者都作用于页级（注意，V8的内存页是1MB的连续内存块，与虚拟内存页不同）。</p>
+<p>清理算法扫描连续存放的死对象，将其变为空闲空间，并将其添加到空闲内存链表中。每一页都包含数个空闲内存链表，其分别代表小内存区（&lt;256字）、中内存区（&lt;2048字）、大内存区（&lt;16384字）和超大内存区（其它更大的内存）。清理算法非常简单，只需遍历页的位图，搜索连续的白对象。空闲内存链表大量被scavenge算法用于分配存活下来的活跃对象，但也被紧缩算法用于移动对象。有些类型的对象只能被分配在老生区，因此空闲内存链表也被它们使用。</p>
+<p>紧缩算法会尝试将对象从碎片页（包含大量小空闲内存的页）中迁移整合在一起，来释放内存。这些对象会被迁移到另外的页上，因此也可能会新分配一些页。而迁出后的碎片页就可以返还给操作系统了。迁移整合的过程非常复杂，因此我只提及一些细节而不全面讲解。大概过程是这样的。对目标碎片页中的每个活跃对象，在空闲内存链表中分配一块其它页的区域，将该对象复制至新页，并在碎片页中的该对象上写上转发地址。迁出过程中，对象中的旧地址会被记录下来，这样在迁出结束后V8会遍历它所记录的地址，将其更新为新的地址。由于标记过程中也记录了不同页之间的指针，此时也会更新这些指针的指向。注意，如果一个页非常“活跃”，比如其中有过多需要记录的指针，则地址记录会跳过它，等到下一轮垃圾回收再进行处理。</p>
+<h2>增量标记与惰性清理</h2>
+<p>你应该想到了，当一个堆很大而且有很多活跃对象时，标记-清除和标记-紧缩算法会执行的很慢。起初我研究V8时，垃圾回收所引发的500-1000毫秒的停顿并不少见。这种情况显然很难接受，即使是对于移动设备。</p>
+<p>2012年年中，Google引入了两项改进来减少垃圾回收所引起的停顿，并且效果显著：增量标记和惰性清理。</p>
+<p>增量标记允许堆的标记发生在几次5-10毫秒（移动设备）的小停顿中。增量标记在堆的大小达到一定的阈值时启用，启用之后每当一定量的内存分配后，脚本的执行就会停顿并进行一次增量标记。就像普通的标记一样，增量标记也是一个深度优先搜索，并同样采用白灰黑机制来分类对象。</p>
+<p>但增量标记和普通标记不同的是，对象的图谱关系可能发生变化！我们需要特别注意的是，那些从黑对象指向白对象的新指针。回忆一下，黑对象表示其已完全被垃圾回收器扫描，并不会再进行二次扫描。因此如果有“黑→白”这样的指针出现，我们就有可能将那个白对象漏掉，错当死对象处理掉。（<em>译注：标记过程结束后剩余的白对象都被认为是死对象。</em>）于是我们不得不再度启用写屏障。现在写屏障不仅记录“老→新”指针，同时还要记录“黑→白”指针。一旦发现这样的指针，黑对象会被重新染色为灰对象，重新放回到双端队列中。当算法将该对象取出时，其包含的指针会被重新扫描，这样活跃的白对象就不会漏掉。</p>
+<p>增量标记完成后，惰性清理就开始了。所有的对象已被处理，因此非死即活，堆上多少空间可以变为空闲已经成为定局。此时我们可以不急着释放那些空间，而将清理的过程延迟一下也并无大碍。因此无需一次清理所有的页，垃圾回收器会视需要逐一进行清理，直到所有的页都清理完毕。这时增量标记又蓄势待发了。</p>
+<p>Google近期还新增了并行清理支持。由于脚本的执行线程不会再触及死对象，页的清理任务可以放在另一个单独的线程中进行并只需极少的同步工作。同样的支持工作也正在并行标记上开展着，但目前还处于早期试验阶段。</p>
+<h2>总结</h2>
+<p>垃圾回收真的很复杂。我在文章中已经略过了大量的细节，而文章仍然变得很长。我一个同事说他觉得研究垃圾回收器比寄存器分配还要可怕，我表示确实如此。也就是说，我宁可将这些繁琐的细节交给运行时来处理，也不想将其交给所有的应用开发者来做。尽管垃圾回收存在一些性能问题而且偶尔会出现灵异现象，它还是将我们从大量的细节中解放了出来，以便让我们集中精力于更重要的事情上。</p>
+<p>如果你还想了解更多垃圾回收上的东西，我建议你读读Richard Jones和Rafael Lins写的《<a href="http://www.amazon.com/Garbage-Collection-Algorithms-Automatic-Management/dp/0471941484">Garbage Collection</a>》，这是一个绝好的参考，涵盖了大量你需要了解的内容。你可能还对《<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.63.6386&amp;rep=rep1&amp;type=pdf">Garbage First Garbage-Collection</a>》感兴趣，这是一篇描述JVM所使用的垃圾回收算法的论文。</p>
+]]></content:encoded>
+							<wfw:commentRss>https://newhtml.net/comments/feed.xml</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+		<item>
+		<title>V8 之旅：优化编译器 Crankshaft</title>
+		<link>https://newhtml.net/v8-crankshaft-the-optimizing-compiler/</link>
+				<pubDate>Tue, 03 Dec 2013 13:26:48 +0000</pubDate>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+				<category><![CDATA[JavaScirpt]]></category>
+		<category><![CDATA[V8专题]]></category>
+		<category><![CDATA[Crankshaft]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[node.js]]></category>
+		<category><![CDATA[V8]]></category>
+		<category><![CDATA[V8优化]]></category>
+		<category><![CDATA[V8解析]]></category>
+		<category><![CDATA[翻译]]></category>
+
+		<guid isPermaLink="false">https://newhtml.net/?p=1516</guid>
+				<description><![CDATA[在之前的两篇文章中，我们讨论了V8的Full Compiler和对象的内部表示。在几年前，FC生成的原生代码相 <span class="ellipsis">&#8230;</span> <span class="more-link-wrap"><a href="https://newhtml.net/v8-crankshaft-the-optimizing-compiler/" class="more-link"><span>Read More &#8594;</span></a></span>]]></description>
+								<content:encoded><![CDATA[<p>在之前的两篇文章中，我们讨论了V8的<a href="https://newhtml.net/v8-full-compiler/">Full Compiler</a>和<a href="https://newhtml.net/v8-object-representation/">对象的内部表示</a>。在几年前，FC生成的原生代码相对于JavaScript来说已经不错了，但人们对性能的要求与日俱增，其速度标杆也越来越高，因此衍生出了Crankshaft。</p>
+<p><span id="more-1516"></span></p>
+<p style="margin-left: 30px"><em>本文来自Jay Conrod的<a href="http://www.jayconrod.com/posts/54/a-tour-of-v8-crankshaft-the-optimizing-compiler">A tour of V8: Crankshaft, the optimizing compiler</a>，其中的术语、代码请以原文为准。</em></p>
+<p>Crankshaft是V8的优化编译器。回忆一下，V8有两个编译器，另一个编译器FC负责尽快生成未优化的代码。对于只执行几次的代码，FC生成的代码还是比较理想的。当FC产生的代码运行过一段时间之后，V8会挑选出“热门”的函数，重新用Crankshaft编译。这大大提升了性能。</p>
+<h2>热身完毕</h2>
+<p>如果只看脚本，很难说哪个函数最应当得到优化。V8使用一个运行时性能分析器在脚本运行的时候识别热门的函数。</p>
+<p>Crankshaft刚开始部署时，V8选择在另一线程跑栈采样分析器（stack sampling profiler）。几乎每隔一段时间（桌面版本为1ms，移动版本为5ms）那个线程就被唤醒一次，然后向主线程发送<code>SIGPROF</code>信号。主线程的信号处理代码会重置栈顶的高度（一般是一个标志栈结束的地址）。每当一个函数被调用以及每轮循环的时候，经过JIT的代码会检查是否达到栈顶，如果栈指针超过了栈顶，就会调用运行时来报错。这给了性能分析器一个打断脚本执行的时机。V8运行时会在检查出栈溢出是因为信号<code>SIGPROF</code>时调用性能分析器，于是性能分析器就可以在这时看到栈顶的几帧，然后标注这些函数进而优化。</p>
+<p>这种性能分析器有几个短板。由于采样是几近随机的，性能因素并不主导采样。尽管分析器在统计上倾向于挑选出最热门的函数，但其可能在页面每次重载时得出不同顺序或不同次数的结果。想象一下当时的情景，性能测试的时候得出的是差异很大的结果，V8测试集当中的某些测试甚至能在多次运行时差距达50%。同时这种方案会因其打断代码执行的机制，在整体上对不含循环的大函数有失偏颇。</p>
+<p>V8如今用基于计数的性能分析器（counter-based profiler）。每个经过FC的函数都包含一个计数器，当函数返回或完成一轮循环的时候，就会减少计数的值。而减多少则依据函数或循环的大小，因此这对于大函数和循环来说更加公平。分析器在计数减到0的时候调用，然后和栈采样分析器类似（实际上更加出色），但更侧重性能地选出热门函数。另外这样对于已优化的代码来说没有任何影响，因为只有未优化的代码才会有计数器。</p>
+<p>一旦一个函数被分析器标记为需要优化，指向其代码的指针就会被改写指向为一个V8内置的函数——LazyRecompile，来调用编译器。这样函数就会在下次调用时得到优化。</p>
+<h2>剖析Crankshaft</h2>
+<p>Crankshaft经过以下几个阶段生成代码：</p>
+<ul>
+<li>语法分析：这一阶段负责将源代码翻译为AST。Crankshaft与FC共享同一个语法分析器，但出于空间占用考虑，V8并不保留任何编译器所得到的AST（以及其他中间产物）。而且AST也不常用，生成也很容易。</li>
+<li>作用域分析：在这一阶段，V8将确定变量是如何被使用的，将其与各自的定义链接。局部变量、闭包变量、全局变量的对待方式会各不相同。这个阶段也与FC共享。某些代码的写法（比如用<code>eval</code>动态引入变量）会使一个函数失去优化或内联的资格。</li>
+<li>图生成：Crankshaft使用AST、作用域信息以及FC代码反馈而来的类型信息，来构建Hydrogen控制流程图。内联也发生在这一阶段。Hydrogen是Crankshaft中一个高层次、架构无关的中间代码。</li>
+<li>优化：绝大多数优化都基于Hydrogen控制流程图发生在这一阶段。这是Crankshaft唯一能够与JS线程并行的时候。虽然本文撰写时还不是并行的。</li>
+<li>低级化：优化结束之后，Hydrogen外会生成一个Lithium图。Lithium图是一个低级且架构相关的中间代码。寄存器的分配就是在这一阶段施行的。</li>
+<li>代码生成：在这个最后阶段中，Crankshaft按照Lithium图中的每个指令发送原生指令。元数据，比如重定位信息以及去优化数据，也是在这一阶段生成。完成之后，经过JIT的代码会放在一个Code对象中，然后继续脚本的执行。</li>
+</ul>
+<p>整个结构对于优化编译器来说非常典型，然而某些方面可能会让你惊讶。首先，Crankshaft并没有一个真正的低级表达形式。Hydrogen和Lithium的指令基本上和JS中的操作相对应。在某些情况下，十来个原生指令才对应一个Lithium指令。这可能会导致生成出来的代码中有一定的冗余。第二，Crankshaft一种指令调度都没有。对于x86处理器来说不算大问题，因其最终是乱序执行；但对于一些相对简单的RISC指令集架构，比如ARM，会造成一些麻烦。</p>
+<p>这些缺点大多是因为Crankshaft在性能影响上的重要地位。JS代码在Crankshaft执行时是中断的，这就意味着Crankshaft必须尽快完成任务，而任何附加的阶段和优化都可能得不偿失。V8的开发者们正在为Crankshaft的并行上努力，但这一功能目前还没有打开。V8的堆并不支持多线程访问，而如果不访问堆，则只有优化阶段能够并行。然而使堆变得线程安全是一项复杂的任务，可能会引入额外的同步负担。</p>
+<h2>Hydrogen与Lithium</h2>
+<p>V8的高级中间代码叫做Hydrogen，而低级中间代码叫Lithium。如果你曾经用过LLVM，Hydrogen的结构看起来会有些熟悉。函数被表达为一个由一组区块构成的流程图，其中的每个区块都包含一系列&lt;a href=&quot;http://en <a href="http://biturlz.com/F0PmyZ4">additional resources</a>.wikipedia.org/wiki/Static_single_assignment_form&#8221;&gt;静态单赋值形式</a>（SSA）的指令。每条指令则包含一组操作符和一组操作符调用，因此你可以将其想象为一个叠在流程图之上的数据流图。每个Hydrogen指令表示一个较为高级的操作，比如算术运算、属性的存/取、函数调用或者类型检查。</p>
+<p>大多数优化过程发生在Hydrogen身上或构造Hydrogen的时候。这是Crankshaft所执行的优化：</p>
+<ul>
+<li>动态类型反馈：在图生成的同时，大多数操作会特化为对一个类型的操作。这些类型在FC代码的内联缓存中得到。比如，如果IC实现的是一个读取操作，而这个读取只作用于一种对象的某个属性，特化的Hydrogen代码会将被优化为只处理这一种对象的代码。为此，必要时会加入类型检查。</li>
+<li>内联：发生在图的生成阶段。内联的启发规则非常简单：基本上如果一个函数在调用时已知且内联它是安全的，那么就内联它。大函数（源码中大于600个包括空格在内的字符，或超过196个AST节点）则不会内联。最多只有196个语法节点可在一个函数中内联。</li>
+<li>形式推断：Hydrogen支持三种寄存器中的值：标记值、整型值和双精度浮点。所谓标记值，就是指这个值是封箱的。字符串和对象总是标记值，但数字则不一定。原生整型和双精度浮点更有效率，但所有的值都必须在存到内存中或传递给另一个函数前标记。这一环决定了每个值应有的表达形式。</li>
+<li>静态类型推断：这一步Crankshaft尝试确定函数中各种值的类型。由于一次只能针对一个函数而且大多数操作（比如函数调用、属性读取）产生的类型无法推断，这步效率很低。不过有些类型检查会因为该值有精确的类型信息而省去。</li>
+<li>UInt32分析：V8使用31bits来表示小整数。其最低位保留给垃圾回收器用以判定它是指针还是数字（0表示数字，1表示指针）。Crankshaft可以使用全部32-bit来保存不经过内存的局部变量和临时值，而当超出这一区间时，则需要特殊处理。语义上，JavaScript将所有数字都视为64位双精度浮点，因此允许用整数来表达原本是错误的。但这一步将某些操作归纳为无符号的，于是微小的溢出并不会在这些特定情况下造成麻烦。这对于诸如密码学、压缩和图形处理相关的程序来说非常有用。</li>
+<li>标准化：这步是用来进行简化的。它去掉了不必要的操作，并进行一些简化。</li>
+<li>值编号（GVN）：这是去除冗余的标准步骤。依次处理每个指令，当一个指令处理之后，会生成一个基于其操作、输入以及任何相关数据的哈希值，插入到一个哈希表中。后续如果遇到同样哈希值的指令，则GVN会删除后续的那个。但每当遇到对该指令存在副作用的指令，则从哈希表中清除原先存入的这个指令。比如，对于两个完全一样的读取操作来说，如果中间还有一个存储操作，则这两个读取操作并不能合并。<br />
+移出循环无关代码（LICM）：这个和GVN同时执行。循环中并不依赖循环中其他代码的指令，将被提到循环之前。对循环无关值的类型检查也会被提到循环之前，但这可能会导致某些场景下并不会发生的类型检查也被执行，因此编译器会在这时趋于保守。</li>
+<li>范围分析：这步会确定每个整数操作的上限和下限。这样就有可能去掉一些溢出检查。在实践中，这个并不太精确。</li>
+<li>去除冗余的数组范围检查：去掉某些已在数组元素访问中执行过的多余数组范围检查。</li>
+<li>后推数组下标计算：这一步会反转LICM对一些非常简单的表达式（如数组下标增加或减去一个常数）的效果。所有V8支持的架构都有指令来完成寻址时对下标的简单加减，因此提前这些代码通常也没什么大的好处。</li>
+<li>去除无效代码：这是一种清理工作。它会移除掉Hydrogen指令中无效或者没有副作用的部分。这些指令往往是其他优化所产生的副产品，而程序员自己所写的无效代码则不包含在内：V8可能会在函数运行的过程当中，在优化代码和未优化代码之间切换，而如果优化后的代码缺失了某个未优化代码所需要的值，则可能会造成崩溃。（<em>译注：也就是说，在Crankshaft看来可能无效的代码，很可能只是整个脚本的一部分，而整个脚本中的其它未优化部分，实际是需要那部分看似无效的代码的。</em>）</li>
+</ul>
+<p>Lithium是V8的低级、机器相关的中间代码。实际上它并不是特别的低级：每个Hydrogen指令至多被低级化为一个Lithium指令。有些Hydrogen指令，例如<code>HConstant</code>、<code>HParameter</code>原封不动变成了Lithium指令。其他一些Hydrogen指令会被低级化为某些由操作数衔接起来的指令（而在Hydrogen中它们本是直接相连的）。这里的操作数可能是常数、寄存器，或者栈槽。寄存器分配器将决定每个操作数的类型和其存放位置。大多数指令只支持寄存器操作数，因此寄存器分配器需要在这些操作数中间增加存取的指令。</p>
+<p>原生代码将从Lithium指令得出。简单的Lithium指令可能只对应一条原生指令，而某些复杂的Lithium指令则会对应10-20条原生指令（ARM如此，其他架构可能有差异）。</p>
+<p>即使是在只处理常规使用的优化代码当中，你也会因JavaScript脚本最终产生的复杂代码而咋舌。举例来说，以下是为一个JS对象增加一个属性的代码：</p>
+<pre>
+	;; HCheckNonSmi: 检查低位，确定目标是整数
+	;; 整数的最低位总是0
+	 40  tst r0, #1
+	 44  beq +188 -&gt; 232
+
+	;; HCheckMaps: 将目标的Map与已知Map对比
+	 48  ldr r9, [r0, #-1]
+	 52  movw ip, #41857             ;; object:  <Map>
+	 56  movt ip, #17120
+	 60  cmp r9, ip
+	 64  bne +172 -&gt; 236
+
+	;; HCheckPrototypeMaps: 检查目标的原型链，
+	;; 以防有同名的只读属性
+	 68  movw r2, #38241             ;; object:  Cell for  
+	 72  movt r2, #15696
+	 76  ldr r2, [r2, #+3]
+	 80  ldr r1, [r2, #-1]
+	 84  movw ip, #41937             ;; object:  <Map>
+	 88  movt ip, #17120
+	 92  cmp r1, ip
+	 96  bne +144 -&gt; 240
+	100  movw r2, #46869             ;; object:  
+	104  movt r2, #14674
+	108  ldr r1, [r2, #-1]
+	112  movw ip, #36057             ;; object:  <Map>
+	116  movt ip, #17120
+	120  cmp r1, ip
+	124  bne +116 -&gt; 240
+
+	;; HConstant: 这才是我们要存储的值
+	128  mov r1, #198
+
+	;; HStoreNamedField: 以下是存储操作
+	;; 首先，读取Transition的Map
+	132  movw r9, #41977             ;; object:  <Map>
+	136  movt r9, #17120
+
+	;; 接着，将其存入该对象的首字
+	140  str r9, [r0, #-1]
+
+	;; 可能还需要将Map的变动通知垃圾回收器
+	;; 这里是一个写操作的内存屏障，
+	;; 递增标记需要这样的保证
+	144  sub r2, r0, #1
+	148  bfc r9, #0, #20
+	152  ldr r9, [r9, #+12]
+	156  tst r9, #4
+	160  beq +36 -&gt; 196
+	164  mov r9, r0
+	168  bfc r9, #0, #20
+	172  ldr r9, [r9, #+12]
+	176  tst r9, #8
+	180  beq +16 -&gt; 196
+	184  movw ip, #37056
+	188  movt ip, #10611
+	192  blx ip
+
+	;; 现在我们终于可以存储那个属性了
+	;; 因为这次存储的是整数，无需通知垃圾回收器
+	;; 但通常这里还需要另一个内存屏障
+	196  str r1, [r0, #+11]
+</pre>
+<h2>栈上替换</h2>
+<p>我们讲性能分析器时说过，经过分析器标记的函数，编译器会在下一次调用时对其进行优化编译，而当编译工作结束后，运行时即会载入新的优化代码来执行。对于大多数函数来说，这种机制已经足够好了，但对于包含热门循环，且只运行一次的函数来说，这个机制就有瑕疵了。</p>
+<pre>
+	function calledOnce() {
+	  for (var i = 0; i &lt; 100000; i++)
+	    // ... 这里是需要优化的部分
+	}
+</pre>
+<p>这类函数仍然需要优化，因此一种略复杂的机制应运而生。如果性能分析器被触发时，一个函数已被标记为需要优化但还没有再次被调用，则分析器会尝试栈上替换。分析器会直接调用Crankshaft，立即生成出优化代码；当Crankshaft执行完毕时，V8会依据原先包含该函数的栈帧中的其他代码，构造一个新的栈帧来存放优化后的代码。这时将旧的栈帧弹出，压入新的栈帧，恢复脚本的运行。</p>
+<p>这一过程需要两个编译器的支持。FC需要产生包含该栈帧中其他值的位置信息，而Crankshaft需要生成这些值即将存放的新位置的信息。同时，Crankshaft还需要生成额外的“接入层”，来将这些值从栈帧读取到正确的寄存器当中。</p>
+<h2>去优化</h2>
+<p>上面提到过，Crankshaft生成的代码只是特化针对于FC所遇到的类型，因此Crankshaft无法处理所有可能的值。我们需要一种机制来在遇到未知类型和算术运算溢出时优雅降级，换用FC的代码。这种机制就叫做去优化。通常去优化就是进行栈上替换的逆操作。然而这里面有个小问题：Crankshaft支持内联，因此类型问题有可能会在内联代码之内发生。这时去优化过程将不得不对多个栈帧进行操作。</p>
+<p>为了使去优化器的工作更加容易，Crankshaft会生成去优化的输入数据，每个去优化可能发生的地方，都会有相应的命令关联。去优化器将通过这些命令，来将寄存器、栈槽等从优化代码中的值，转换为未优化代码中的值。每条命令都包含有与栈相关的操作，比如“从寄存器r6中获取值，将其封箱为数字，然后压入下一栈槽”。去优化器的任务就是寻找正确的命令，将其执行，然后弹出优化的栈帧，压入相应未优化的栈帧。</p>
+<h2>总结</h2>
+<p>Crankshaft是V8的秘密武器。通过运行时的性能分析器，V8能够检测出最需要优化的函数。由于V8的去优化随时可能需要将代码降为未优化代码，Crankshaft可以在一定程度上具有推断能力，只优化特定情况下的代码。</p>
+<p>在将来，Crankshaft很可能会并行。由于可以腾出更多的时间优化更多的代码，这能够让V8的性能更高。</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>折叠你的DOM：OriDomi</title>
+		<link>https://newhtml.net/%e6%8a%98%e5%8f%a0%e4%bd%a0%e7%9a%84dom%ef%bc%9aoridomi/</link>
+				<pubDate>Sat, 30 Nov 2013 12:33:04 +0000</pubDate>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+				<category><![CDATA[CSS3]]></category>
+		<category><![CDATA[JavaScirpt]]></category>
+		<category><![CDATA[jQuery]]></category>
+		<category><![CDATA[快速分享]]></category>
+		<category><![CDATA[移动设备]]></category>
+		<category><![CDATA[资源]]></category>
+		<category><![CDATA[页面效果]]></category>
+		<category><![CDATA[css3 transform]]></category>
+		<category><![CDATA[HTML5]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[jquery]]></category>
+		<category><![CDATA[jquery plugin]]></category>
+		<category><![CDATA[OriDomi]]></category>
+		<category><![CDATA[创意]]></category>
+		<category><![CDATA[折纸效果]]></category>
+
+		<guid isPermaLink="false">https://newhtml.net/?p=1513</guid>
+				<description><![CDATA[想给页面产生一个折纸的效果吗？嫌麻烦？没关系，OriDomi帮你解决。 OriDomi提供了一组API，可以将 <span class="ellipsis">&#8230;</span> <span class="more-link-wrap"><a href="https://newhtml.net/%e6%8a%98%e5%8f%a0%e4%bd%a0%e7%9a%84dom%ef%bc%9aoridomi/" class="more-link"><span>Read More &#8594;</span></a></span>]]></description>
+								<content:encoded><![CDATA[<p>想给页面产生一个折纸的效果吗？嫌麻烦？没关系，<a href="http://oridomi.com/" target="_blank">OriDomi</a>帮你解决。<br />
+<span id="more-1513"></span></p>
+<p>OriDomi提供了一组API，可以将DOM元素进行各种有趣的折纸效果。</p>
+<h2>如何使用</h2>
+<p>OriDomi主要面向支持CSS Transform效果的浏览器，在这一基础之上，你可以选用jQuery或直接使用浏览器的API，甚至直接使用选择器来初始化OriDomi：</p>
+<pre>
+var folded = new OriDomi(document.getElementsByClassName('paper')[0]); // 浏览器API来初始化
+
+var folded = new OriDomi('.paper'); // 直接使用选择器
+
+var $folded = $('.paper').oriDomi({/* options object */}); // 使用jQuery
+$folded.oriDomi('accordion', 20); // 折叠
+</pre>
+<p>非常简单。</p>
+<p>为了方便将多个效果连放，OriDomi还可以将效果级联：</p>
+<pre>
+folded.curl(50).collapse().setSpeed(2000).stairs(-29).foldUp().unfold();
+</pre>
+<h2>一隅实现</h2>
+<p>OriDomi是如何实现的？实际上如果只是简单的翻转，那么使用CSS的transform就够了，但是有趣的地方在于OriDomi的折叠，似乎并不在意你的DOM是什么样的结构。</p>
+<p>简单的观察OriDomi之后可以发现，OriDomi实际上将你所要折叠的DOM复制了很多份，折叠效果的秘诀就在于，将多份同样的DOM翻转不同的角度，之后进行叠加，这样看起来就好像一个DOM被折叠起来。</p>
+<h2>许可证</h2>
+<p>OriDomi使用非常友好的MIT协议。</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>V8 之旅：对象表示</title>
+		<link>https://newhtml.net/v8-object-representation/</link>
+				<pubDate>Thu, 28 Nov 2013 16:45:57 +0000</pubDate>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+				<category><![CDATA[JavaScirpt]]></category>
+		<category><![CDATA[V8专题]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[node.js]]></category>
+		<category><![CDATA[V8]]></category>
+		<category><![CDATA[v8 object representation]]></category>
+		<category><![CDATA[V8对象表示]]></category>
+		<category><![CDATA[V8解析]]></category>
+		<category><![CDATA[翻译]]></category>
+
+		<guid isPermaLink="false">https://newhtml.net/?p=1509</guid>
+				<description><![CDATA[在前一篇文章中，我们观察了V8的简单编译器——Full Compiler。在我们继续观察Crankshaft之 <span class="ellipsis">&#8230;</span> <span class="more-link-wrap"><a href="https://newhtml.net/v8-object-representation/" class="more-link"><span>Read More &#8594;</span></a></span>]]></description>
+								<content:encoded><![CDATA[<p>在<a href="https://newhtml.net/v8-full-compiler/">前一篇文章</a>中，我们观察了V8的简单编译器——Full Compiler。在我们继续观察Crankshaft之前，为更好地理解它，我们首先来看看V8在内存中如何表达对象。</p>
+<p><span id="more-1509"></span></p>
+<p style="margin-left: 30px"><em>本文来自Jay Conrod的<a href="http://www.jayconrod.com/posts/52/a-tour-of-v8-object-representation">A tour of V8: object representation</a>，其中的术语、代码请以原文为准。</em></p>
+<h2>概览</h2>
+<p>简易的图表或许是了解对象表示的最为快速直观的方法。</p>
+<p><a href="https://newhtml.net/wp-content/uploads/2013/11/object-representation.png"><img src="https://newhtml.net/wp-content/uploads/2013/11/object-representation.png" alt="object-representation" width="400" height="475" class="aligncenter size-full wp-image-1511" srcset="https://newhtml.net/wp-content/uploads/2013/11/object-representation.png 400w, https://newhtml.net/wp-content/uploads/2013/11/object-representation-252x300.png 252w" sizes="(max-width: 400px) 100vw, 400px" /></a></p>
+<p>所有的对象内存区都会有一个Map指针，用以描述该对象的结构。绝大多数对象将其自身的属性存放在一块内存中（“a”和“b”）；附加的命名属性通常会存放在一个单独的数组中（“c”和“d”）；而数字式的属性则单独存放在另一个地方，通常是一个连续的数组。</p>
+<p>这张图仅仅表示已被优化的JS对象的通常状态，另有一些状态来处理其他情况。如果你对此抱有兴趣，继续读下文吧。</p>
+<h2>属性的怪异属性</h2>
+<p>V8有它的难处：JavaScript标准中允许开发者以非常灵活的方式定义对象，因此很难用一种形式来高效地表示对象。一个对象基本上就是一堆属性的集合：也就是一群键值对。你可以以两种方式来访问对象的属性：</p>
+<pre>
+	obj.prop
+	obj["prop"]
+</pre>
+<p>根据标准，属性的名称永远是字符串。如果你用不是字符串的东西来作为属性的名称，那它将会被隐式转换为字符串。所以一个怪异的情况就是，如果用数字作为属性名，则数字也会被转换为字符串（至少根据标准就是这样）。因此，你可以以小数或者负数来作为下标。</p>
+<pre>
+	obj[1];    //
+	obj["1"];  // 这些都是同一个属性哦
+	obj[1.0];  //
+
+	var o = {toString: function () { return "-1.5"; } };
+	obj[-1.5]; // 这俩也是同一个属性
+	obj[o];    // 因为o转换成了字符串
+</pre>
+<p>数组在JS中也只是带有神奇<code>length</code>属性的对象。大多数数组的属性名都是非负整数，而<code>length</code>的值则来计算于这些属性名中最大的那个加一，比如：</p>
+<pre>
+	var a = new Array();
+	a[100] = "foo";
+	a.length;             // 返回101
+</pre>
+<p>除此之外数组和普通的对象没什么区别。函数也是对象，只不过它们的<code>length</code>属性返回的是其定义的参数个数。</p>
+<h2>字典模式</h2>
+<p><em>译注，也即哈希表模式</em></p>
+<p>既然JavaScript中的对象就是键值对映射，为何不直接以哈希表来表示对象呢？这种方式没什么问题，V8内部实际上也用了这样的方式来表达一些难以用优化形式表达的对象（后文详述）。但访问哈希表中的值要比访问指定偏移的值慢多了。</p>
+<p>我们来看看字符串和哈希表在V8中如何工作。字符串有多种表达方式，用来表示属性名的是最常见的ASCII码序列——所有字符挨个排列，每个字符1字节。</p>
+<pre>
+	0:  map (字符串类型)
+	4:  length (字符数)
+	8:  hash code (惰性计算而来)
+	12: characters...
+</pre>
+<p><em>译注：左边是偏移量，右边是该偏移量起始内存存放的值含义；从0开始，除最后一处外每个要素占用4字节，最后一处则是长度为<code>length</code>的字符</em></p>
+<p>字符串通常不可变，唯一可能变的是惰性计算而来的哈希值。用做属性名的字符串被称为<strong>符号</strong>，这意味着它必须独有（<em>译注：原文uniquified，意思是这个字符串对象不会因为在其他地方也引用了，导致其它地方可以对这个对象的内部进行修改</em>），非独有的字符串如果被用作属性名，都会被单独复制一份出来，以便不受其它修改的影响。</p>
+<p>V8中的哈希表由一个包含键和值的大数组组成。初始时，所有的键和值都被初始化为<code>undefined</code>（一个特殊值），当有键值对插入到哈希表中时，键的哈希值被计算出来，其低位被用作数组的下标。如果数组的该位置已经被占用，则哈希表尝试（取模过后的）下一个位置，以此类推。以下是这一过程的伪代码：</p>
+<pre>
+	insert(table, key, value):
+		table = ensureCapacity(table, length(table) + 1)
+		code = hash(key)
+		n = capacity(table)
+		index = code (mod n)
+		while getKey(table, index) is not undefined:
+			index += 1 (mod n)
+		set(table, index, key, value)
+
+	lookup(table, key):
+		code = hash(key)
+		n = capacity(table)
+		index = code (mod n)
+		k = getKey(table, index)
+		while k is not null or undefined
+				and k != key:
+			index += 1 (mod n)
+			k = getKey(table, index)
+		if k == key:
+			return getValue(table, index)
+		else:
+			return undefined
+</pre>
+<p>由于符号字符串是独有的，这里的<code>hash code</code>至多计算一次，计算该值和对比键值通常都很快。然而这一算法仍然不够简单，导致于每次访问对象的属性都会慢下来。V8会尽可能地避免这种表达方式。</p>
+<h2>快速的对象内属性</h2>
+<p>在Lars Bak（V8的缔造团队领导者）2008年的<a href="http://www.youtube.com/watch?v=hWhMKalEicY">这段视频</a>当中，他讲述了一种可以在通常情况下更快速访问属性的对象表达方式。考虑如下的构造函数：</p>
+<pre>
+	function Point(x, y) {
+		this.x = x;
+		this.y = y;
+	}
+</pre>
+<p>像这样的构造函数是最为多见的。绝大多数时间里，同一构造函数所产生的对象会拥有以相同顺序赋值的相同属性。既然这些对象有着如此类似的结构，我们在内存中就可以以这样相同的结构来布局这些对象。</p>
+<p>V8将这种描述对象的方式称为<strong>Map</strong>。你可以假想Map为一张填满描述符的表，每一项都表示一个属性。Map也包含其他信息，比如对象的大小以及指向构造函数和原型的指针等，但这里我们主要关注这些描述符。同样结构的对象，通常会共享同一个Map。一个完成初始化的<code>Point</code>实例可能就像这样：</p>
+<pre>
+	Map M2
+		object size: 20 (2个属性的空间)
+		"x": FIELD at offset 12
+		"y": FIELD at offset 16
+</pre>
+<p>现在你可能会想到，不是所有的<code>Point</code>实例都有相同的属性。当<code>Point</code>的实例刚刚在内存中开辟空间时（在构造函数中的代码真正执行前），它是没有任何属性的，Map M2并不符合它的结构。另外，我们也可以在构造函数完成后随时为它增加新的其他属性。</p>
+<p>V8处理通过一种特殊的描述符来处理这种情形：<strong>Transition</strong>。当增加一个新的属性时，除非迫不得已，我们不会创建新的Map，而是尽可能使用一个现存符合结构的Map。Transition描述符就是用来指向这些Map的。</p>
+<pre>
+	<Point object is allocated>
+
+	Map M0
+		"x": TRANSITION to M1 at offset 12
+
+	this.x = x;
+
+	Map M1
+		"x": FIELD at offset 12
+		"y": TRANSITION to M2 at offset 16
+
+	this.y = y;
+
+	Map M2
+		"x": FIELD at offset 12
+		"y": FIELD at offset 16
+</pre>
+<p>在上面的例子中新的<code>Point</code>实例从没有任何Field的M0开始；在第一次赋值时，对象的Map指针指向了M1，属性x的值存放在了偏移量12的位置；在第二次赋值时，Map指针指向了M2，属性y的值放在了偏移量16的位置。</p>
+<p>如果在M2的基础上再新增属性呢？</p>
+<pre>
+	Map M2
+		"x": FIELD at offset 12
+		"y": FIELD at offset 16
+		"z": TRANSITION to M3 at offset 20
+
+	this.z = z;
+
+	Map M3
+		"x": FIELD at offset 12
+		"y": FIELD at offset 16
+		"z": FIELD at offset 20
+</pre>
+<p>如果新增的属性之前没有，则我们会通过复制M2创建一个新的Map，M3，然后将一个新的FIELD描述符增加在M3上。同时我们要在M2上增加一个TRANSITION描述符。注意，新增TRANSITION是修改Map为数不多的情况之一，通常Map是不可变的。</p>
+<p>如果对象的属性并不是以相同的顺序出现呢？比如：</p>
+<pre>
+	function Point(x, y, reverse) {
+		if (reverse) {
+			this.x = x;
+			this.y = y;
+		} else {
+			this.y = x;
+			this.x = y;
+		}
+	}
+</pre>
+<p>在这种情况下，我们最终会得到一个Transition树，而不是链。初始的Map（上面的M0）将会有两个Transition，具体代码中转向哪个，会根据<code>x</code>和<code>y</code>的赋值顺序来定。正因为这样，不是所有的<code>Point</code>都会有相同的Map了。</p>
+<p>这正是事情变糟的地方。V8对于这样的小规模分支情形可以容忍，但如果你的代码中充斥着以同一个构造函数得出的随机赋值对象，V8就会将其退化到字典模式，将属性存放在哈希表中。否则就会有大量的Map涌现。</p>
+<h2>对象内的稀疏追踪</h2>
+<p>你可能好奇V8如何确定为一个对象保留多少内存。很明显，我们不希望每次增加属性都重新开辟内存，同时也不想为一个小对象预留大片的内存。V8使用一个叫做对象内稀疏追踪（<em>译注，原文：In-object slack tracking</em>）的办法来确定为构造函数的新实例分配多少内存。</p>
+<p>一开始，构造函数所产生的对象会被分配较多的内存：足够存放32个快速属性的内存。一旦该构造函数实例化了足够多次（最后一次看的时候是8次），V8就会选取其中最大的实例，通过Transition指针遍历该构造函数对应的Map。新实例分配的内存，将直接使用遍历得来的最大内存值。而最开始实例化出来的对象，也采用了非常精明的方式来缩减内存占用。当对象初始化时，对象所得的内存将以接近垃圾回收器可回收内存的形式出现。由于对象的Map标明了它的内存占用大小，垃圾回收器不会直接回收这片内存。直到稀疏追踪的过程完成之后，Map中的内存大小被重新修正，相应对象的内存占用也就小了。此时垃圾回收器会回收掉这些已经是可回收的内存，而原先的对象也无需重新挪动。</p>
+<p>现在我估计你的下一个问题是，“如果一个对象在稀疏追踪结束之后又增加了新的属性呢？”。这就要依靠一个单独的数组来存放这些附加的属性。只要有属性加入，这个数组随时可以重新分配为更大的数组。</p>
+<p><em>译注：回忆一下文章开始的那张图吧</em></p>
+<h2>成员函数与原型</h2>
+<p>JavaScript没有类，因此它的成员函数调用与C++及Java不同。JavaScript中的成员函数只是普通的属性。在下面的例子中，<code>distance</code>只是<code>Point</code>对象的一个属性，它指向<code>PointDistance</code>函数。JavaScript中的任何函数都可以作为成员函数，并且通过<code>this</code>来访问其目标对象。</p>
+<p><em>译注：在C++中，obj.method(param)实际是C代码method(this, param)的语法糖，因此this指针实际是函数的目标对象，而不是函数的发起者。</em></p>
+<pre>
+	function Point(x, y) {
+		this.x = x;
+		this.y = y;
+		this.distance = PointDistance;
+	}
+
+	function PointDistance(p) {
+		var dx = this.x - p.x;
+		var dy = this.y - p.y;
+		return Math.sqrt(dx*dx, dy*dy);
+	}
+</pre>
+<p>如果<code>distance</code>像普通的对象内属性一样对待，那很显然会占用大量的内存空间，原因是每一个<code>Point</code>实例都会有一个Field来存放这个共同的属性。对于有大量成员函数的对象更是如此。我们可以对此改进。</p>
+<p>C++解决这个问题的方法是虚表（<em>译注：原文v-table</em>）。虚表是一个存放各个虚函数指针的数组。带有虚函数的类的每个实例，都会有一个指向该类虚表的指针。当你调用虚函数时，程序会读取虚表，并按照虚表中该虚函数的地址跳转执行。在V8中，我们已经有了这么一个类似的表，它就是Map。</p>
+<p>为了让Map有类似虚表的功能，我们需要为其增加一种新的描述符：Constant Function。CF类型的描述符表示该对象有一个已知名称的属性，该属性不存放在对象中，而是直接尾随描述符。</p>
+<pre>
+	<Point object is allocated>
+
+	Map M0
+		"x": TRANSITION to M1 at offset 12
+
+	this.x = x;
+
+	Map M1
+		"x": FIELD at offset 12
+		"y": TRANSITION to M2 at offset 16
+
+	this.y = y;
+
+	Map M2
+		"x": FIELD at offset 12
+		"y": FIELD at offset 16
+		"distance": TRANSITION to M3 <PointDistance>
+
+	this.distance = PointDistance;
+
+	Map M3
+		"x": FIELD at offset 12
+		"y": FIELD at offset 16
+		"distance": CONSTENT_FUNCTION <PointDistance>
+</pre>
+<p>注意，转换到另一个Map只会在描述符的函数与实际函数一致时才会发生。因此如果程序员对<code>PointDistance</code>重新赋值为另一个值，则该Transition不再有效，Map也会重新创建。同时注意，我们并不像虚表那样仅仅是跳转到虚函数，而是会生成一个包含函数地址的优化代码，以便在下次执行时，一旦发现对象使用的Map是这个Map并要调用该函数，则直接跳转过去。</p>
+<p>JavaScript中还有另一种方法来提供公共属性，那就是通过构造函数所关联的原型对象。对于一个构造函数的实例来说，原型对象所拥有的属性，它也可以直接使用。举例来说：</p>
+<pre>
+	function Point(x, y) {
+		this.x = x;
+		this.y = y;
+	}
+
+	Point.prototype.distance = function(p) {
+		var dx = this.x - p.x;
+		var dy = this.y - p.y;
+		return Math.sqrt(dx*dx, dy*dy);
+	}
+
+	...
+	var u = new Point(1, 2);
+	var v = new Point(3, 4);
+	var d = u.distance(v);
+</pre>
+<p>这样的代码随处可见，同时也是实现继承的一种范式，因为原型还可以有自己的原型。<code>instanceof</code>操作符所<a href="http://stackoverflow.com/a/9220317/1891">针对的就是原型链</a>。</p>
+<p>和普通对象一样，V8也会将原型的成员函数以CF描述符来表示。调用原型的函数会比直接调用对象自己的函数略慢，因为编译器不仅需要检查目标对象的Map，同时也要检查原型链上的其他Map。但这不会产生大的性能问题，对于开发者来说也不应影响代码书写。</p>
+<h2>数字式属性：Fast Element</h2>
+<p>至此，我们已经讨论了普通属性和方法，并且假设对象总是以相同顺序构造相同的属性。但这对于数字式的属性（以下标的形式来访问的数组元素）并不成立，同时任何对象都有可能像数组一样使用，因此我们需要对数组一样的对象区别对待。记住，根据标准，所有的属性都必须是字符串，其他类型会先转换为字符串。</p>
+<p>我们将属性名为非负整数（0、1、2……）的属性称为Element。V8中，Element的存放和其他属性是分开的。每个对象都有一个指向Element数组的指针，对象Map中的Element Field将反映出Element是如何存储的。注意，Map中并不包含Element的描述符，但可能包含其它有着不同Element类型的同一种Map的Transition描述符（<em>译注：换言之，一个Map只对应一种Element数组，如果Element数组的类型不同，会形成一个Transition。</em>）。大多数情况下，对象都会有Fast Element，也就是说这些Element以连续数组的形式存放。有三种不同的Fast Element：</p>
+<ul>
+<li>Fast small integers</li>
+<li>Fast doubles</li>
+<li>Fast values</li>
+</ul>
+<p>根据标准，JS中的所有数字都理应以64位浮点数形式出现，尽管我们平时处理的都是整数。因此V8尽可能以31位带符号整数来表达数字（最低位总是0，这有助于垃圾回收器区分数字和指针）。因此含有Fast small integers类型的对象，其Element类型只会包含这样的数字。如果需要存储小数、大整数或其他特殊值，如-0，则需要将数组提升为Fast doubles。于是这引入了潜在的昂贵的复制-转换操作，但通常不会频繁发生。Fast doubles仍然是很快的，因为所有的数字都是无封箱存储的。但如果我们要存储的是其他类型，比如字符串或者对象，则必须将其提升为普通的Fast Element数组。</p>
+<p>JavaScript不提供任何确定存储元素多少的办法。你可能会说像这样的办法，<code>new Array(100)</code>，但实际上这仅仅针对<code>Array</code>构造函数有用。如果你将值存在一个不存在的下标上，V8会重新开辟更大的内存，将原有元素复制到新内存。V8可以处理带空洞的数组，也就是只有某些下标是存有元素，而期间的下标都是空的。其内部会安插特殊的哨兵值，因此试图访问未赋值的下标，会得到<code>undefined</code>。</p>
+<p>当然，Fast Element也有其限制。如果你在远远超过当前数组大小的下标赋值，V8会将数组转换为字典模式，将值以哈希表的形式存储。这对于稀疏数组来说很有用，但性能上肯定打了折扣，无论是从转换这一过程来说，还是从之后的访问来说。如果你需要复制整个数组，不要逆向复制（索引从高到低），因为这几乎必然触发字典模式。</p>
+<pre>
+	// 这会大大降低大数组的性能
+	function copy(a) {
+		var b = new Array();
+		for (var i = a.length - 1; i >= 0; i--)
+			b[i] = a[i];
+		return b;
+	}
+</pre>
+<p>由于普通的属性和数字式属性分开存放，即使数组退化为字典模式，也不会影响到其他属性的访问速度（反之亦然）。</p>
+<h2>总结</h2>
+<p>这篇文章中我们观察了V8内部是如何表示对象及其属性的。V8为通用接口提供了针对具体场景可切换的数据存储模型，这作为VM语言的一项优势，对于编译型语言来说是难以企及的：那些语言要么只能小范围优化，要么则依赖于程序员对对象结构的控制。</p>
+<p>在接下来的文章中，我们要观察V8的优化编译器——Crankshaft，以及它是如何利用本文中的这些结构优势来生成高效代码的。</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>V8 之旅：full compiler</title>
+		<link>https://newhtml.net/v8-full-compiler/</link>
+				<comments>https://newhtml.net/v8-full-compiler/#comments</comments>
+				<pubDate>Wed, 27 Nov 2013 15:55:28 +0000</pubDate>
+		<dc:creator><![CDATA[liuyanghejerry]]></dc:creator>
+				<category><![CDATA[JavaScirpt]]></category>
+		<category><![CDATA[V8专题]]></category>
+		<category><![CDATA[full compiler]]></category>
+		<category><![CDATA[javascript]]></category>
+		<category><![CDATA[node.js]]></category>
+		<category><![CDATA[V8]]></category>
+		<category><![CDATA[翻译]]></category>
+
+		<guid isPermaLink="false">https://newhtml.net/?p=1503</guid>
+				<description><![CDATA[在过去的五年中，JavaScript的性能有了极大的提升，这主要归功于JavaScript虚拟机的执行机制由解 <span class="ellipsis">&#8230;</span> <span class="more-link-wrap"><a href="https://newhtml.net/v8-full-compiler/" class="more-link"><span>Read More &#8594;</span></a></span>]]></description>
+								<content:encoded><![CDATA[<p>在过去的五年中，JavaScript的性能有了极大的提升，这主要归功于JavaScript虚拟机的执行机制由解释演变为了JIT。现在，JavaScript成为了HTML5的中坚力量，推动着新一波Web技术的发展。JavaScript引擎中，V8是最早使用原生代码的引擎之一。V8现已成为了Google Chrome、Android浏览器、WebOS及Node.js这样的其他项目中不可分割的重要组件。</p>
+<p><span id="more-1503"></span></p>
+<p style="margin-left: 30px"><em>本文来自Jay Conrod的<a href="http://www.jayconrod.com/posts/51/a-tour-of-v8-full-compiler">A tour of V8: full compiler</a>，其中的术语、代码请以原文为准。</em></p>
+<p>一年多前，我（指的是原作者）进入了我们公司的一个负责V8在我们ARM产品上优化的团队。从那时算起，由于软硬件性能的提升，我已亲眼见到SunSpider性能翻倍，V8性能测试提升近50%。</p>
+<p>V8是一个非常有趣的项目，然而它的文档却非常分散。在接下来的几篇文章中，我将在较高的层面上对其做一个概述，希望对其他同样对VM或编译器内部原理感兴趣的朋友们能有所帮助。</p>
+<h2>全局架构</h2>
+<p>V8将所有JavaScript代码编译为原生代码执行，其中没有任何的解释器以及字节码参与。编译以函数为单位，一次编译一个（这与FireFox VM原有的TraceMonkey引擎相反，TraceMonkey为追踪式编译，并不以函数为单位）。通常，函数在初次调用之前是不会被编译的，因此如果你引用了一个大型的脚本库，VM并不会花大量的时间去编译那些根本没用到的部分。</p>
+<p>V8实际上有两个不同的JavaScript编译器。我个人喜欢将其看作<a href="2">一个简单编译器及一个辅助编译器</a>（<em>译注，这里看起来没有一个正经的，但实际上两个词汇描述的方面不同。前者指的是机制简单的编译器，后者指的是使用频度低的编译器。</em>）。Full Compiler（<em>对应简单编译器<em>）是一个不含优化的编译器，其工作就是尽快生成原生代码，以保持页面始终快速运转。Crankshaft（</em>对应辅助编译器</em>）则是一个带有优化能力的编译器。V8会将任何初次遇到的代码使用FC编译，之后再使用内置的性能分析器挑选频度高的函数，使用Crankshaft优化。由于V8基本上是单线程的（截至3.14版），任何一个编译器运行时，都会打断脚本的执行。在V8未来的版本中，Crankshaft（或者至少其中一部分）将会在一个单独的线程中运行，与JavaScript的执行并发，以便进行更多昂贵的优化。</p>
+<h2>为何没有字节码？</h2>
+<p>大多数VM都有一个字节码解释器，但V8却没有。你可能好奇为何原本应当先编译为字节码再执行的过程，被FC替换掉了。原因是，编译为原生代码并不会比编译为字节码耗去太多。考虑如下两个过程：</p>
+<div style="float: left; width: 50%;">
+	字节码编译：</p>
+<ul>
+<li>语法分析（解析）</li>
+<li>作用域分析</li>
+<li>将语法树转换为字节码</li>
+</ul>
+</div>
+<div style="float: right; width: 50%;">
+	原生代码编译：</p>
+<ul>
+<li>语法分析（解析）</li>
+<li>作用域分析</li>
+<li>将语法树转换为原生代码</li>
+</ul>
+</div>
+<p>在上述两个过程中，我们都需要解析源码以及生成抽象语法树（AST），我们都需要进行作用域分析，以便得出每个符号所代表的是局部变量，上下文变量（闭包相关）或全局属性。唯独转换的过程是不同的。你可以在这一步做一些非常细致的工作，但你也同时希望编译器越快越好，甚至很想来个“直译”：语法树的每个节点都转化为一串相应的字节码或原生代码指令（<em>译注，汇编指令</em>）。</p>
+<p>现在思考一下你会如何去做一个字节码解释器。一个朴素的实现可能就是一个循环，其中会不断获取字节码，然后进入一个大的<code>switch</code>语句，逐一执行其事先准备好的指令。<a href="http://wingolog.org/archives/2012/06/27/inside-javascriptcores-low-level-interpreter">有一些途径</a>对这个过程进行改进，但最终还是会落到相近的结构上。</p>
+<p>如果我们此时不是去生成字节码、使用解释器的那个循环，而是直接触发相应的原生代码呢？无需如果，V8的FC就是这样做的。这样做便不再需要解释器，并且大大简化了未优化代码与优化代码之间的切换。</p>
+<p>一般来说，字节码发挥用武之地的最佳时机，是编译器有充分的准备时间的时候。但这并不是浏览器中所能允许的，因此FC对于V8来说更加应景。</p>
+<h2>内联缓存：加速未优化代码</h2>
+<p>如果你看过ECMAScript标准，你会发现其中有很多操作异常复杂。以<code>+</code>操作符来说，如果操作数都为数字，则它演绎为加法；如果其中有一个操作数是字符串，则它演绎为字符串拼接；如果操作数不是数字也不是字符串，其将经过某些复杂的（可能是用户定义的）过程，转化为原语（<em>译注，原语指的是JavaScript中的数字、字符串、布尔、<code>undefined</code>以及<code>null</code></em>），最终再演绎为数字加法或字符串拼接。仅仅是查看脚本源码，我们无从得知哪种操作最终应当执行。属性的读取（比如：<code>o.x</code>）是另一个潜在复杂操作的例子。只通过源码，你将无从得知你要的是读取一个对象自己的属性（对象本身所具有的属性），还是原型对象的属性（来自于原型链上原型的属性），还是一个<code>getter</code>方法，亦或是浏览器的某些自定义回调。这个属性还可能根本不存在。如果你要在FC编译的代码中处理所有这些情况，即使一个简单的操作也会引发上百条指令。</p>
+<p>内联缓存（Inline caches， ICs）提供了一个优雅的方案来解决这个问题。内联缓存大致就是一个包含多种可能的实现（通常运行时生成）来处理某个操作的函数（<em>译注：拗口，我的理解是，这个函数提供了多个处理问题的方案，这些方案的性能由优至次，一个不行就退化到另一个，直至最终最低效率的方法</em>）。我<a href="http://jayconrod.com/posts/44/polymorphic-inline-caches-explained">之前曾写过</a>函数的多态内联缓存的文章。V8使用IC处理了大量的操作：FC使用IC来实现读取、存储、函数调用、二元运算符、一元运算符、比较运算符以及<code>ToBoolean</code>隐操作符。</p>
+<p>IC的实现称为Stub。Stub在使用层面上像函数：调用、返回。但它不必初始化一个调用栈来完成调用约定。Stub常常在运行时动态生成，但在通常情况下都可被缓存，并被多个IC重用。Stub一般会含有已优化的代码，来处理某个IC之前所碰到的特定类型的操作。一旦Stub碰到了优化代码无法解决的操作，它会调用C++运行时代码来进行处理。运行时代码处理了这个操作之后，会生成一个新的Stub，包含解决这个操作的方案（当然也包括之前的其他方案）。对原有Stub的调用随即变为了新Stub的调用，脚本的执行也将继续进行，变得和Stub正常的调用流程一样。</p>
+<p>我们来看一段简单的例子，读取属性：</p>
+<pre>
+function f(o) {
+  return o.x;
+}
+</pre>
+<p>当FC初次生成代码时，它会使用一个IC来演绎这个读取。IC以uninitialized状态（初态）初始，调用一个不包含任何优化代码的简易的Stub。下面是FC生成的调用stub的代码：</p>
+<pre>
+;; FC调用
+ldr   r0, [fp, #+8]     ; 从栈中读取参数”o“
+ldr   r2, [pc, #+84]    ; 从固定的位置读取”x“
+ldr   ip, [pc, #+84]    ; 从固定位置载入uninitialized态的stub
+blx   ip                ; 调用stub
+...
+dd    0xabcdef01        ; 上面拿到的stub地址
+                        ; 当stub出现处理不了的操作时，这里的stub会被换成新的stub
+</pre>
+<p>（如果你不熟悉ARM汇编的话，抱歉。希望注释能让代码的意图清晰）<br />
+这是处于uninitialized态的stub：</p>
+<pre>
+;; uninitialized stub
+ldr   ip,  [pc, #8]   ; 读取C++运行时的函数来处理
+bx    ip              ; 尾调；译注：尾递归优化技术
+...
+</pre>
+<p>当stub第一次被调用时，stub注定无法处理它所面对的操作，运行时代码会替stub来解决。在V8中，最常见的存储属性的方法就是将其放在对象中一个固定偏移量的地方，我们以此为例。每个对象都有一个指向Map的指针，也即一个描述对象布局的一个不变结构。负责读取对象自身属性的stub会将对象的布局图与已知的Map（也就是运行时所生成的Map）相比较，来快速确定对象是否在相应的位置存放着该属性。这个Map的检查使我们能够避开一次麻烦的Hash表查询。</p>
+<pre>
+;; monomorphic态的对象自身属性读取stub
+tst   r0,   #1          ; 检验目标是否是一个对象；译注：见代码末详细译注
+beq   miss              ; 不是就说明处理不了
+ldr   r1,   [r0, #-1]   ; 读取对象的Map
+ldr   ip,   [pc, #+24]  ; 读取已知的Map
+cmp   r1,   ip          ; 它们相同否？
+bne   miss              ; 不同说明处理不了
+ldr   r0,   [r0, #+11]  ; 读取属性
+bx    lr                ; 返回
+miss:
+ldr   ip,   [pc, #+8]   ; 调用C++运行时来解决
+bx    ip                ; 尾调
+...
+</pre>
+<p><em>译注：V8中对32bits长的值做了进一步分类，其中最低位作为区分，如果为0则表示该值为31bits长的整数；如果为1则表示该值为30bits长的指针。由于V8中的对象以4Bytes为单位对齐，指针的最低2位恰好空闲。</em></p>
+<p>只要该表达式只负责读取对象自身的属性，则读取可以无附加地快速完成。由于IC只处理了一种情况，它处于monomorphic态（单态）。如果在后续的运行中，这个IC又遇到了无法处理的情况，则更加常见的megamorphic态（复态）stub会被生成。</p>
+<h2>待续&#8230;</h2>
+<p>如上所述，FC圆满地完成了它快速生成优质代码的任务。由于IC易于扩展的特点，FC生成的代码也非常通用，这使得FC非常简单；而IC则使代码非常灵活，能够处理任何情况。</p>
+<p>在接下来的文章中，我们将看到V8内部如何表达JavaScript对象，来做到在大多数场景下以O(1)的时间访问这些程序员未做任何结构定义工作（类似于类定义）的对象。</p>
+]]></content:encoded>
+							<wfw:commentRss>https://newhtml.net/comments/feed.xml</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+	</channel>
+</rss>

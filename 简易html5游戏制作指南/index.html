@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="stylesheet" href="../wp-content/themes/contango/style.css" type="text/css" media="all" />
+
+<title>简易HTML5游戏制作指南 &#8211; NewHTML</title>
+<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="NewHTML &raquo; Feed" href="https://newhtml.net/feed.xml" />
+<link rel="alternate" type="application/rss+xml" title="NewHTML &raquo; 评论Feed" href="https://newhtml.net/comments/feed.xml" />
+<link rel="alternate" type="application/rss+xml" title="NewHTML &raquo; 简易HTML5游戏制作指南评论Feed" href="https://newhtml.net/feed.xml" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/newhtml.net\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='../wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contango-css-960-css'  href='../wp-content/themes/contango/lib/css/960.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contango-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%7CNixie+One&#038;ver=5.3.2' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='25+款社交图标分享' href='../25款社交图标分享/' />
+<link rel='next' title='jQuery Transit &#8211; 一个CSS3渐变效果插件' href='../jquery-transit-一个css3渐变效果插件/' />
+<link rel="canonical" href="../简易html5游戏制作指南/" />
+<link rel='shortlink' href='../简易html5游戏制作指南/' />
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("../wp-content/themes/contango/images/bg-pattern.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }
+</style>
+	</head>
+
+<body class="post-template-default single single-post postid-273 single-format-standard custom-background">
+<div id="page" class="wrapper hfeed site">
+
+  <header id="masthead" class="site-header" role="banner">
+    <div class="container_16 clearfix">
+      <div class="grid_16">
+        <div id="headimg">
+
+    
+  <div id="logo-text">
+    <span class="site-name"><a href="../page/1/index.html" title="NewHTML" rel="home">NewHTML</a></span>
+    <span class="site-description">全新的互联网体验</span>
+  </div><!-- end of #logo -->
+  
+  
+</div>      </div>
+    </div>
+  </header><!-- #masthead -->
+
+
+  <div class="container_16 clearfix">
+    <nav id="site-navigation" class="grid_16 main-navigation" role="navigation">
+      <div class="menu clearfix"><ul id="menu-%e9%a6%96%e9%a1%b5" class="sf-menu"><li id="menu-item-60" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-60"><a href="../category/html5/page/1/index.html">HTML5</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19"><a href="../category/css3/page/1/index.html">CSS3</a></li>
+<li id="menu-item-77" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-77"><a href="../category/jquery/page/1/index.html">jQuery</a>
+<ul class="sub-menu">
+	<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a href="../jquery-plugins/">jQuery plugins</a></li>
+</ul>
+</li>
+<li id="menu-item-1527" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1527"><a href="../category/v8专题/index.html">V8专题</a></li>
+<li id="menu-item-61" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61"><a href="http://paletton.com/">配色</a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20"><a href="../category/about-us/index.html">关于我们</a></li>
+</ul></div>    </nav><!-- #site-navigation -->
+  </div>
+<div id="content" class="site-content clearfix">
+
+      
+  <div class="container_16 clearfix">
+    
+    <div class="grid_11">
+      
+      <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+  	  
+      	  
+                      
+                            
+                <article id="post-273" class="post-273 post type-post status-publish format-standard hentry category-html5 category-javascirpt category-jquery tag-html5 tag-javascript tag-66">
+  
+  <div class="entry-meta-group clearfix">
+    <div class="grid_2 alpha">
+      <time class="entry-date entry-time updated" datetime="2011-12-03T01:32:01+08:00"><a href="../简易html5游戏制作指南/" title="2011 年 12 月 3 日 01:32" rel="bookmark"><span class="entry-date-day">03</span><span class="entry-date-month-year">12月 2011</span></a></time>    </div>
+    <div class="grid_8 omega">
+      <h1 class="entry-title entry-title-single">简易HTML5游戏制作指南</h1>
+      <div class="entry-meta">    
+		<span class="entry-author author vcard">by <a href="../author/woodu/index.html" title="by Woodu" rel="author"><span class="entry-author-name fn">Woodu</span></a></span>      </div><!-- .entry-meta -->
+    </div>
+  </div>
+  
+  <div class="entry-content clearfix">
+  	<p align="right">-By Daniel X. Moore，来自Pixel Relations, STRd6。<br />
+2010年2月1日<br />
+本文适用的浏览器为 Google Chrome/Mozilla Firefox/Apple Safari/Opera。
+</p>
+<h2>介绍</h2>
+<p>你想用HTML5的新特性Canvas来制作一个游戏么？那相信这篇教程会给你带来一定的帮助。<br />
+不过丑话说前面，你得有至少中级的Javascript应用能力才行。<br />
+<span id="more-273"></span><br />
+你可以先<a href=http://demo.newhtml.net/space_demo/index.html>看看这个游戏成品</a>，或者是直接来进入文章并<a href=http://demo.newhtml.net/space_demo/space_demo.zip>查看游戏的源码</a>。
+</p>
+<h2>创建canvas区域</h2>
+<p>为了让内容显示在屏幕上，我们需要一个canvas区域。由于本文重点是游戏制作，那么在这里我们使用jQuery来创建这一区域。</p>
+<pre>
+var CANVAS_WIDTH = 480;
+var CANVAS_HEIGHT = 320;
+
+var canvasElement = $("<canvas width='" + CANVAS_WIDTH + 
+                      "' height='" + CANVAS_HEIGHT + "'></canvas>");
+var canvas = canvasElement.get(0).getContext("2d");
+canvasElement.appendTo('body');
+</pre>
+<h2>游戏更新</h2>
+<p>为了让游戏画面更流畅，我们需要将更新画面的频率设置的快一些。快多少呢？只要比人的眼睛和大脑的反应速度稍快就行啦！</p>
+<pre>
+var FPS = 30;
+setInterval(function() {
+  update();
+  draw();
+}, 1000/FPS);
+</pre>
+<p>那么就这样，我们就可以更新画面或是绘制空白方法了。不过千万要记得定时调用这个叫做<font color="green">setIntercal()</font>的函数。</p>
+<pre>function update() { ... }
+function draw() { ... }</pre>
+<h2>Hello World</h2>
+<p>现在我们有了一个游戏循环更新的函数，那么接下来就可以在屏幕上绘制东西了。首先从最简单的绘制文字开始。</p>
+<pre>
+function draw() {
+  canvas.fillStyle = "#000"; // Set color to black
+  canvas.fillText("Hello World!", 50, 50);
+}
+</pre>
+<p>注意：确保在修改后你的程序还能正常运行。只有分段检查，在出问题之后才更容易确定出问题的地方——查几行代码总比查全部工程要强吧？<Br /><br />
+如果你想让静态的字体更酷一些的话（比如动起来），那就使用我们已经设定好的游戏循环更新函数吧。通过它，我们可以让文字移动时候更容易一些。</p>
+<pre>
+var textX = 50;
+var textY = 50;
+
+function update() {
+  textX += 1;
+  textY += 1;
+}
+
+function draw() {
+  canvas.fillStyle = "#000";
+  canvas.fillText("Hello World!", textX, textY);
+}</pre>
+<p>现在来让文字回旋起来吧。如果按照上面的代码，那么文字应该已经动起来了。不过在它移动后留在屏幕上的痕迹并没有被清除。先停一下，思考思考为啥会这样？其实答案很简单，因为我们在绘制新的图案之前并没有清除屏幕。所以在绘屏之前让我们先执行清屏操作。</p>
+<pre>
+function draw() {
+  canvas.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+  canvas.fillStyle = "#000";
+  canvas.fillText("Hello World!", textX, textY);
+}
+</pre>
+<p>嗯，这样我们就让一段文字在屏幕上移动了，于是这样的话，在制作游戏的道路上我们也就成功了一半了……也就是说，除了增加控制、提高游戏体验，美化游戏界面……呃，或许还有6/7的路我们就可以创造一个真正的游戏了呢。别紧张，接下来的部分，也有教程陪着你。</p>
+<h2>创建游戏控制器</h2>
+<p>游戏玩家是用于操控游戏信息，并负责绘制诸如图形之类数据的一个对象。那么接下来我们就创建一个游戏控制器，并用简单的字符串变量来储存全部信息。</p>
+<pre>
+var player = {
+  color: "#00A",
+  x: 220,
+  y: 270,
+  width: 32,
+  height: 32,
+  draw: function() {
+    canvas.fillStyle = this.color;
+    canvas.fillRect(this.x, this.y, this.width, this.height);
+  }
+};
+</pre>
+<p>为方便起见，让我们用一个简单的上色矩形来代表当前的游戏玩家。当我们绘制游戏时，我们将canvas清空，并绘制游戏玩家对象。</p>
+<pre>
+function draw() {
+  canvas.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+  player.draw();
+}
+</pre>
+<h2>键盘控制</h2>
+<h3>使用jQuery Hotkeys</h3>
+<p><a href=https://github.com/tzuryby/jquery.hotkeys>jQuery Hotkeys Plugin</a>让浏览器响应键盘按键变得更容易了。通过定义的<font color=green>keyCode</font>和<font color=green>charCode</font>，来将事件如下一样绑定</p>
+<pre>$(document).bind("keydown", "left", function() { ... });
+</pre>
+<p>这个函数的一大长处是不需要知道每个键的ASCII码，我们需要做的就是命令它“当玩家按某个键的时候，去做什么事儿”，jQuery Hotkeys就可以很好的完成我们想要的事儿。</p>
+<h3>游戏对象移动</h3>
+<p>JavaScript接管键盘事件的方法是通过事件驱动，所以这也就意味着我们没法检测按下的是哪个键。所以，那让我们使用自己的方法吧。</p>
+<p>你可能会问，为什么我们不自己建立一个事件驱动么？好吧，因为键盘是通过系统的IO组件来反映操作的，而并不通过我们的游戏更新循环，所以我们并不能及时获得按键信息。那么为了用户体验的一致性，我们需要在游戏更新循环中加入自己的按键检测。</p>
+<p>好消息是，我已经引用了一个16行的JS文件——key_status.js来让检测按键成为了可能。你只要来在looping函数中检查<font color=green>keydown.left</font>或是对应的其他键的事件即可。</p>
+<p>现在我们能检测按键了，那就用下面这个update函数来移动游戏对象。</p>
+<pre>
+function update() {
+  if (keydown.left) {
+    player.x -= 2;
+  }
+
+  if (keydown.right) {
+    player.x += 2;
+  }
+}
+</pre>
+<p>那接下来，让它旋转起来吧。</p>
+<p>你可能已经注意到了，那块东西（好吧，游戏对象）会被移出可见范围之外，那让我们锁定它的范围。还有，就是移动速度有点慢，那就加速，呵呵。</p>
+<pre>
+function update() {
+  if (keydown.left) {
+    player.x -= 5;
+  }
+
+  if (keydown.right) {
+    player.x += 5;
+  }
+
+  player.x = player.x.clamp(0, CANVAS_WIDTH - player.width);
+}
+</pre>
+<p>增加更多的输入同样简单。那让我们发射炮弹吧！</p>
+<pre>
+function update() {
+  if (keydown.space) {
+    player.shoot();
+  }
+
+  if (keydown.left) {
+    player.x -= 5;
+  }
+
+  if (keydown.right) {
+    player.x += 5;
+  }
+
+  player.x = player.x.clamp(0, CANVAS_WIDTH - player.width);
+}
+
+player.shoot = function() {
+  console.log("Pew pew");
+  // :) 好吧，至少增加按键绑定这事很简单。。。就是这样～
+};
+</pre>
+<h2>增加更多的游戏元素</h2>
+<h3>子弹</h3>
+<p>让我们增加一些子弹吧。首先，需要一个数组来储存它们的信息。</p>
+<p><pre>var playerBullets = [];</pre>
+<p>然后我们需要一个函数来创建这些子弹实例。</p>
+<pre>
+function Bullet(I) {
+  I.active = true;
+
+  I.xVelocity = 0;
+  I.yVelocity = -I.speed;
+  I.width = 3;
+  I.height = 3;
+  I.color = "#000";
+
+  I.inBounds = function() {
+    return I.x >= 0 && I.x <= CANVAS_WIDTH &#038;&#038;
+      I.y >= 0 && I.y <= CANVAS_HEIGHT;
+  };
+
+  I.draw = function() {
+    canvas.fillStyle = this.color;
+    canvas.fillRect(this.x, this.y, this.width, this.height);
+  };
+
+  I.update = function() {
+    I.x += I.xVelocity;
+    I.y += I.yVelocity;
+
+    I.active = I.active &#038;&#038; I.inBounds();
+  };
+
+  return I;
+}
+</pre>
+<p>当玩家按下发射键时，我们需要马上创建一个子弹实例，并放置到之前储存信息的数组中以便显示。</p>
+<pre>
+player.shoot = function() {
+  var bulletPosition = this.midpoint();
+
+  playerBullets.push(Bullet({
+    speed: 5,
+    x: bulletPosition.x,
+    y: bulletPosition.y
+  }));
+};
+
+player.midpoint = function() {
+  return {
+    x: this.x + this.width/2,
+    y: this.y + this.height/2
+  };
+};
+</pre>
+<p>那么现在我们需要将上面的代码加入到游戏循环更新的函数中了。为了防止集合中已经攻击过敌人或是飞出窗体的子弹（我们称之为“无效子弹”）仍旧滞留在数组中，我们来把整个一系列子弹过滤到只剩活动的子弹。这样的话我们移除无效子弹的方法也简单多了。</p>
+<pre>
+function update() {
+  ...
+  playerBullets.forEach(function(bullet) {
+    bullet.update();
+  });
+
+  playerBullets = playerBullets.filter(function(bullet) {
+    return bullet.active;
+  });
+}
+</pre>
+<p>最后一步是绘制子弹。</p>
+<pre>
+function draw() {
+  ...
+  playerBullets.forEach(function(bullet) {
+    bullet.draw();
+  });
+}
+</pre>
+<h3>敌人</h3>
+<p>下面让我们来像增加子弹一样增加一些敌人吧。</p>
+<pre>
+  enemies = [];
+
+function Enemy(I) {
+  I = I || {};
+
+  I.active = true;
+  I.age = Math.floor(Math.random() * 128);
+
+  I.color = "#A2B";
+
+  I.x = CANVAS_WIDTH / 4 + Math.random() * CANVAS_WIDTH / 2;
+  I.y = 0;
+  I.xVelocity = 0
+  I.yVelocity = 2;
+
+  I.width = 32;
+  I.height = 32;
+
+  I.inBounds = function() {
+    return I.x >= 0 && I.x <= CANVAS_WIDTH &#038;&#038;
+      I.y >= 0 && I.y <= CANVAS_HEIGHT;
+  };
+
+  I.draw = function() {
+    canvas.fillStyle = this.color;
+    canvas.fillRect(this.x, this.y, this.width, this.height);
+  };
+
+  I.update = function() {
+    I.x += I.xVelocity;
+    I.y += I.yVelocity;
+
+    I.xVelocity = 3 * Math.sin(I.age * Math.PI / 64);
+
+    I.age++;
+
+    I.active = I.active &#038;&#038; I.inBounds();
+  };
+
+  return I;
+};
+
+function update() {
+  ...
+
+  enemies.forEach(function(enemy) {
+    enemy.update();
+  });
+
+  enemies = enemies.filter(function(enemy) {
+    return enemy.active;
+  });
+
+  if(Math.random() < 0.1) {
+    enemies.push(Enemy());
+  }
+};
+
+function draw() {
+  ...
+
+  enemies.forEach(function(enemy) {
+    enemy.draw();
+  });
+}
+</pre>
+<h2>读取并绘制图片</h2>
+<p>图片移动显然比色块移动看上去帅。在canvas中读取并绘制图片是很痛苦的，为了避免那些，让我们使用一个简单的公用模块。</p>
+<pre>
+player.sprite = Sprite("player");
+
+player.draw = function() {
+  this.sprite.draw(canvas, this.x, this.y);
+};
+
+function Enemy(I) {
+  ...
+
+  I.sprite = Sprite("enemy");
+
+  I.draw = function() {
+    this.sprite.draw(canvas, this.x, this.y);
+  };
+
+  ...
+}
+</pre>
+<h2>碰撞检测</h2>
+<p>像机器人比赛？其实是，我们将这些元素绘制完后，它们相撞却不会产生事件。为了让他们能在合适的时候爆炸，那让我们增加一些判断吧。</p>
+<p>让我们使用一个简单的矩形碰撞检测算法：</p>
+<pre>
+function collides(a, b) {
+  return a.x < b.x + b.width &#038;&#038;
+         a.x + a.width > b.x &&
+         a.y < b.y + b.height &#038;&#038;
+         a.y + a.height > b.y;
+}
+</pre>
+<p>请注意，我们有两个需要检测的东西。<br />
+  ·1、玩家的子弹>=敌方飞船<br />
+  ·2、玩家>=敌方飞船</p>
+<p>完成后，让我们做一个钩子来挂载到update函数中，以便游戏更新循环可以更新我们需要的碰撞检测。</p>
+<pre>
+function handleCollisions() {
+  playerBullets.forEach(function(bullet) {
+    enemies.forEach(function(enemy) {
+      if (collides(bullet, enemy)) {
+        enemy.explode();
+        bullet.active = false;
+      }
+    });
+  });
+
+  enemies.forEach(function(enemy) {
+    if (collides(enemy, player)) {
+      enemy.explode();
+      player.explode();
+    }
+  });
+}
+
+function update() {
+  ...
+  handleCollisions();
+}
+</pre>
+<p>完成了检测，让我们加点爆炸效果吧。这个函数标记了被碰撞的对象，同时移除并播放爆炸效果。</p>
+<pre>
+function Enemy(I) {
+  ...
+
+  I.explode = function() {
+    this.active = false;
+    // 可以增加一点爆炸的图片
+  };
+
+  return I;
+};
+
+player.explode = function() {
+  this.active = false;
+  // 增加爆炸的图片并结束游戏。
+};
+</pre>
+<h2>音效</h2>
+<p>声音也是个增加用户体验的不错方法。虽然说在HTML5中直接嵌入声音和图片还是挺那啥的，不过多亏我们有一个额外的js——sound.js，插入声音也变得非常简单了。</p>
+<pre>
+player.shoot = function() {
+  Sound.play("shoot");
+  ...
+}
+
+function Enemy(I) {
+  ...
+
+  I.explode = function() {
+    Sound.play("explode");
+    ...
+  }
+}
+</pre>
+<p>需要你注意的是，引入声音可能会带来一系列稳定性问题，诸如选项卡崩溃或是声音卡顿之类的。所以要有心理准备。</p>
+<h2>结束了</h2>
+<p>还是那句话，这是<a href=http://demo.newhtml.net/space_demo/index.html>这个游戏成品</a>，而且这是<a href=http://demo.newhtml.net/space_demo/space_demo.zip>整套程序的zip源码包</a>。</p>
+<p>看完教程，我希望你已经明白了用JS和html5做游戏的最基础的一些东西了。经过一些适当的抽象编程，我们可以对api更灵活地掌握，同时也学会了一些灵活应对未来问题的方法。</p>
+<h2>参考</h2>
+<p><a href=http://blog.nihilogic.dk/2009/02/html5-canvas-cheat-sheet.html>HTML5 Canvas Cheat Sheet</a><br />
+<a href=https://gist.github.com/768272>HTML5 Game Engines</a></p>
+  </div> <!-- end .entry-content -->
+  
+    
+  <div class="entry-meta-bottom">
+  <span class="cat-links"><span class="entry-utility-prep entry-utility-prep-cat-links">Posted in:</span> <a href="../category/html5/page/1/index.html" rel="category tag">HTML5</a>, <a href="../category/javascirpt/page/1/index.html" rel="category tag">JavaScirpt</a>, <a href="../category/jquery/page/1/index.html" rel="category tag">jQuery</a></span><span class="entry-meta-sep"> &sdot; </span><span class="tag-links"><span class="entry-utility-prep entry-utility-prep-tag-links">Tagged:</span> <a href="../tag/html5/page/1/index.html" rel="tag">HTML5</a>, <a href="../tag/javascript/page/1/index.html" rel="tag">javascript</a>, <a href="../tag/游戏/index.html" rel="tag">游戏</a></span>  </div><!-- .entry-meta -->
+
+</article> <!-- end #post-273 .post_class -->
+
+ 
+
+<div id="comments" class="grid_inside">
+  
+  
+    
+  <h3 id="comments-title">
+    2 Thoughts on &ldquo;<span>简易HTML5游戏制作指南</span>&rdquo;  </h3>
+
+  <ol class="commentlist">
+    
+            <li class="comment even thread-even depth-1" id="li-comment-10">
+
+				<div id="comment-10" class="comment">
+
+					<div class="comment-meta">
+						<div class="comment-author vcard">
+
+							<img alt='' src='https://secure.gravatar.com/avatar/448e177aa4ab100b3d95ac4faf86dade?s=60&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/448e177aa4ab100b3d95ac4faf86dade?s=120&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />
+                            <span class="fn">sosasker</span> on <a href="../简易html5游戏制作指南/#comment-10"><span pubdate datetime="2011-12-10T15:43:00+08:00">2011 年 12 月 10 日 at 15:43</span></a> <span class="says">said:</span>
+							
+						</div> <!-- end .comment-author .vcard -->
+
+						
+					</div> <!-- end .comment-meta -->
+
+					<div class="comment-content">
+					  <p>博主 您好 你的这个翻译真的不错<br />
+不知道有没有建立群什麽的 大家交流。。</p>
+<p>新手学习开发html5 希望能做一些新东西 不只是游戏。。。</p>
+<p>邮件交流哈。</p>
+                    </div> <!-- end .comment-content -->
+
+					<div class="reply">
+											</div><!-- .reply -->
+
+				</div><!-- end #comment-10 -->
+
+		<ul class="children">
+
+            <li class="comment byuser comment-author-woodu bypostauthor odd alt depth-2" id="li-comment-11">
+
+				<div id="comment-11" class="comment">
+
+					<div class="comment-meta">
+						<div class="comment-author vcard">
+
+							<img alt='' src='https://secure.gravatar.com/avatar/688c1c9f804fac83e2fc85656cdd9005?s=60&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/688c1c9f804fac83e2fc85656cdd9005?s=120&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />
+                            <span class="fn">Woodu</span> on <a href="../简易html5游戏制作指南/#comment-11"><span pubdate datetime="2011-12-11T22:53:05+08:00">2011 年 12 月 11 日 at 22:53</span></a> <span class="says">said:</span>
+							
+						</div> <!-- end .comment-author .vcard -->
+
+						
+					</div> <!-- end .comment-meta -->
+
+					<div class="comment-content">
+					  <p>啊哈。还真没有呢。</p>
+                    </div> <!-- end .comment-content -->
+
+					<div class="reply">
+											</div><!-- .reply -->
+
+				</div><!-- end #comment-11 -->
+
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+  </ol>
+
+  
+  
+  
+</div><!-- #comments -->              
+                          
+                      
+          <div id="loop-nav-singlular-post" class="clearfix">
+  <h3 class="assistive-text">Post Navigation</h3>
+  <div class="loop-nav-previous grid_5 alpha">
+    <a href="../25款社交图标分享/" rel="prev"><span class="meta-nav">&larr;</span> Previous Post</a>  </div>
+  <div class="loop-nav-next grid_5 omega">
+	<a href="../jquery-transit-一个css3渐变效果插件/" rel="next">Next Post <span class="meta-nav">&rarr;</span></a>  </div>
+</div><!-- end #loop-nav-singular-post -->
+      
+        </main><!-- #main -->
+      </div><!-- #primary -->
+    
+    </div> <!-- end .grid_11 -->
+    
+    <div id="secondary" class="grid_5 widget-area" role="complementary">
+  <div id="sidebar">
+  
+	<aside id="text-3" class="widget widget_text widget-widget_text clearfix"><div class="widget-wrap widget-inside"><h3 class="widget-title">赞助广告</h3>			<div class="textwidget"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-3299450050937314";
+/* newhtml */
+google_ad_slot = "5721301653";
+google_ad_width = 125;
+google_ad_height = 125;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+		</div></aside>		<aside id="recent-posts-3" class="widget widget_recent_entries widget-widget_recent_entries clearfix"><div class="widget-wrap widget-inside">		<h3 class="widget-title">近期文章</h3>		<ul>
+											<li>
+					<a href="../102-programming-fonts/">102款最适合编程的字体</a>
+									</li>
+											<li>
+					<a href="../from-unicode-to-emoji/">从Unicode到emoji</a>
+									</li>
+											<li>
+					<a href="../screen-readers-and-css/">读屏器与CSS</a>
+									</li>
+											<li>
+					<a href="../html-preload-prefetch/">HTML Preload 文章两篇</a>
+									</li>
+											<li>
+					<a href="../v8-about-to-have-new-engine-turbofan-ignition/">V8即将启用新的引擎 &#8211; TurboFan &#038; Ignition</a>
+									</li>
+											<li>
+					<a href="../typedarray-vs-dataview/">TypedArray vs. DataView</a>
+									</li>
+											<li>
+					<a href="../cache-control-immutable/">Cache-Control新成员：immutable</a>
+									</li>
+											<li>
+					<a href="../js-error-capturestacktrace/">有关Error.captureStackTrace</a>
+									</li>
+											<li>
+					<a href="../gh-html/">有关line-height</a>
+									</li>
+											<li>
+					<a href="../x-htm/">8款纯CSS模拟移动设备</a>
+									</li>
+					</ul>
+		</div></aside><aside id="search-4" class="widget widget_search widget-widget_search clearfix"><div class="widget-wrap widget-inside"><div class="search">
+  <form method="get" class="searchform" action="https://www.google.com/search">
+    <label for="s" class="assistive-text">Search for:</label>
+    <input type="text" class="field" name="q" id="s" value="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
+    <input type="hidden" name="sitesearch" value="newhtml.net" />
+    <input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+  </form>
+</div><!-- end .search --></div></aside><aside id="tag_cloud-4" class="widget widget_tag_cloud widget-widget_tag_cloud clearfix"><div class="widget-wrap widget-inside"><h3 class="widget-title">标签</h3><div class="tagcloud"><a href="../tag/3d/index.html" class="tag-cloud-link tag-link-79 tag-link-position-1" style="font-size: 9.7379310344828pt;" aria-label="3D (5个项目)">3D</a>
+<a href="../tag/animated-buttons/index.html" class="tag-cloud-link tag-link-6 tag-link-position-2" style="font-size: 8pt;" aria-label="animated buttons (3个项目)">animated buttons</a>
+<a href="../tag/bootstrap/index.html" class="tag-cloud-link tag-link-217 tag-link-position-3" style="font-size: 8.9655172413793pt;" aria-label="bootstrap (4个项目)">bootstrap</a>
+<a href="../tag/canvas/index.html" class="tag-cloud-link tag-link-104 tag-link-position-4" style="font-size: 8pt;" aria-label="canvas (3个项目)">canvas</a>
+<a href="../tag/css/page/1/index.html" class="tag-cloud-link tag-link-10 tag-link-position-5" style="font-size: 16.496551724138pt;" aria-label="CSS (29个项目)">CSS</a>
+<a href="../tag/css3/page/1/index.html" class="tag-cloud-link tag-link-423 tag-link-position-6" style="font-size: 20.358620689655pt;" aria-label="CSS3 (74个项目)">CSS3</a>
+<a href="../tag/css3-animation/page/1/index.html" class="tag-cloud-link tag-link-34 tag-link-position-7" style="font-size: 14.372413793103pt;" aria-label="CSS3 animation (17个项目)">CSS3 animation</a>
+<a href="../tag/css3-transform/page/1/index.html" class="tag-cloud-link tag-link-7 tag-link-position-8" style="font-size: 15.144827586207pt;" aria-label="css3 transform (21个项目)">css3 transform</a>
+<a href="../tag/font-face/index.html" class="tag-cloud-link tag-link-13 tag-link-position-9" style="font-size: 11.862068965517pt;" aria-label="font-face (9个项目)">font-face</a>
+<a href="../tag/hover-effect/index.html" class="tag-cloud-link tag-link-31 tag-link-position-10" style="font-size: 10.413793103448pt;" aria-label="hover effect (6个项目)">hover effect</a>
+<a href="../tag/html5/page/1/index.html" class="tag-cloud-link tag-link-425 tag-link-position-11" style="font-size: 19.779310344828pt;" aria-label="HTML5 (65个项目)">HTML5</a>
+<a href="../tag/icon/page/1/index.html" class="tag-cloud-link tag-link-11 tag-link-position-12" style="font-size: 13.310344827586pt;" aria-label="icon (13个项目)">icon</a>
+<a href="../tag/icon-font/index.html" class="tag-cloud-link tag-link-118 tag-link-position-13" style="font-size: 8.9655172413793pt;" aria-label="icon font (4个项目)">icon font</a>
+<a href="../tag/javascript/page/1/index.html" class="tag-cloud-link tag-link-21 tag-link-position-14" style="font-size: 21.51724137931pt;" aria-label="javascript (98个项目)">javascript</a>
+<a href="../tag/jquery-2/page/1/index.html" class="tag-cloud-link tag-link-22 tag-link-position-15" style="font-size: 18.234482758621pt;" aria-label="jquery (45个项目)">jquery</a>
+<a href="../tag/jquery-plugin/page/1/index.html" class="tag-cloud-link tag-link-125 tag-link-position-16" style="font-size: 13.793103448276pt;" aria-label="jquery plugin (15个项目)">jquery plugin</a>
+<a href="../tag/node-js/index.html" class="tag-cloud-link tag-link-370 tag-link-position-17" style="font-size: 10.413793103448pt;" aria-label="node.js (6个项目)">node.js</a>
+<a href="../tag/ui/index.html" class="tag-cloud-link tag-link-132 tag-link-position-18" style="font-size: 9.7379310344828pt;" aria-label="UI (5个项目)">UI</a>
+<a href="../tag/v8/index.html" class="tag-cloud-link tag-link-367 tag-link-position-19" style="font-size: 10.413793103448pt;" aria-label="V8 (6个项目)">V8</a>
+<a href="../tag/v8解析/index.html" class="tag-cloud-link tag-link-368 tag-link-position-20" style="font-size: 8.9655172413793pt;" aria-label="V8解析 (4个项目)">V8解析</a>
+<a href="../tag/web-audio-api/index.html" class="tag-cloud-link tag-link-47 tag-link-position-21" style="font-size: 10.413793103448pt;" aria-label="Web Audio API (6个项目)">Web Audio API</a>
+<a href="../tag/web-font/page/1/index.html" class="tag-cloud-link tag-link-178 tag-link-position-22" style="font-size: 13.6pt;" aria-label="web font (14个项目)">web font</a>
+<a href="../tag/下载/page/1/index.html" class="tag-cloud-link tag-link-28 tag-link-position-23" style="font-size: 12.924137931034pt;" aria-label="下载 (12个项目)">下载</a>
+<a href="../tag/免费/page/1/index.html" class="tag-cloud-link tag-link-92 tag-link-position-24" style="font-size: 20.648275862069pt;" aria-label="免费 (80个项目)">免费</a>
+<a href="../tag/典范/page/1/index.html" class="tag-cloud-link tag-link-39 tag-link-position-25" style="font-size: 14.951724137931pt;" aria-label="典范 (20个项目)">典范</a>
+<a href="../tag/创意/page/1/index.html" class="tag-cloud-link tag-link-69 tag-link-position-26" style="font-size: 19.296551724138pt;" aria-label="创意 (58个项目)">创意</a>
+<a href="../tag/图标/page/1/index.html" class="tag-cloud-link tag-link-424 tag-link-position-27" style="font-size: 15.144827586207pt;" aria-label="图标 (21个项目)">图标</a>
+<a href="../tag/字体/page/1/index.html" class="tag-cloud-link tag-link-42 tag-link-position-28" style="font-size: 16.013793103448pt;" aria-label="字体 (26个项目)">字体</a>
+<a href="../tag/工具/page/1/index.html" class="tag-cloud-link tag-link-429 tag-link-position-29" style="font-size: 17.558620689655pt;" aria-label="工具 (38个项目)">工具</a>
+<a href="../tag/手机网页/page/1/index.html" class="tag-cloud-link tag-link-48 tag-link-position-30" style="font-size: 12.924137931034pt;" aria-label="手机网页 (12个项目)">手机网页</a>
+<a href="../tag/按钮/index.html" class="tag-cloud-link tag-link-9 tag-link-position-31" style="font-size: 8pt;" aria-label="按钮 (3个项目)">按钮</a>
+<a href="../tag/插件/page/1/index.html" class="tag-cloud-link tag-link-54 tag-link-position-32" style="font-size: 17.075862068966pt;" aria-label="插件 (34个项目)">插件</a>
+<a href="../tag/效果/page/1/index.html" class="tag-cloud-link tag-link-20 tag-link-position-33" style="font-size: 19.489655172414pt;" aria-label="效果 (60个项目)">效果</a>
+<a href="../tag/教程/page/1/index.html" class="tag-cloud-link tag-link-426 tag-link-position-34" style="font-size: 14.951724137931pt;" aria-label="教程 (20个项目)">教程</a>
+<a href="../tag/浏览器/index.html" class="tag-cloud-link tag-link-428 tag-link-position-35" style="font-size: 10.896551724138pt;" aria-label="浏览器 (7个项目)">浏览器</a>
+<a href="../tag/移动应用/page/1/index.html" class="tag-cloud-link tag-link-50 tag-link-position-36" style="font-size: 12.634482758621pt;" aria-label="移动应用 (11个项目)">移动应用</a>
+<a href="../tag/网页/page/1/index.html" class="tag-cloud-link tag-link-37 tag-link-position-37" style="font-size: 14.08275862069pt;" aria-label="网页 (16个项目)">网页</a>
+<a href="../tag/翻译/page/1/index.html" class="tag-cloud-link tag-link-15 tag-link-position-38" style="font-size: 15.531034482759pt;" aria-label="翻译 (23个项目)">翻译</a>
+<a href="../tag/翻页/index.html" class="tag-cloud-link tag-link-138 tag-link-position-39" style="font-size: 8pt;" aria-label="翻页 (3个项目)">翻页</a>
+<a href="../tag/翻页效果/index.html" class="tag-cloud-link tag-link-190 tag-link-position-40" style="font-size: 8pt;" aria-label="翻页效果 (3个项目)">翻页效果</a>
+<a href="../tag/色彩/index.html" class="tag-cloud-link tag-link-68 tag-link-position-41" style="font-size: 10.413793103448pt;" aria-label="色彩 (6个项目)">色彩</a>
+<a href="../tag/设计/page/1/index.html" class="tag-cloud-link tag-link-38 tag-link-position-42" style="font-size: 17.558620689655pt;" aria-label="设计 (38个项目)">设计</a>
+<a href="../tag/资源/page/1/index.html" class="tag-cloud-link tag-link-427 tag-link-position-43" style="font-size: 22pt;" aria-label="资源 (111个项目)">资源</a>
+<a href="../tag/适应性设计/page/1/index.html" class="tag-cloud-link tag-link-164 tag-link-position-44" style="font-size: 12.924137931034pt;" aria-label="适应性设计 (12个项目)">适应性设计</a>
+<a href="../tag/页面/page/1/index.html" class="tag-cloud-link tag-link-18 tag-link-position-45" style="font-size: 15.820689655172pt;" aria-label="页面 (25个项目)">页面</a></div>
+</div></aside><aside id="linkcat-242" class="widget widget_links widget-widget_links clearfix"><div class="widget-wrap widget-inside"><h3 class="widget-title">酷站推荐</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.canvasdemos.com/">CanvasDemos</a></li>
+<li><a href="http://codevisually.com/">CodeVisually</a></li>
+<li><a href="http://tympanus.net/codrops/" title="Codrops &#8211; useful drops of code" target="_blank">Codrops</a></li>
+<li><a href="http://css-tricks.com/">CSS-Tricks</a></li>
+<li><a href="http://www.css3.info/">CSS3.info</a></li>
+<li><a href="http://designlol.net/" title="Design lol 全球设计精华分享" target="_blank">Designlol</a></li>
+<li><a href="http://designmodo.com/">DesignModo</a></li>
+<li><a href="http://html5demos.com/">HTML 5 Demos and Examples</a></li>
+<li><a href="http://html5doctor.com/" target="_blank">HTML5 Doctor</a></li>
+<li><a href="http://www.html5rocks.com/">HTML5 Rocks</a></li>
+<li><a href="http://ilovetypography.com/">I love Typography</a></li>
+<li><a href="http://www.inserthtml.com/">InsertHTML</a></li>
+<li><a href="http://www.paulund.co.uk/">Paulund</a></li>
+<li><a href="http://spyrestudios.com">SpyreStudios</a></li>
+<li><a href="http://www.thinkingwithtype.com/" target="_blank">Thinking with Type</a></li>
+<li><a href="http://typographica.org/">Typographica.</a></li>
+<li><a href="http://typophile.com/blog">Typophile</a></li>
+<li><a href="http://vector.me" target="_blank">Vector.me</a></li>
+<li><a href="http://www.webdesigntoolslist.com/">Web Design Tools</a></li>
+<li><a href="http://www.zhouwenbin.com/" target="_blank">前端开发-周文斌</a></li>
+
+	</ul>
+</div></aside>
+<aside id="linkcat-2" class="widget widget_links widget-widget_links clearfix"><div class="widget-wrap widget-inside"><h3 class="widget-title">友情链接</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://yangjiayu.com/" rel="friend co-worker" title="Mr Yang&#8217;s Eome &#8211; 杨加玉" target="_blank">Mr Yang&#039;s Eome</a></li>
+<li><a href="http://www.w3cplus.com/" target="_blank">W3cplus</a></li>
+<li><a href="http://www.html-js.com/" target="_blank">前端乱炖</a></li>
+<li><a href="http://blog.zzjin.net" rel="friend" target="_blank">空空的blog</a></li>
+<li><a href="http://huangyang.me" rel="friend" title="黄杨的前端技术博客" target="_blank">黄杨的博客</a></li>
+
+	</ul>
+</div></aside>
+<aside id="meta-4" class="widget widget_meta widget-widget_meta clearfix"><div class="widget-wrap widget-inside"><h3 class="widget-title">杂项</h3>			<ul>
+			<li><a href="https://newhtml.net/feed.xml">项目feed</a></li>
+			<li><a href="https://newhtml.net/comments/feed.xml">评论feed</a></li>
+			<li><a href="https://cn.wordpress.org/">WordPress.org</a></li>			</ul>
+			</div></aside><aside id="text-4" class="widget widget_text widget-widget_text clearfix"><div class="widget-wrap widget-inside">			<div class="textwidget"><span style="color:hsl(0, 0%, 40%);">苏ICP备12058838号</span></div>
+		</div></aside>  
+  </div> <!-- end #sidebar -->
+</div>  <!-- end .grid_5 -->
+  </div> <!-- end .container_16 -->
+
+</div><!-- #content -->
+  
+  <div class="container_16 containter_footer">
+    <footer id="colophon" class="grid_16 site-footer" role="contentinfo">
+      <div class="copyright clearfix">
+  <div class="copyright_inside">
+     &copy; Copyright 2017 - <a href="../index.html">NewHTML</a>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27466992-1', 'auto');
+  ga('send', 'pageview');
+
+</script>  </div>
+</div>
+<div class="credit clearfix">
+  <div class="credit_inside">
+    <a href="http://designorbital.com/contango/" title="Contango Theme">Contango Theme</a> &sdot; Powered by <a href="http://wordpress.org/" title="WordPress">WordPress</a>
+  </div>
+</div>
+    </footer>
+  </div>
+
+</div> <!-- end .wrapper -->
+
+<script type='text/javascript' src='../wp-content/themes/contango/lib/js/superfish/superfish-combine.min.js'></script>
+<script type='text/javascript' src='../wp-content/themes/contango/lib/js/common.js'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.min.js'></script>
+</body>
+</html>

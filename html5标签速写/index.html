@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="stylesheet" href="../wp-content/themes/contango/style.css" type="text/css" media="all" />
+
+<title>HTML5标签速写 &#8211; NewHTML</title>
+<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="NewHTML &raquo; Feed" href="https://newhtml.net/feed.xml" />
+<link rel="alternate" type="application/rss+xml" title="NewHTML &raquo; 评论Feed" href="https://newhtml.net/comments/feed.xml" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/newhtml.net\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='../wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contango-css-960-css'  href='../wp-content/themes/contango/lib/css/960.css' type='text/css' media='all' />
+<link rel='stylesheet' id='contango-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%7CNixie+One&#038;ver=5.3.2' type='text/css' media='all' />
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='../wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='CSS3 Trick: 文字也能做图标' href='../用文字做图标/' />
+<link rel='next' title='华丽的页面滚动效果9例' href='../华丽的页面滚动效果9例/' />
+<link rel="canonical" href="../html5标签速写/" />
+<link rel='shortlink' href='../html5标签速写/' />
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("../wp-content/themes/contango/images/bg-pattern.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: fixed; }
+</style>
+	</head>
+
+<body class="post-template-default single single-post postid-48 single-format-standard custom-background">
+<div id="page" class="wrapper hfeed site">
+
+  <header id="masthead" class="site-header" role="banner">
+    <div class="container_16 clearfix">
+      <div class="grid_16">
+        <div id="headimg">
+
+    
+  <div id="logo-text">
+    <span class="site-name"><a href="../page/1/index.html" title="NewHTML" rel="home">NewHTML</a></span>
+    <span class="site-description">全新的互联网体验</span>
+  </div><!-- end of #logo -->
+  
+  
+</div>      </div>
+    </div>
+  </header><!-- #masthead -->
+
+
+  <div class="container_16 clearfix">
+    <nav id="site-navigation" class="grid_16 main-navigation" role="navigation">
+      <div class="menu clearfix"><ul id="menu-%e9%a6%96%e9%a1%b5" class="sf-menu"><li id="menu-item-60" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-60"><a href="../category/html5/page/1/index.html">HTML5</a></li>
+<li id="menu-item-19" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19"><a href="../category/css3/page/1/index.html">CSS3</a></li>
+<li id="menu-item-77" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-77"><a href="../category/jquery/page/1/index.html">jQuery</a>
+<ul class="sub-menu">
+	<li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46"><a href="../jquery-plugins/">jQuery plugins</a></li>
+</ul>
+</li>
+<li id="menu-item-1527" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1527"><a href="../category/v8专题/index.html">V8专题</a></li>
+<li id="menu-item-61" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61"><a href="http://paletton.com/">配色</a></li>
+<li id="menu-item-20" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-20"><a href="../category/about-us/index.html">关于我们</a></li>
+</ul></div>    </nav><!-- #site-navigation -->
+  </div>
+<div id="content" class="site-content clearfix">
+
+      
+  <div class="container_16 clearfix">
+    
+    <div class="grid_11">
+      
+      <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+  	  
+      	  
+                      
+                            
+                <article id="post-48" class="post-48 post type-post status-publish format-standard hentry category-html5 tag-html5 tag-15">
+  
+  <div class="entry-meta-group clearfix">
+    <div class="grid_2 alpha">
+      <time class="entry-date entry-time updated" datetime="2011-11-21T12:46:07+08:00"><a href="../html5标签速写/" title="2011 年 11 月 21 日 12:46" rel="bookmark"><span class="entry-date-day">21</span><span class="entry-date-month-year">11月 2011</span></a></time>    </div>
+    <div class="grid_8 omega">
+      <h1 class="entry-title entry-title-single">HTML5标签速写</h1>
+      <div class="entry-meta">    
+		<span class="entry-author author vcard">by <a href="../author/admin/page/1/index.html" title="by liuyanghejerry" rel="author"><span class="entry-author-name fn">liuyanghejerry</span></a></span>      </div><!-- .entry-meta -->
+    </div>
+  </div>
+  
+  <div class="entry-content clearfix">
+  	<p>HTML5标准虽然尚未正式出炉，但其脚步声却是越来越近。在漫长的等待中，我们不妨先来看看HTML5目前都有些什么了，来一次HTML5速写。</p>
+<p style="padding-left: 30px;"><em>如要查询各大浏览器的HTML5支持情况，请猛击<a href="http://caniuse.com/" target="_blank">这里</a>。</em></p>
+<p><span id="more-48"></span></p>
+<p style="padding-left: 30px;"><em>本文基于<a href="http://coding.smashingmagazine.com/2011/11/18/html5-semantics/" target="_blank">HTML5 Semantics</a>而写，但并不是一篇标准的翻译。如果您对文中的技术细节、正式观点存在疑惑，请以原文为准</em></p>
+<h2>有些标签拜拜了</h2>
+<p>用了专门控制网页表现力的标签都被移除了，比如 <code>center</code>、<code>font</code>、<code>big</code>，因为它们的作用目前已经完全被CSS所替代。不过这并不意味着你必须要重写以前，而是说这些标签都“过时”了，不应当在新的网页中使用了。</p>
+<p>查看更多<a href="http://coding.smashingmagazine.com/2011/11/18/html5-semantics/www.w3.org/TR/html5-diff/#absent-elements" target="_blank">被删除的标签</a></p>
+<h2>有些标签意义变了</h2>
+<p>除了取消了一批标签之外，现有的许多标签还被重新赋予了含义。<code>small</code>标签将不再用来表示“小尺寸字体”，而被用来表示一段文字属于<a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/text-level-semantics.html#the-small-element" target="_blank">旁注</a>。旁注可以用来存放许多和正文有关系，但不影响正文意义的文字，比如用来写免责声明、版权声明等等。b标签不再用来表示“加粗”，而用来提示浏览器，该标签当中的内容很重要，比如是产品名称、名词诠释等等。</p>
+<p>查看<a href="http://www.w3.org/TR/html5-diff/#changed-elements" target="_blank">变更含义的标签</a></p>
+<h2>还有很多新标签</h2>
+<p>新标签通常就意味着新功能，因此这可能是我们最期待也是最关注的部分了。我们熟悉的有<code>video</code>、<code>audio</code>，另外还有一个在游戏中被用的大红大紫的<code>canvas</code>——这个标签在未来将提供<a href="http://dev.opera.com/articles/view/an-introduction-to-webgl/" target="_blank">WebGL</a>支持，这是游戏中非常重要的一点，而且由于WebGL的易用性，很多既有的项目和产品还将被轻松地移植至浏览器之上。</p>
+<p>这三个标签的实际效果与老<code>img</code>标签类似，它们都是将外界的信息捕捉至网页当中。但不同的是，三者既允许使用闭合标签，也能够使用非闭合标签，这将极大地方便开发者为不支持新特性的浏览器提供一个回避措施：一张图片来替代<code>canvas</code>，或者一个flash来替代<code>video</code>。</p>
+<p><code>source</code>标签及track标签将作为空标签应用至<code>video</code>、<code>audio</code>内部。</p>
+<p>其中<code>source</code>标签用来提供媒体文件的位置及类型，浏览器自上而下依次读取，解析它所遇到的第一个能够解析的格式：</p>
+<pre>
+<audio controls>
+  <source src=bieber.ogg type=audio/ogg>
+  <source src=bieber.mp3 type=audio/mp3>
+    <!-- fallback content: -->
+    Download <a href="https://newhtml.net/html5%e6%a0%87%e7%ad%be%e9%80%9f%e5%86%99/bieber.ogg">Ogg</a> or <a href="https://newhtml.net/html5%e6%a0%87%e7%ad%be%e9%80%9f%e5%86%99/bieber.mp3">MP3</a> formats.
+</audio>
+</pre>
+<p>在这个例子中，Opera、Firefox以及Chrome将下载ogg格式的bieber文件进行播放，而Safari和IE将直接下载MP3格式的文件播放。其中Chrome虽然能够播放两种格式，但因为<code>source</code>标签的规则，它将只播放第一个能够解析的文件。最后的的fallback部分则是其它不支持<code>source</code>标签的浏览器用来回避标签的代码，支持<code>source</code>标签的浏览器就不会显示这些内容了。</p>
+<p>同样的情况也适用于<code>video</code>标签：</p>
+<pre>
+<video controls>
+  <source src=best-video-ever.webm type=video/webm>
+  <source src=best-video-ever.mp4 type=video/mp4>
+    <!-- fallback content: -->
+    <iframe width="480" height="360"
+      src="http://www.youtube.com/embed/xzMUyqmaqcw?rel=0"
+      frameborder="0" allowfullscreen>
+    </iframe>
+</video>
+</pre>
+<p>如此，老版本浏览器用户将直接观看flash格式的Youtube视频，而新浏览器用户则能够凭借其浏览器来进行更好的本地视频解析。这正是所谓的“人人都适用”的代码。</p>
+<p><code>track</code>标签则是新近才增加到HTML5标准中的，该标签目前还仅仅只有Opera、Chrome和IE（当然，我们说的是最新版）能够支持。这个标签的作用是提示浏览器字幕文件的所在。一旦浏览器支持了该标签，那么它将在视频或者音频文件播放时，同步地按需出现——如此将使得语言障碍者及残疾人受益。</p>
+<h2>有些标签专为国际化</h2>
+<p>虽然没有上面几条标签那么具有吸引力，但这对于互联网上的非英语使用者非常有帮助。</p>
+<p>阿拉伯语、希伯来语等自右向左的文字将在网页中，由浏览器专门来决定书写形式，更重要的是，读音、数字等等符号也将被同等对待。现代的浏览器在处理多国语言上已经做得非常好了，而在HTML5的帮助下，它们将做得更好。</p>
+<p>bdi标签，将允许网页开发者覆盖浏览器现有的多国语言处理、表现方式，这使得浏览器在一些特殊情况（语言实在是太灵活了）下能够针对当前的情况听从开发者的安排。</p>
+<p>除此之外，有些语言含有一些完全不是字母的字符，它们传达的仅仅是意义而没有读音。另一方面，文章的作者有时也会需要为读者提供一些不常见的字符，而通常都由小字体来单独注释。HTML5这次将为我们带来专门的三个标签：<code>ruby</code>、<code>rt</code>以及<code>rp</code>。</p>
+<p><a href="http://my.opera.com/tagawa/blog/the-html5-ruby-element-in-words-of-one-syllable-or-less" target="_blank">查看ruby标签的详细描述</a></p>
+<h2>有些标签与网页结构有关</h2>
+<p>绝大多数人都已经知道，HTML5为现代网页专门提供了标签来描述网页的特定部分，如<code>header</code>、<code>footer</code>、<code>nav</code>、<code>section</code>、<code>article</code>、<code>aside</code>等等。这些标签之所以被纳入标准，是因为网页开发者确实就需要这样的标签。这些需求在<a href="http://code.google.com/webstats/" target="_blank">2005年Google的一项网页分析</a>中，已经验证：在多达10亿的网页中，开发者使用这些词汇来描述网页的特定部分是最多的。无独有偶，2008年，<a href="http://dev.opera.com/articles/view/mama-markup-report-part-2/" target="_blank">Opera MAMA</a>调查了30亿链接来分析使用<a href="http://devfiles.myopera.com/articles/572/classlist-url.htm" target="_blank">最多的class</a>及<a href="http://devfiles.myopera.com/articles/572/idlist-url.htm" target="_blank">最多的ID</a>名称，最终同样得到了开发者对这些标签的需求。当然，如果你是一个职业的网页开发者，这一点我想就更不用多说了。</p>
+<p>新标准坚持<a href="http://www.w3.org/TR/html-design-principles/#degrade-gracefully" target="_blank">平缓降级</a>。例如，HTML5的最新版本当中引入了一个<code>figure</code>标签：</p>
+<blockquote>
+<p>
+figure标签用以表示一些浮动元素内容。figure可选地带有caption标签，通常用来关联正文当中的内容。</p>
+<p>该标签可用来容纳图片、代码等等。
+</p>
+</blockquote>
+<p>而这并非新点子。HTML3草案中<a href="http://www.w3.org/MarkUp/html3/figures" target="_blank">曾提到过一个<code>fig</code>标签</a>（但最终没能进入标准），用法大致如下：</p>
+<pre>
+<FIG SRC="https://newhtml.net/html5%e6%a0%87%e7%ad%be%e9%80%9f%e5%86%99/nicodamus.jpeg">
+   <CAPTION>Ground dweller: <I>Nicodamus bicolor</I> builds silk snares</CAPTION>
+   <P>A small hairy spider.
+   <CREDIT>J. A. L. Cooke/OSF</CREDIT></P>
+</FIG>
+</pre>
+<p>但这有一个大麻烦。当用户的浏览器并不支持<code>fig</code>标签的时候（实际上根本没有浏览器支持），图片就根本不会被显示，因为<code>fig</code>标签整个都被忽略掉了，搞笑的是，其内部的声明却被显示出来——因其仅仅只是普通的文本。</p>
+<p>在HTML5中，我们就可以这么做：</p>
+<pre>
+<figure>
+<img src="https://newhtml.net/html5%e6%a0%87%e7%ad%be%e9%80%9f%e5%86%99/nicodamus.jpeg">
+<figcaption>
+
+Ground dweller: <i>Nicodamus bicolor</i> builds silk snares.
+
+A small hairy spider.
+      <small>J. A. L. Cooke/OSF</small&#038;gt
+</figcaption>
+</figure>
+</pre>
+<p>和HTML3中半途而废的<code>fig</code>不同，HTML5中的<code>figure</code>标签是可回避的，一旦浏览器不支持<code>figure</code>标签，其内部的图片和文字依然能够被顺利解析。而且注意，我们还用到了重新定义的<code>small</code>标签——我们之前提到过，它可以用作版权声明。</p>
+<p>HTML5还提供了<code>figcaption</code>标签。这一标签原本会被写作<code>caption</code>，但由于一些历史因素，<code>caption</code>以后也将仅仅只是<code>table</code>标签中的一部分。</p>
+<p>HTML5标准的一个<a href="http://www.w3.org/TR/html-design-principles/" target="_blank">设计原则</a>就是新特性应当尽量平缓降级，而一旦降级无法实现，标准则提供回避。标准倾向于重用既有的标签，而不是立刻创造一个新的——当然，这是相对的，必要的时候还是会引入新的。</p>
+<h2>有些标签用以交互</h2>
+<p>结构相关的标签对浏览器的表现来说，不会造成什么大的差异，尽管很多软件已经开始使用它们了。而有些标签对网页表现来说，则已经开始产生影响了。</p>
+<p><a href="http://html5doctor.com/the-details-and-summary-elements/" target="_blank"><code>details</code>标签</a>，一个被动交互标签，能够产生一个隐藏信息的效果，它只有当用户需要的时候才展现出信息。绝大多数浏览器都会将其实现为一个可展开的结构，就像现在很多网页上的show/hide按钮（都是JavaScript实现）。</p>
+<p>而其它相关的新标签，许多也都已经被用在<a href="http://dev.opera.com/articles/view/new-form-features-in-html5/" target="_blank">网页表单</a>当中了，比如<code>input</code>标签。<code>input</code>标签就属于之前所说的平缓降级的标签，它的众多属性在老版本的浏览器中，都等同于<code></p>
+<pre>
+<input type=text></pre>
+<p></code>。除此之外，新标签还有<code>datalist</code>、<code>output</code>、<code>progress</code>以及<code>meter</code>。</p>
+<h2>这是我们想要的么？</h2>
+<p>现在我们已经有了很多新标签了，但我们如何确保这些标签就是我们真正需要的？毕竟前面举出的Google调查，也是2005年的调查了——真的好久了。或许有些事实已经在调查之后发生了重大的改变——比如说很多人指出HTML5是面向文档的，而不是面向应用的。那我们是不是需要更多面向应用的标签，比如login或者share？</p>
+<p>那我就不知道了，毕竟我不是应用开发人员。但HTML标准总是活的，一旦需求变得强烈，这些东西就会被列入讨论。</p>
+<p>我猜许多开发者都可能想要一个新的图片嵌入方式，以应对不同的设备环境。这类似于<code>video</code>，我能想象出一个<code>picture</code>标签，就像这样：</p>
+<pre>
+<picture alt="angry pirate">
+   <source src=hires.png media="min-width:800px">
+   <source src=midres.png media="min-width:480px">
+   <source src=lores.png>
+      <!-- fallback for browsers without support -->
+      <img src="https://newhtml.net/html5%e6%a0%87%e7%ad%be%e9%80%9f%e5%86%99/midres.png" alt="angry pirate">
+</picture>
+</pre>
+<p>这段假想的代码将在宽屏设备上下载hires.png，而在最小为480像素宽的设备上下载midres.png，其余的设备则下载lores.png。这样的代码可能每个设计师都曾幻想过，因为它将解决设计师和开发者对跨平台图片选取的困惑。带宽、屏宽等等诸多因素都将影响图片的选择。或许我们可以见到这样的标签出现在HTML6当中，而在现在，我们就只能依靠脚本或者浏览器检测之类的其它手段来解决这样的问题。</p>
+<h2 style="color:#D93315;">时间，地点和人物</h2>
+<p>HTML5引入了一个<code>time</code>标签（<a href="http://www.brucelawson.co.uk/2011/goodbye-html5-time-hello-data/" target="_blank">尽管曾产生过激烈的辩论</a>），这个标签将把一个人类理解的日子，转换成一个机器可读的数据。无论标签当中的内容如何改变，它都将不会再影响机器对该时间的理解。因此，<code>time</code>使用起来就像这样：</p>
+<pre>
+<time datetime="1982-07-18">The day the woman I love was born</time>
+
+<time datetime="1982-07-18">Priyanka Chopra’s birthday</time>
+</pre>
+<p>同一个日期，无论你如何对其定义，对于机器来说，它都将认准<code>YYYY-MM-DD</code>这样的一个日期。而如果你想再增加具体的时间，则可以考虑<code>2011-11-13T20:00Z</code>这样一个表达。这样搜索引擎之类的机器就能够精准地读取到最新的信息。</p>
+<p>可能有点令人吃惊，尽管时下<a href="http://dev.opera.com/articles/view/how-to-use-the-w3c-geolocation-api/" target="_blank">地理应用</a>如此兴旺，我们却还没有一个地理标签能够处理这样三个属性：经度、维度和海拔（可选），所以要是能有这么一个标签就太好了：</p>
+<pre>
+<location lat=51.502064 long=-0.131981>London SW1A 4WW</location>
+</pre>
+<p>然后浏览器就可以根据这个信息来显示一副地图或者GPS导航信息了。</p>
+<p>HTML3当中有一个<a href="http://www.w3.org/MarkUp/html3/logical.html" target="_blank"><code>person</code>标签</a>，用来提供给机器识别姓名，但没有一个浏览器真正实现了它。在HTML4中，cite标签能够用于人名的处理，但在HTML5中它已经被移除了。那么在HTML5中，我们已经没有任何能够消歧义人名的东西了。人名确实是一个很难处理的东西，因为姓名没有一个统一的标准，它不像时间这样有一个ISO标准，也不像地理那样可以靠经纬度来指定。</p>
+<p>HTML5当中已经引入了一个新标签<code>data</code>，它原本用来替换掉<code>time</code>，但最终两者都得以保存。<code>data</code>标签用来存放一些信息，其中可以存放姓名，但浏览器不会理解其中存放的到底是什么，就像<code>1936-10-19</code>可以是一个日期，也可以是一个邮编。</p>
+<h2>微型数据</h2>
+<p>HTML5，和HTML4一样，是可扩展的（但不像XML那么夸张，以至于让委员会无法接受）。你可以用HTML的class机制携带一些小规模的数据，或者使用RDFa标准（但RDFa很难用）。而在HTML5中，微型数据实际是指增加一些商定好的标签。</p>
+<p>类似于RDFa，增加的标签只有在你告诉其它人它是什么意义时，才真正有意义，这意味着数据必须要有一个类似于词汇表的东西来作为索引的方式。</p>
+<p><a href="http://html5doctor.com/tag/microdata/" target="_blank">更多有关微型数据</a></p>
+<h2>标签到底重要吗</h2>
+<p>标签到底重要吗？这因人而定。有些人习惯于使用JavaScript来生成网页的几乎全部内容，标签对他们来说确实不重要——因为都是机器生成的，完全无需人工干预。这有点像flash。文章的原作者对此并不认同，但我个人认为，如果这样的方式确实广泛的存在了（事实上真是这样），那么它便是合理的。人们需要这样一种方式来使用HTML，那还有什么可说的呢？</p>
+<p>而另一方面，标签确实能够加强人和机器对于网页的理解。以往的div虽然也能用，但大部分情况下仅仅只有开发者才清楚其真正意义，而对于搜索引擎来说，它就和其它的div完全没有分别了。</p>
+<p>因此辩证地看，标签大部分情况下重要，但也不总是那么重要。更关键的还是在于你——在于你如何去对待它了。</p>
+  </div> <!-- end .entry-content -->
+  
+    
+  <div class="entry-meta-bottom">
+  <span class="cat-links"><span class="entry-utility-prep entry-utility-prep-cat-links">Posted in:</span> <a href="../category/html5/page/1/index.html" rel="category tag">HTML5</a></span><span class="entry-meta-sep"> &sdot; </span><span class="tag-links"><span class="entry-utility-prep entry-utility-prep-tag-links">Tagged:</span> <a href="../tag/html5/page/1/index.html" rel="tag">HTML5</a>, <a href="../tag/翻译/page/1/index.html" rel="tag">翻译</a></span>  </div><!-- .entry-meta -->
+
+</article> <!-- end #post-48 .post_class -->
+
+<div id="author-info" class="clearfix">
+
+  <div id="author-avatar" class="grid_2 alpha">
+    <div id="author-avatar-inside">
+	  <img alt='' src='https://secure.gravatar.com/avatar/83794b0ea1170a337e4782048cdaa928?s=80&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/83794b0ea1170a337e4782048cdaa928?s=160&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-80 photo' height='80' width='80' />    </div>
+  </div> <!-- #author-avatar -->
+
+  <div id="author-description" class="grid_8 omega">
+      <h3>About liuyanghejerry</h3>
+      <p>富有激情的前端工程师，专注GUI开发。</p>
+      <div id="author-link">
+        <a href="../author/admin/page/1/index.html" rel="author">View all posts by liuyanghejerry <span class="meta-nav">&rarr;</span></a>
+      </div> <!-- #author-link	-->
+  </div> <!-- #author-description -->
+
+</div> <!-- #author-info -->
+ 
+
+<div id="comments" class="grid_inside">
+  
+  
+    <p class="nocomments">Comments are closed.</p>
+  
+  
+</div><!-- #comments -->              
+                          
+                      
+          <div id="loop-nav-singlular-post" class="clearfix">
+  <h3 class="assistive-text">Post Navigation</h3>
+  <div class="loop-nav-previous grid_5 alpha">
+    <a href="../用文字做图标/" rel="prev"><span class="meta-nav">&larr;</span> Previous Post</a>  </div>
+  <div class="loop-nav-next grid_5 omega">
+	<a href="../华丽的页面滚动效果9例/" rel="next">Next Post <span class="meta-nav">&rarr;</span></a>  </div>
+</div><!-- end #loop-nav-singular-post -->
+      
+        </main><!-- #main -->
+      </div><!-- #primary -->
+    
+    </div> <!-- end .grid_11 -->
+    
+    <div id="secondary" class="grid_5 widget-area" role="complementary">
+  <div id="sidebar">
+  
+	<aside id="text-3" class="widget widget_text widget-widget_text clearfix"><div class="widget-wrap widget-inside"><h3 class="widget-title">赞助广告</h3>			<div class="textwidget"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-3299450050937314";
+/* newhtml */
+google_ad_slot = "5721301653";
+google_ad_width = 125;
+google_ad_height = 125;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+		</div></aside>		<aside id="recent-posts-3" class="widget widget_recent_entries widget-widget_recent_entries clearfix"><div class="widget-wrap widget-inside">		<h3 class="widget-title">近期文章</h3>		<ul>
+											<li>
+					<a href="../102-programming-fonts/">102款最适合编程的字体</a>
+									</li>
+											<li>
+					<a href="../from-unicode-to-emoji/">从Unicode到emoji</a>
+									</li>
+											<li>
+					<a href="../screen-readers-and-css/">读屏器与CSS</a>
+									</li>
+											<li>
+					<a href="../html-preload-prefetch/">HTML Preload 文章两篇</a>
+									</li>
+											<li>
+					<a href="../v8-about-to-have-new-engine-turbofan-ignition/">V8即将启用新的引擎 &#8211; TurboFan &#038; Ignition</a>
+									</li>
+											<li>
+					<a href="../typedarray-vs-dataview/">TypedArray vs. DataView</a>
+									</li>
+											<li>
+					<a href="../cache-control-immutable/">Cache-Control新成员：immutable</a>
+									</li>
+											<li>
+					<a href="../js-error-capturestacktrace/">有关Error.captureStackTrace</a>
+									</li>
+											<li>
+					<a href="../gh-html/">有关line-height</a>
+									</li>
+											<li>
+					<a href="../x-htm/">8款纯CSS模拟移动设备</a>
+									</li>
+					</ul>
+		</div></aside><aside id="search-4" class="widget widget_search widget-widget_search clearfix"><div class="widget-wrap widget-inside"><div class="search">
+  <form method="get" class="searchform" action="https://www.google.com/search">
+    <label for="s" class="assistive-text">Search for:</label>
+    <input type="text" class="field" name="q" id="s" value="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
+    <input type="hidden" name="sitesearch" value="newhtml.net" />
+    <input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+  </form>
+</div><!-- end .search --></div></aside><aside id="tag_cloud-4" class="widget widget_tag_cloud widget-widget_tag_cloud clearfix"><div class="widget-wrap widget-inside"><h3 class="widget-title">标签</h3><div class="tagcloud"><a href="../tag/3d/index.html" class="tag-cloud-link tag-link-79 tag-link-position-1" style="font-size: 9.7379310344828pt;" aria-label="3D (5个项目)">3D</a>
+<a href="../tag/animated-buttons/index.html" class="tag-cloud-link tag-link-6 tag-link-position-2" style="font-size: 8pt;" aria-label="animated buttons (3个项目)">animated buttons</a>
+<a href="../tag/bootstrap/index.html" class="tag-cloud-link tag-link-217 tag-link-position-3" style="font-size: 8.9655172413793pt;" aria-label="bootstrap (4个项目)">bootstrap</a>
+<a href="../tag/canvas/index.html" class="tag-cloud-link tag-link-104 tag-link-position-4" style="font-size: 8pt;" aria-label="canvas (3个项目)">canvas</a>
+<a href="../tag/css/page/1/index.html" class="tag-cloud-link tag-link-10 tag-link-position-5" style="font-size: 16.496551724138pt;" aria-label="CSS (29个项目)">CSS</a>
+<a href="../tag/css3/page/1/index.html" class="tag-cloud-link tag-link-423 tag-link-position-6" style="font-size: 20.358620689655pt;" aria-label="CSS3 (74个项目)">CSS3</a>
+<a href="../tag/css3-animation/page/1/index.html" class="tag-cloud-link tag-link-34 tag-link-position-7" style="font-size: 14.372413793103pt;" aria-label="CSS3 animation (17个项目)">CSS3 animation</a>
+<a href="../tag/css3-transform/page/1/index.html" class="tag-cloud-link tag-link-7 tag-link-position-8" style="font-size: 15.144827586207pt;" aria-label="css3 transform (21个项目)">css3 transform</a>
+<a href="../tag/font-face/index.html" class="tag-cloud-link tag-link-13 tag-link-position-9" style="font-size: 11.862068965517pt;" aria-label="font-face (9个项目)">font-face</a>
+<a href="../tag/hover-effect/index.html" class="tag-cloud-link tag-link-31 tag-link-position-10" style="font-size: 10.413793103448pt;" aria-label="hover effect (6个项目)">hover effect</a>
+<a href="../tag/html5/page/1/index.html" class="tag-cloud-link tag-link-425 tag-link-position-11" style="font-size: 19.779310344828pt;" aria-label="HTML5 (65个项目)">HTML5</a>
+<a href="../tag/icon/page/1/index.html" class="tag-cloud-link tag-link-11 tag-link-position-12" style="font-size: 13.310344827586pt;" aria-label="icon (13个项目)">icon</a>
+<a href="../tag/icon-font/index.html" class="tag-cloud-link tag-link-118 tag-link-position-13" style="font-size: 8.9655172413793pt;" aria-label="icon font (4个项目)">icon font</a>
+<a href="../tag/javascript/page/1/index.html" class="tag-cloud-link tag-link-21 tag-link-position-14" style="font-size: 21.51724137931pt;" aria-label="javascript (98个项目)">javascript</a>
+<a href="../tag/jquery-2/page/1/index.html" class="tag-cloud-link tag-link-22 tag-link-position-15" style="font-size: 18.234482758621pt;" aria-label="jquery (45个项目)">jquery</a>
+<a href="../tag/jquery-plugin/page/1/index.html" class="tag-cloud-link tag-link-125 tag-link-position-16" style="font-size: 13.793103448276pt;" aria-label="jquery plugin (15个项目)">jquery plugin</a>
+<a href="../tag/node-js/index.html" class="tag-cloud-link tag-link-370 tag-link-position-17" style="font-size: 10.413793103448pt;" aria-label="node.js (6个项目)">node.js</a>
+<a href="../tag/ui/index.html" class="tag-cloud-link tag-link-132 tag-link-position-18" style="font-size: 9.7379310344828pt;" aria-label="UI (5个项目)">UI</a>
+<a href="../tag/v8/index.html" class="tag-cloud-link tag-link-367 tag-link-position-19" style="font-size: 10.413793103448pt;" aria-label="V8 (6个项目)">V8</a>
+<a href="../tag/v8解析/index.html" class="tag-cloud-link tag-link-368 tag-link-position-20" style="font-size: 8.9655172413793pt;" aria-label="V8解析 (4个项目)">V8解析</a>
+<a href="../tag/web-audio-api/index.html" class="tag-cloud-link tag-link-47 tag-link-position-21" style="font-size: 10.413793103448pt;" aria-label="Web Audio API (6个项目)">Web Audio API</a>
+<a href="../tag/web-font/page/1/index.html" class="tag-cloud-link tag-link-178 tag-link-position-22" style="font-size: 13.6pt;" aria-label="web font (14个项目)">web font</a>
+<a href="../tag/下载/page/1/index.html" class="tag-cloud-link tag-link-28 tag-link-position-23" style="font-size: 12.924137931034pt;" aria-label="下载 (12个项目)">下载</a>
+<a href="../tag/免费/page/1/index.html" class="tag-cloud-link tag-link-92 tag-link-position-24" style="font-size: 20.648275862069pt;" aria-label="免费 (80个项目)">免费</a>
+<a href="../tag/典范/page/1/index.html" class="tag-cloud-link tag-link-39 tag-link-position-25" style="font-size: 14.951724137931pt;" aria-label="典范 (20个项目)">典范</a>
+<a href="../tag/创意/page/1/index.html" class="tag-cloud-link tag-link-69 tag-link-position-26" style="font-size: 19.296551724138pt;" aria-label="创意 (58个项目)">创意</a>
+<a href="../tag/图标/page/1/index.html" class="tag-cloud-link tag-link-424 tag-link-position-27" style="font-size: 15.144827586207pt;" aria-label="图标 (21个项目)">图标</a>
+<a href="../tag/字体/page/1/index.html" class="tag-cloud-link tag-link-42 tag-link-position-28" style="font-size: 16.013793103448pt;" aria-label="字体 (26个项目)">字体</a>
+<a href="../tag/工具/page/1/index.html" class="tag-cloud-link tag-link-429 tag-link-position-29" style="font-size: 17.558620689655pt;" aria-label="工具 (38个项目)">工具</a>
+<a href="../tag/手机网页/page/1/index.html" class="tag-cloud-link tag-link-48 tag-link-position-30" style="font-size: 12.924137931034pt;" aria-label="手机网页 (12个项目)">手机网页</a>
+<a href="../tag/按钮/index.html" class="tag-cloud-link tag-link-9 tag-link-position-31" style="font-size: 8pt;" aria-label="按钮 (3个项目)">按钮</a>
+<a href="../tag/插件/page/1/index.html" class="tag-cloud-link tag-link-54 tag-link-position-32" style="font-size: 17.075862068966pt;" aria-label="插件 (34个项目)">插件</a>
+<a href="../tag/效果/page/1/index.html" class="tag-cloud-link tag-link-20 tag-link-position-33" style="font-size: 19.489655172414pt;" aria-label="效果 (60个项目)">效果</a>
+<a href="../tag/教程/page/1/index.html" class="tag-cloud-link tag-link-426 tag-link-position-34" style="font-size: 14.951724137931pt;" aria-label="教程 (20个项目)">教程</a>
+<a href="../tag/浏览器/index.html" class="tag-cloud-link tag-link-428 tag-link-position-35" style="font-size: 10.896551724138pt;" aria-label="浏览器 (7个项目)">浏览器</a>
+<a href="../tag/移动应用/page/1/index.html" class="tag-cloud-link tag-link-50 tag-link-position-36" style="font-size: 12.634482758621pt;" aria-label="移动应用 (11个项目)">移动应用</a>
+<a href="../tag/网页/page/1/index.html" class="tag-cloud-link tag-link-37 tag-link-position-37" style="font-size: 14.08275862069pt;" aria-label="网页 (16个项目)">网页</a>
+<a href="../tag/翻译/page/1/index.html" class="tag-cloud-link tag-link-15 tag-link-position-38" style="font-size: 15.531034482759pt;" aria-label="翻译 (23个项目)">翻译</a>
+<a href="../tag/翻页/index.html" class="tag-cloud-link tag-link-138 tag-link-position-39" style="font-size: 8pt;" aria-label="翻页 (3个项目)">翻页</a>
+<a href="../tag/翻页效果/index.html" class="tag-cloud-link tag-link-190 tag-link-position-40" style="font-size: 8pt;" aria-label="翻页效果 (3个项目)">翻页效果</a>
+<a href="../tag/色彩/index.html" class="tag-cloud-link tag-link-68 tag-link-position-41" style="font-size: 10.413793103448pt;" aria-label="色彩 (6个项目)">色彩</a>
+<a href="../tag/设计/page/1/index.html" class="tag-cloud-link tag-link-38 tag-link-position-42" style="font-size: 17.558620689655pt;" aria-label="设计 (38个项目)">设计</a>
+<a href="../tag/资源/page/1/index.html" class="tag-cloud-link tag-link-427 tag-link-position-43" style="font-size: 22pt;" aria-label="资源 (111个项目)">资源</a>
+<a href="../tag/适应性设计/page/1/index.html" class="tag-cloud-link tag-link-164 tag-link-position-44" style="font-size: 12.924137931034pt;" aria-label="适应性设计 (12个项目)">适应性设计</a>
+<a href="../tag/页面/page/1/index.html" class="tag-cloud-link tag-link-18 tag-link-position-45" style="font-size: 15.820689655172pt;" aria-label="页面 (25个项目)">页面</a></div>
+</div></aside><aside id="linkcat-242" class="widget widget_links widget-widget_links clearfix"><div class="widget-wrap widget-inside"><h3 class="widget-title">酷站推荐</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.canvasdemos.com/">CanvasDemos</a></li>
+<li><a href="http://codevisually.com/">CodeVisually</a></li>
+<li><a href="http://tympanus.net/codrops/" title="Codrops &#8211; useful drops of code" target="_blank">Codrops</a></li>
+<li><a href="http://css-tricks.com/">CSS-Tricks</a></li>
+<li><a href="http://www.css3.info/">CSS3.info</a></li>
+<li><a href="http://designlol.net/" title="Design lol 全球设计精华分享" target="_blank">Designlol</a></li>
+<li><a href="http://designmodo.com/">DesignModo</a></li>
+<li><a href="http://html5demos.com/">HTML 5 Demos and Examples</a></li>
+<li><a href="http://html5doctor.com/" target="_blank">HTML5 Doctor</a></li>
+<li><a href="http://www.html5rocks.com/">HTML5 Rocks</a></li>
+<li><a href="http://ilovetypography.com/">I love Typography</a></li>
+<li><a href="http://www.inserthtml.com/">InsertHTML</a></li>
+<li><a href="http://www.paulund.co.uk/">Paulund</a></li>
+<li><a href="http://spyrestudios.com">SpyreStudios</a></li>
+<li><a href="http://www.thinkingwithtype.com/" target="_blank">Thinking with Type</a></li>
+<li><a href="http://typographica.org/">Typographica.</a></li>
+<li><a href="http://typophile.com/blog">Typophile</a></li>
+<li><a href="http://vector.me" target="_blank">Vector.me</a></li>
+<li><a href="http://www.webdesigntoolslist.com/">Web Design Tools</a></li>
+<li><a href="http://www.zhouwenbin.com/" target="_blank">前端开发-周文斌</a></li>
+
+	</ul>
+</div></aside>
+<aside id="linkcat-2" class="widget widget_links widget-widget_links clearfix"><div class="widget-wrap widget-inside"><h3 class="widget-title">友情链接</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://yangjiayu.com/" rel="friend co-worker" title="Mr Yang&#8217;s Eome &#8211; 杨加玉" target="_blank">Mr Yang&#039;s Eome</a></li>
+<li><a href="http://www.w3cplus.com/" target="_blank">W3cplus</a></li>
+<li><a href="http://www.html-js.com/" target="_blank">前端乱炖</a></li>
+<li><a href="http://blog.zzjin.net" rel="friend" target="_blank">空空的blog</a></li>
+<li><a href="http://huangyang.me" rel="friend" title="黄杨的前端技术博客" target="_blank">黄杨的博客</a></li>
+
+	</ul>
+</div></aside>
+<aside id="meta-4" class="widget widget_meta widget-widget_meta clearfix"><div class="widget-wrap widget-inside"><h3 class="widget-title">杂项</h3>			<ul>
+			<li><a href="https://newhtml.net/feed.xml">项目feed</a></li>
+			<li><a href="https://newhtml.net/comments/feed.xml">评论feed</a></li>
+			<li><a href="https://cn.wordpress.org/">WordPress.org</a></li>			</ul>
+			</div></aside><aside id="text-4" class="widget widget_text widget-widget_text clearfix"><div class="widget-wrap widget-inside">			<div class="textwidget"><span style="color:hsl(0, 0%, 40%);">苏ICP备12058838号</span></div>
+		</div></aside>  
+  </div> <!-- end #sidebar -->
+</div>  <!-- end .grid_5 -->
+  </div> <!-- end .container_16 -->
+
+</div><!-- #content -->
+  
+  <div class="container_16 containter_footer">
+    <footer id="colophon" class="grid_16 site-footer" role="contentinfo">
+      <div class="copyright clearfix">
+  <div class="copyright_inside">
+     &copy; Copyright 2017 - <a href="../index.html">NewHTML</a>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27466992-1', 'auto');
+  ga('send', 'pageview');
+
+</script>  </div>
+</div>
+<div class="credit clearfix">
+  <div class="credit_inside">
+    <a href="http://designorbital.com/contango/" title="Contango Theme">Contango Theme</a> &sdot; Powered by <a href="http://wordpress.org/" title="WordPress">WordPress</a>
+  </div>
+</div>
+    </footer>
+  </div>
+
+</div> <!-- end .wrapper -->
+
+<script type='text/javascript' src='../wp-content/themes/contango/lib/js/superfish/superfish-combine.min.js'></script>
+<script type='text/javascript' src='../wp-content/themes/contango/lib/js/common.js'></script>
+<script type='text/javascript' src='../wp-includes/js/wp-embed.min.js'></script>
+</body>
+</html>
